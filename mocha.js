@@ -3,5 +3,8 @@ module.exports = {
     mocha: true
   },
 
-  rules: {}
+  rules: {
+    // specify the maximum depth callbacks can be nested
+    'max-nested-callbacks': 0
+  }
 };
