@@ -1,0 +1,39 @@
+{
+  "name": "eslint-config-zeal",
+  "description": "ESLint sharable configuration matching Zeal's style guide",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CodingZeal/eslint-config-zeal.git"
+  },
+  "homepage": "https://github.com/CodingZeal/eslint-config-zeal",
+  "bugs": {
+    "url": "https://github.com/CodingZeal/eslint-config-zeal/issues"
+  },
+  "author": "Randy Coulman <randy@codingzeal.com> (http://codingzeal.com)",
+  "license": "MIT",
+  "keywords": [
+    "check",
+    "checker",
+    "code checker",
+    "code linter",
+    "code standards",
+    "code style",
+    "eslint",
+    "eslint-config",
+    "eslintconfig",
+    "lint",
+    "quality",
+    "style",
+    "style checker",
+    "style linter"
+  ],
+  "dependencies": {
+    "babel-eslint": "^4.1.6",
+    "eslint": "^1.10.3"
+  }
+}
