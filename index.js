@@ -189,6 +189,12 @@ module.exports = {
     // require immediate function invocation to be wrapped in parentheses
     'wrap-iife': 1,
     // require or disallow Yoda conditions
-    'yoda': 1
+    'yoda': 1,
+
+    //
+    // Strict Mode
+    //
+    // controls location of Use Strict Directives
+    'strict': [1, 'never']
   }
 };
