@@ -221,6 +221,28 @@ module.exports = {
     // disallow declaration of variables that are not used in the code
     'no-unused-vars': 1,
     // disallow use of variables before they are defined
-    'no-use-before-define': [1, 'nofunc']
+    'no-use-before-define': [1, 'nofunc'],
+
+    //
+    // Node.js and CommonJS
+    //
+    // enforce return after a callback
+    'callback-return': 1,
+    // enforce require() on top-level module scope
+    'global-require': 1,
+    // enforce error handling in callbacks
+    'handle-callback-err': 1,
+    // disallow mixing regular variable and require declarations
+    'no-mixed-requires': 1,
+    // disallow use of new operator with the require function
+    'no-new-require': 1,
+    // disallow string concatenation with __dirname and __filename
+    'no-path-concat': 1,
+    // disallow process.exit()
+    'no-process-exit': 1,
+    // restrict usage of specified node modules
+    'no-restricted-modules': 0,
+    // disallow use of synchronous methods
+    'no-sync': 1
   }
 };
