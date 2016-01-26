@@ -243,6 +243,46 @@ module.exports = {
     // restrict usage of specified node modules
     'no-restricted-modules': 0,
     // disallow use of synchronous methods
-    'no-sync': 1
+    'no-sync': 1,
+
+    //
+    // ECMAScript 6
+    //
+    // require braces in arrow function body
+    'arrow-body-style': 1,
+    // require parens in arrow function arguments
+    'arrow-parens': [1, 'as-needed'],
+    // require space before/after arrow function's arrow
+    'arrow-spacing': 1,
+    // verify calls of super() in constructors
+    'constructor-super': 1,
+    // enforce spacing around the * in generator functions
+    'generator-star-spacing': [1, 'after'],
+    // disallow arrow functions where a condition is expected
+    'no-arrow-condition': 0,
+    // disallow modifying variables of class declarations
+    'no-class-assign': 1,
+    // disallow modifying variables that are declared using const
+    'no-const-assign': 1,
+    // disallow duplicate name in class members
+    'no-dupe-class-members': 1,
+    // disallow use of this/super before calling super() in constructors.
+    'no-this-before-super': 1,
+    // require let or const instead of var
+    'no-var': 1,
+    // require method and property shorthand syntax for object literals
+    'object-shorthand': 1,
+    // suggest using arrow functions as callbacks
+    'prefer-arrow-callback': 1,
+    // suggest using const declaration for variables that are never modified after declared
+    'prefer-const': 1,
+    // suggest using Reflect methods where applicable
+    'prefer-reflect': 0,
+    // suggest using the spread operator instead of .apply().
+    'prefer-spread': 1,
+    // suggest using template literals instead of strings concatenation
+    'prefer-template': 1,
+    // disallow generator functions that do not have yield
+    'require-yield': 1
   }
 };
