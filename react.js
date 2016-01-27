@@ -6,7 +6,7 @@ module.exports = {
 
   rules: {
     // Prevent missing displayName in a React component definition
-    'react/display-name': 0,
+    'react/display-name': [1, { acceptTranspilerName: true }],
     // Forbid certain propTypes
     'react/forbid-prop-types': 1,
     // Enforce boolean attributes notation in JSX
@@ -22,7 +22,7 @@ module.exports = {
     // Validate JSX indentation
     'react/jsx-indent': [1, 2],
     // Validate JSX has key prop when in array or iterator
-    'react/jsx-key': 0,
+    'react/jsx-key': 1,
     // Limit maximum of props on a single line in JSX
     'react/jsx-max-props-per-line': 0,
     // Prevent usage of .bind() and arrow functions in JSX props

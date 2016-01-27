@@ -255,7 +255,7 @@ module.exports = {
     // enforce one true brace style
     'brace-style': 1,
     // require camel case names
-    camelcase: [1, { properties: 'never' }],
+    camelcase: 1,
     // enforce spacing before and after comma
     'comma-spacing': 1,
     // enforce one true comma style
@@ -271,7 +271,7 @@ module.exports = {
     // enforce use of function declarations or expressions
     'func-style': [1, 'declaration', { allowArrowFunctions: true }],
     // this option enforces minimum and maximum identifier lengths (variable names, property names etc.)
-    'id-length': 1,
+    'id-length': 0,
     // require identifiers to match the provided regular expression
     'id-match': 0,
     // specify tab or space width for your code
@@ -287,7 +287,7 @@ module.exports = {
     // specify the maximum depth that blocks can be nested
     'max-depth': 1,
     // specify the maximum length of a line in your program
-    'max-len': [2, 80, 2],
+    'max-len': [1, 80, 2],
     // specify the maximum depth callbacks can be nested
     'max-nested-callbacks': [1, 3],
     // limits the number of parameters that can be used in the function declaration.
@@ -307,7 +307,7 @@ module.exports = {
     // disallow use of the continue statement
     'no-continue': 1,
     // disallow comments inline after code
-    'no-inline-comments': 1,
+    'no-inline-comments': 0,
     // disallow if as the only statement in an else block
     'no-lonely-if': 1,
     // disallow mixed spaces and tabs for indentation
