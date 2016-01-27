@@ -12,7 +12,7 @@ module.exports = {
     // Enforce boolean attributes notation in JSX
     'react/jsx-boolean-value': 1,
     // Validate closing bracket location in JSX
-    'react/jsx-closing-bracket-location': [1, "after-props"],
+    'react/jsx-closing-bracket-location': [1, 'after-props'],
     // Enforce or disallow spaces inside of curly braces in JSX attributes
     'react/jsx-curly-spacing': 1,
     // Enforce event handler naming conventions in JSX
