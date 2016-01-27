@@ -41,7 +41,7 @@ module.exports = {
     // disallow double-negation boolean casts in a boolean context
     'no-extra-boolean-cast': 1,
     // disallow unnecessary parentheses
-    'no-extra-parens': 1,
+    'no-extra-parens': [1, 'functions'],
     // disallow unnecessary semicolons
     'no-extra-semi': 1,
     // disallow overwriting functions written as function declarations
