@@ -54,7 +54,8 @@ module.exports = {
     'no-irregular-whitespace': 1,
     // disallow negation of the left operand of an in expression
     'no-negated-in-lhs': 1,
-    // disallow the use of object properties of the global object (Math and JSON) as functions
+    // disallow the use of object properties of the global object (Math and
+    // JSON) as functions
     'no-obj-calls': 1,
     // disallow multiple spaces in a regular expression literal
     'no-regex-spaces': 1,
@@ -62,7 +63,8 @@ module.exports = {
     'no-sparse-arrays': 1,
     // Avoid code that looks like two expressions but is actually one
     'no-unexpected-multiline': 1,
-    // disallow unreachable statements after a return, throw, continue, or break statement
+    // disallow unreachable statements after a return, throw, continue, or
+    // break statement
     'no-unreachable': 1,
     // disallow comparisons with the value NaN
     'use-isnan': 1,
@@ -118,7 +120,8 @@ module.exports = {
     'no-extra-bind': 1,
     // disallow fallthrough of case statements
     'no-fallthrough': 1,
-    // disallow the use of leading or trailing decimal points in numeric literals
+    // disallow the use of leading or trailing decimal points in numeric
+    // literals
     'no-floating-decimal': 1,
     // disallow the type conversions with shorter notations
     'no-implicit-coercion': 1,
@@ -146,9 +149,11 @@ module.exports = {
     'no-new-func': 1,
     // disallows creating new instances of String,Number, and Boolean
     'no-new-wrappers': 1,
-    // disallow use of the new operator when not part of an assignment or comparison
+    // disallow use of the new operator when not part of an assignment or
+    // comparison
     'no-new': 1,
-    // disallow use of octal escape sequences in string literals, such as var foo = "Copyright \251";
+    // disallow use of octal escape sequences in string literals, such as var
+    // foo = "Copyright \251";
     'no-octal-escape': 1,
     // disallow use of octal literals
     'no-octal': 1,
@@ -178,7 +183,8 @@ module.exports = {
     'no-useless-concat': 1,
     // disallow use of the void operator
     'no-void': 1,
-    // disallow usage of configurable warning terms in comments - e.g. TODO or FIXME
+    // disallow usage of configurable warning terms in comments - e.g. TODO
+    // or FIXME
     'no-warning-comments': 1,
     // disallow use of the with statement
     'no-with': 1,
@@ -202,7 +208,8 @@ module.exports = {
     //
     // enforce or disallow variable initializations at definition
     'init-declarations': 1,
-    // disallow the catch clause parameter name being the same as a variable in the outer scope
+    // disallow the catch clause parameter name being the same as a variable in
+    // the outer scope
     'no-catch-shadow': 1,
     // disallow deletion of variables
     'no-delete-var': 1,
@@ -214,7 +221,8 @@ module.exports = {
     'no-shadow': 1,
     // disallow use of undefined when initializing variables
     'no-undef-init': 1,
-    // disallow use of undeclared variables unless mentioned in a /*global */ block
+    // disallow use of undeclared variables unless mentioned in a /*global */
+    // block
     'no-undef': 1,
     // disallow use of undefined variable
     'no-undefined': 0,
@@ -270,7 +278,8 @@ module.exports = {
     'func-names': 1,
     // enforce use of function declarations or expressions
     'func-style': [1, 'declaration', { allowArrowFunctions: true }],
-    // this option enforces minimum and maximum identifier lengths (variable names, property names etc.)
+    // this option enforces minimum and maximum identifier lengths (variable
+    // names, property names etc.)
     'id-length': 0,
     // require identifiers to match the provided regular expression
     'id-match': 0,
@@ -290,13 +299,15 @@ module.exports = {
     'max-len': [1, 80, 2],
     // specify the maximum depth callbacks can be nested
     'max-nested-callbacks': [1, 3],
-    // limits the number of parameters that can be used in the function declaration.
+    // limits the number of parameters that can be used in the function
+    // declaration.
     'max-params': [1, 3],
     // specify the maximum number of statement allowed in a function
     'max-statements': 1,
     // require a capital letter for constructors
     'new-cap': 1,
-    // disallow the omission of parentheses when invoking a constructor with no arguments
+    // disallow the omission of parentheses when invoking a constructor with no
+    // arguments
     'new-parens': 1,
     // require or disallow an empty newline after variable declarations
     'newline-after-var': 1,
@@ -338,7 +349,8 @@ module.exports = {
     'object-curly-spacing': [1, 'always'],
     // require or disallow one variable declaration per function
     'one-var': [1, 'never'],
-    // require assignment operator shorthand where possible or prohibit it entirely
+    // require assignment operator shorthand where possible or prohibit it
+    // entirely
     'operator-assignment': [1, 'always'],
     // enforce operators to be placed before or after line breaks
     'operator-linebreak': 1,
@@ -372,7 +384,8 @@ module.exports = {
     'space-return-throw-case': 1,
     // require or disallow spaces before/after unary operators
     'space-unary-ops': 1,
-    // require or disallow a space immediately following the // or /* in a comment
+    // require or disallow a space immediately following the // or /* in a
+    // comment
     'spaced-comment': 1,
     // require regex literals to be wrapped in parentheses
     'wrap-regex': 1,
@@ -406,7 +419,8 @@ module.exports = {
     'object-shorthand': 1,
     // suggest using arrow functions as callbacks
     'prefer-arrow-callback': 1,
-    // suggest using const declaration for variables that are never modified after declared
+    // suggest using const declaration for variables that are never modified
+    // after declared
     'prefer-const': 1,
     // suggest using Reflect methods where applicable
     'prefer-reflect': 0,
