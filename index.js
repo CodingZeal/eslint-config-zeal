@@ -417,4 +417,4 @@ module.exports = {
     // disallow generator functions that do not have yield
     'require-yield': 1
   }
-};
+}

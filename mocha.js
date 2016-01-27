@@ -7,4 +7,4 @@ module.exports = {
     // specify the maximum depth callbacks can be nested
     'max-nested-callbacks': 0
   }
-};
+}
