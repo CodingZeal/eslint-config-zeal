@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file.  This proje
 
 ### Changed
 
-* Mark eslint and babel-eslint as `peerDependencies` and `devDependencies` instead of `dependencies`. (#2)
+* Mark eslint and babel-eslint as `peerDependencies` and `devDependencies` instead of `dependencies`. ([#2](https://github.com/CodingZeal/eslint-config-zeal/pull/2))
 
 ## 0.1.0 - 2016-01-28
 
