@@ -32,7 +32,11 @@
     "style checker",
     "style linter"
   ],
-  "dependencies": {
+  "devDependencies": {
+    "babel-eslint": "^4.1.6",
+    "eslint": "^1.10.3"
+  },
+  "peerDependencies": {
     "babel-eslint": "^4.1.6",
     "eslint": "^1.10.3"
   }

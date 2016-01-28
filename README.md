@@ -10,10 +10,10 @@ Zeal's JavaScript coding style is still evolving as we do more projects, but thi
 
 ## Install
 
-To make use of this configuration, install this package as a development dependency of your project:
+To make use of this configuration, install eslint, babel-eslint, and this package as development dependencies of your project:
 
 ```
-npm install eslint-config-zeal --save-dev
+npm install eslint babel-eslint eslint-config-zeal --save-dev
 ```
 
 ## Usage
