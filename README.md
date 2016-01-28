@@ -54,4 +54,4 @@ This plugin contains all of the rules available in:
 
 ## License
 
-Copyright (c) 2015 Zeal, LLC.  Licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Copyright (c) 2016 Zeal, LLC.  Licensed under the [MIT license](https://opensource.org/licenses/MIT).
