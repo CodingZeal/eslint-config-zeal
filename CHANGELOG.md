@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.  This proje
 
 ## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.1.0...HEAD)
 
+### Changed
+
+* Mark eslint and babel-eslint as `peerDependencies` and `devDependencies` instead of `dependencies`. (#2)
+
 ## 0.1.0 - 2016-01-28
 
 ### Added
