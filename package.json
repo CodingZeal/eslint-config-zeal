@@ -34,10 +34,10 @@
   ],
   "devDependencies": {
     "babel-eslint": "^4.1.6",
-    "eslint": "^1.10.3"
+    "eslint": "^2.0.0"
   },
   "peerDependencies": {
     "babel-eslint": "^4.1.6",
-    "eslint": "^1.10.3"
+    "eslint": "^2.0.0"
   }
 }
