@@ -330,7 +330,7 @@ module.exports = {
     // require or disallow an empty newline after variable declarations
     'newline-after-var': 1,
     //  enforce newline after each call when chaining the calls
-    'newline-per-chained-call': [1, { ignoreChainWithDepth: 3 }],
+    'newline-per-chained-call': 1,
     // disallow use of the Array constructor
     'no-array-constructor': 1,
     // disallow use of bitwise operators
