@@ -78,6 +78,8 @@ module.exports = {
     //
     // Enforces getter/setter pairs in objects
     'accessor-pairs': 1,
+    // Enforces return statements in callbacks of array's methods
+    'array-callback-return': 1,
     // treat var statements as if they were block scoped
     'block-scoped-var': 1,
     // specify the maximum cyclomatic complexity allowed in a program
@@ -106,8 +108,8 @@ module.exports = {
     'no-div-regex': 1,
     // disallow else after a return in an if
     'no-else-return': 1,
-    // disallow use of labels for anything other than loops and switches
-    'no-empty-label': 1,
+    // disallow use of empty functions
+    'no-empty-function': 1,
     // disallow use of empty destructuring patterns
     'no-empty-pattern': 1,
     // disallow comparisons to null without a type-checking operator
@@ -118,6 +120,8 @@ module.exports = {
     'no-extend-native': 1,
     // disallow unnecessary function binding
     'no-extra-bind': 1,
+    // disallow unnecessary labels
+    'no-extra-label': 1,
     // disallow fallthrough of case statements
     'no-fallthrough': 1,
     // disallow the use of leading or trailing decimal points in numeric
@@ -125,6 +129,8 @@ module.exports = {
     'no-floating-decimal': 1,
     // disallow the type conversions with shorter notations
     'no-implicit-coercion': 1,
+    // disallow var and named functions in global scope
+    'no-implicit-globals': 1,
     // disallow use of eval()-like methods
     'no-implied-eval': 1,
     // disallow this keywords outside of classes or class-like objects
@@ -169,14 +175,20 @@ module.exports = {
     'no-return-assign': 1,
     // disallow use of javascript: urls.
     'no-script-url': 1,
+    // disallow assignments where both sides are exactly the same
+    'no-self-assign': 1,
     // disallow comparisons where both sides are exactly the same
     'no-self-compare': 1,
     // disallow use of the comma operator
     'no-sequences': 1,
     // restrict what can be thrown as an exception
     'no-throw-literal': 1,
+    // disallow unmodified conditions of loops
+    'no-unmodified-loop-condition': 1,
     // disallow usage of expressions in statement position
     'no-unused-expressions': 1,
+    // disallow unused labels
+    'no-unused-labels': 1,
     // disallow unnecessary .call() and .apply()
     'no-useless-call': 1,
     // disallow unnecessary concatenation of literals or template literals
@@ -248,6 +260,8 @@ module.exports = {
     'no-path-concat': 1,
     // disallow process.exit()
     'no-process-exit': 1,
+    // restrict usage of specified node imports
+    'no-restricted-imports': 0,
     // restrict usage of specified node modules
     'no-restricted-modules': 0,
     // disallow use of synchronous methods
@@ -278,6 +292,8 @@ module.exports = {
     'func-names': 1,
     // enforce use of function declarations or expressions
     'func-style': [1, 'declaration', { allowArrowFunctions: true }],
+    // blacklist certain identifiers to prevent them being used
+    'id-blacklist': 0,
     // this option enforces minimum and maximum identifier lengths (variable
     // names, property names etc.)
     'id-length': 0,
@@ -289,6 +305,8 @@ module.exports = {
     'jsx-quotes': [1, 'prefer-single'],
     // enforce spacing between keys and values in object literal properties
     'key-spacing': 1,
+    // enforce spacing before and after keywords
+    'keyword-spacing': 1,
     // disallow mixed 'LF' and 'CRLF' as linebreaks
     'linebreak-style': 1,
     // enforce empty lines around comments
@@ -311,6 +329,8 @@ module.exports = {
     'new-parens': 1,
     // require or disallow an empty newline after variable declarations
     'newline-after-var': 1,
+    //  enforce newline after each call when chaining the calls
+    'newline-per-chained-call': [1, { ignoreChainWithDepth: 3 }],
     // disallow use of the Array constructor
     'no-array-constructor': 1,
     // disallow use of bitwise operators
@@ -335,6 +355,8 @@ module.exports = {
     'no-plusplus': 1,
     // disallow use of certain syntax in code
     'no-restricted-syntax': 0,
+    // disallow whitespace before properties
+    'no-whitespace-before-property': 1,
     // disallow space between function identifier and application
     'no-spaced-func': 1,
     // disallow the use of ternary operators
@@ -349,6 +371,8 @@ module.exports = {
     'object-curly-spacing': [1, 'always'],
     // require or disallow one variable declaration per function
     'one-var': [1, 'never'],
+    // require or disallow an newline around variable declarations
+    'one-var-declaration-per-line': 1,
     // require assignment operator shorthand where possible or prohibit it
     // entirely
     'operator-assignment': [1, 'always'],
@@ -366,22 +390,18 @@ module.exports = {
     'semi-spacing': 1,
     // require or disallow use of semicolons instead of ASI
     semi: [1, 'never'],
+    // sort import declarations within module
+    'sort-imports': 0,
     // sort variables within the same declaration block
     'sort-vars': 0,
-    // require a space after certain keywords
-    'space-after-keywords': 1,
     // require or disallow a space before blocks
     'space-before-blocks': 1,
     // require or disallow a space before function opening parenthesis
     'space-before-function-paren': [1, 'never'],
-    // require a space before certain keywords
-    'space-before-keywords': 1,
     // require or disallow spaces inside parentheses
     'space-in-parens': 1,
     // require spaces around operators
     'space-infix-ops': 1,
-    // require a space after return, throw, and case
-    'space-return-throw-case': 1,
     // require or disallow spaces before/after unary operators
     'space-unary-ops': 1,
     // require or disallow a space immediately following the // or /* in a
@@ -403,16 +423,20 @@ module.exports = {
     'constructor-super': 1,
     // enforce spacing around the * in generator functions
     'generator-star-spacing': [1, 'after'],
-    // disallow arrow functions where a condition is expected
-    'no-arrow-condition': 0,
     // disallow modifying variables of class declarations
     'no-class-assign': 1,
+    // disallow arrow functions where they could be confused with comparisons
+    'no-confusing-arrow': 0,
     // disallow modifying variables that are declared using const
     'no-const-assign': 1,
     // disallow duplicate name in class members
     'no-dupe-class-members': 1,
+    // disallow use of the new operator with the Symbol object
+    'no-new-symbol': 1,
     // disallow use of this/super before calling super() in constructors.
     'no-this-before-super': 1,
+    // disallow unnecessary constructor
+    'no-useless-constructor': 1,
     // require let or const instead of var
     'no-var': 1,
     // require method and property shorthand syntax for object literals
@@ -424,11 +448,15 @@ module.exports = {
     'prefer-const': 1,
     // suggest using Reflect methods where applicable
     'prefer-reflect': 0,
+    // suggest using the rest parameters instead of arguments
+    'prefer-rest-params': 1,
     // suggest using the spread operator instead of .apply().
     'prefer-spread': 1,
     // suggest using template literals instead of strings concatenation
     'prefer-template': 1,
     // disallow generator functions that do not have yield
-    'require-yield': 1
+    'require-yield': 1,
+    // enforce spacing around the * in yield* expressions
+    'yield-star-spacing': 1
   }
 }
