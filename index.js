@@ -5,11 +5,11 @@ module.exports = {
     node: true,
     es6: true
   },
-  ecmaFeatures: {
-    modules: true
-  },
-
   globals: {},
+  parserOptions: {
+    ecmaVersion: 6,
+    sourceType: 'module'
+  },
   rules: {
     //
     // Possible Errors
