@@ -10,11 +10,15 @@ Zeal's JavaScript coding style is still evolving as we do more projects, but thi
 
 ## Install
 
+**NOTE:** The current version of this package is designed to work with ESLint 2.0 and greater.  If you are still using ESLint 1.x, use version 0.2.0 of this package instead.
+
 To make use of this configuration, install eslint, babel-eslint, and this package as development dependencies of your project:
 
 ```
 npm install eslint babel-eslint eslint-config-zeal --save-dev
 ```
+
+These packages are marked as peer dependencies, so you will get a warning if they're not installed.
 
 ## Usage
 
@@ -50,7 +54,7 @@ See the [ESLint configuration documentation](http://eslint.org/docs/user-guide/c
 
 This plugin contains all of the rules available in:
 
-* [ESLint](http://eslint.org/): 1.10.3
+* [ESLint](http://eslint.org/): 2.0.0
 * [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): 3.13.1
 
 ## License
