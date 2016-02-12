@@ -55,7 +55,7 @@ See the [ESLint configuration documentation](http://eslint.org/docs/user-guide/c
 This plugin contains all of the rules available in:
 
 * [ESLint](http://eslint.org/): 2.0.0
-* [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): 3.13.1
+* [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): 3.16.1
 
 ## License
 
