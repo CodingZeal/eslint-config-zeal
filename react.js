@@ -1,6 +1,8 @@
 module.exports = {
-  ecmaFeatures: {
-    jsx: true
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true
+    }
   },
   plugins: ['react'],
 
@@ -15,6 +17,8 @@ module.exports = {
     'react/jsx-closing-bracket-location': [1, 'after-props'],
     // Enforce or disallow spaces inside of curly braces in JSX attributes
     'react/jsx-curly-spacing': 1,
+    // Enforce or disallow spaces around equal signs in JSX attributes
+    'react/jsx-equals-spacing': 1,
     // Enforce event handler naming conventions in JSX
     'react/jsx-handler-names': 1,
     // Validate props indentation in JSX
@@ -43,6 +47,8 @@ module.exports = {
     }],
     // Enforce props alphabetical sorting
     'react/jsx-sort-props': 0,
+    // Validate spacing before closing bracket in JSX
+    'react/jsx-space-before-closing': 1,
     // Prevent React to be incorrectly marked as unused
     'react/jsx-uses-react': 1,
     // Prevent variables used in JSX to be incorrectly marked as unused
