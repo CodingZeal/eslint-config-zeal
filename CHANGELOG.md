@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file.  This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.3.0...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.3.1...HEAD)
+
+## [0.3.1](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.3.0...v0.3.1) - 2016-02-12
+
+### Removed
+
+* Temporarily remove the `react/jsx-space-before-closing` rule.  It hasn't been released in eslint-plugin-react yet. ([#6](https://github.com/CodingZeal/eslint-config-zeal/pull/6))
 
 ## [0.3.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.2.0...v0.3.0) - 2016-02-12
 
