@@ -2,7 +2,17 @@
 
 All notable changes to this project will be documented in this file.  This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.3.1...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.4.0...HEAD)
+
+## [0.4.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.3.1...v0.4.0) - 2016-02-19
+
+### Added
+
+* Add [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import) to check ES6 imports and exports. ([#7](https://github.com/CodingZeal/eslint-config-zeal/pull/7))
+
+### Changed
+
+* Disable the [newline-per-chained-call](http://eslint.org/docs/rules/newline-per-chained-call) rule. It fires too frequently, especially when using Chai expectations.  Given that we have a pretty short line-length limit (80 chars), that tends to limit the length of chained calls already. ([#8](https://github.com/CodingZeal/eslint-config-zeal/pull/8))
 
 ## [0.3.1](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.3.0...v0.3.1) - 2016-02-12
 
