@@ -10,6 +10,13 @@ module.exports = {
     ecmaVersion: 6,
     sourceType: 'module'
   },
+  plugins: ['import'],
+  settings: {
+    'import/ignore': [
+      'node_modules',
+      '.(scss|sass|less|css)$'
+    ]
+  },
   rules: {
     //
     // Possible Errors
@@ -457,6 +464,31 @@ module.exports = {
     // disallow generator functions that do not have yield
     'require-yield': 1,
     // enforce spacing around the * in yield* expressions
-    'yield-star-spacing': 1
+    'yield-star-spacing': 1,
+
+    //
+    // Import Plugin
+    //
+    // Ensure imports point to a file/module that can be resolved
+    'import/no-unresolved': [1, { commonjs: true }],
+    // Ensure named imports correspond to a named export in the remote file
+    'import/named': 1,
+    // Ensure a default export is present, given a default import
+    'import/default': 1,
+    // Ensure imported namespaces contain dereferenced properties as they are
+    // dereferenced
+    'import/namespace': 1,
+    // Report any invalid exports, i.e. re-export of the same name
+    'import/export': 1,
+    // Report use of exported name as identifier of default export
+    'import/no-named-as-default': 1,
+    // Report CommonJS require calls and module.exports or exports.*
+    'import/no-commonjs': 0,
+    // Report AMD require and define calls
+    'import/no-amd': 1,
+    // Ensure all imports appear before other statements
+    'import/imports-first': 1,
+    // Report repeated import of the same module in multiple places
+    'import/no-duplicates': 1
   }
 }
