@@ -12,10 +12,10 @@ Zeal's JavaScript coding style is still evolving as we do more projects, but thi
 
 **NOTE:** The current version of this package is designed to work with ESLint 2.0 and greater.  If you are still using ESLint 1.x, use version 0.2.0 of this package instead.
 
-To make use of this configuration, install eslint, babel-eslint, and this package as development dependencies of your project:
+To make use of this configuration, install eslint, babel-eslint, eslint-plugin-import, and this package as development dependencies of your project:
 
 ```
-npm install eslint babel-eslint eslint-config-zeal --save-dev
+npm install eslint babel-eslint eslint-plugin-import eslint-config-zeal --save-dev
 ```
 
 These packages are marked as peer dependencies, so you will get a warning if they're not installed.
@@ -50,12 +50,55 @@ You can extend multiple configurations using an array:
 
 See the [ESLint configuration documentation](http://eslint.org/docs/user-guide/configuring) for more information on configuring ESLint.
 
+## Usage With React
+
+If you're using this package in a React project, make sure you have [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) installed as well:
+
+```
+npm install eslint-plugin-react --save-dev
+```
+
+Then, in your `.eslintrc` file, extend both the `zeal` and `zeal/react` configurations:
+
+```
+{
+  "extends": ["zeal", "zeal/react"]
+}
+```
+
+## Usage With Webpack
+
+This configuration uses [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import).  If your project uses Webpack, you'll need to add [eslint-import-resolver-webpack]():
+
+```
+npm install eslint-import-resolver-webpack
+```
+
+You'll also need to add the following to your `.eslintrc`:
+
+```
+"settings": {
+  "import/resolver": "webpack"
+}
+```
+
+or, if your webpack config file is not in the default location:
+
+```
+"settings": {
+  "import/resolver": {
+    "webpack": { "config": "path/to/webpack.config.js" }
+  }
+}
+```
+
 ## Supported Versions
 
 This plugin contains all of the rules available in:
 
 * [ESLint](http://eslint.org/): 2.0.0
 * [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): 3.16.1
+* [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import): 1.0.0-beta.0
 
 ## License
 
