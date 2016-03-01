@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file.  This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.4.0...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.5.0...HEAD)
+
+## [0.5.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.4.0...v0.5.0) - 2016-03-01
+
+### Changed
+
+* Update [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) support to v4.1.0. If you need to continue to use version 3.x of that plugin, please keep using v0.4.0 instead of upgrading. ([#9](https://github.com/CodingZeal/eslint-config-zeal/pull/9))
 
 ## [0.4.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.3.1...v0.4.0) - 2016-02-19
 
