@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file.  This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.5.0...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.5.1...HEAD)
+
+## [0.5.1](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.5.0...v0.5.1) - 2016-03-01
+
+### Fixed
+
+* The configuration options for the `react/display-name` rule changed in eslint-plugin-react 4.0.  `react.js` has been updated to adapt to the new options. ([#10](https://github.com/CodingZeal/eslint-config-zeal/pull/10))
 
 ## [0.5.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.4.0...v0.5.0) - 2016-03-01
 
