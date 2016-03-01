@@ -39,14 +39,10 @@ module.exports = {
     'react/jsx-no-undef': 1,
     // Enforce PascalCase for user-defined JSX components
     'react/jsx-pascal-case': 1,
-    // Enforce propTypes declarations alphabetical sorting
-    'react/jsx-sort-prop-types': [1, {
-      callbacksLast: true,
-      ignoreCase: true,
-      requiredFirst: true
-    }],
     // Enforce props alphabetical sorting
     'react/jsx-sort-props': 0,
+    // Validate spacing before closing bracket in JSX
+    'react/jsx-space-before-closing': 1,
     // Prevent React to be incorrectly marked as unused
     'react/jsx-uses-react': 1,
     // Prevent variables used in JSX to be incorrectly marked as unused
@@ -83,6 +79,12 @@ module.exports = {
     'react/self-closing-comp': 1,
     // Enforce component methods order
     'react/sort-comp': 1,
+    // Enforce propTypes declarations alphabetical sorting
+    'react/sort-prop-types': [1, {
+      callbacksLast: true,
+      ignoreCase: true,
+      requiredFirst: true
+    }],
     // Prevent missing parentheses around multilines JSX
     'react/wrap-multilines': 1
   }
