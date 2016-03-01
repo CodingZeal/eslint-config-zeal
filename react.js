@@ -8,7 +8,7 @@ module.exports = {
 
   rules: {
     // Prevent missing displayName in a React component definition
-    'react/display-name': [1, { acceptTranspilerName: true }],
+    'react/display-name': 1,
     // Forbid certain propTypes
     'react/forbid-prop-types': 1,
     // Enforce boolean attributes notation in JSX
