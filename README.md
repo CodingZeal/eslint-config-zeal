@@ -96,9 +96,9 @@ or, if your webpack config file is not in the default location:
 
 This plugin contains all of the rules available in:
 
-* [ESLint](http://eslint.org/): 2.0.0
-* [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): 4.1.0
-* [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import): 1.0.0-beta.0
+* [ESLint](http://eslint.org/): 2.4.0
+* [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): 4.2.3
+* [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import): 1.1.0
 
 ## License
 
