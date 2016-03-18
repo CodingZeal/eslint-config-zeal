@@ -463,6 +463,8 @@ module.exports = {
     'prefer-template': 1,
     // disallow generator functions that do not have yield
     'require-yield': 1,
+    // enforce spacing around embedded expressions of template strings
+    'template-curly-spacing': 1,
     // enforce spacing around the * in yield* expressions
     'yield-star-spacing': 1,
 
