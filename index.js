@@ -234,6 +234,8 @@ module.exports = {
     'no-delete-var': 1,
     // disallow labels that share a name with a variable
     'no-label-var': 1,
+    // restrict usage of specified global variables
+    'no-restricted-globals': 0,
     // disallow shadowing of names such as arguments
     'no-shadow-restricted-names': 1,
     // disallow declaration of variables already declared in the outer scope
@@ -336,6 +338,8 @@ module.exports = {
     'new-parens': 1,
     // require or disallow an empty newline after variable declarations
     'newline-after-var': 1,
+    // require newline before return statement
+    'newline-before-return': 0,
     //  enforce newline after each call when chaining the calls
     'newline-per-chained-call': 0,
     // disallow use of the Array constructor
