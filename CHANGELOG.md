@@ -2,7 +2,9 @@
 
 All notable changes to this project will be documented in this file.  This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.5.1...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.6.0...HEAD)
+
+## [0.6.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.5.1...v0.6.0) - 2016-03-18
 
 ### Added
 
