@@ -8,11 +8,11 @@ All notable changes to this project will be documented in this file.  This proje
 
 ### Added
 
-* Add support for new `template-curly-spacing`, `newline-before-return`, `no-restricted-globals`, and `react/prefer-stateless-function` rules. ([#11](https://github.com/CodingZeal/eslint-config-zeal/pull/7))
+* Add support for new `template-curly-spacing`, `newline-before-return`, `no-restricted-globals`, and `react/prefer-stateless-function` rules. ([#11](https://github.com/CodingZeal/eslint-config-zeal/pull/11))
 
 ### Changed
 
-* Update to ESLint 2.4.0, eslint-plugin-import 1.1.0, and eslint-plugin-react 4.2.3. Requires babel-eslint 6.0.0-beta.6 or later. ([#11](https://github.com/CodingZeal/eslint-config-zeal/pull/7))
+* Update to ESLint 2.4.0, eslint-plugin-import 1.1.0, and eslint-plugin-react 4.2.3. Requires babel-eslint 6.0.0-beta.6 or later. ([#11](https://github.com/CodingZeal/eslint-config-zeal/pull/11))
 
 ## [0.5.1](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.5.0...v0.5.1) - 2016-03-01
 
