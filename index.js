@@ -14,7 +14,7 @@ module.exports = {
   settings: {
     'import/ignore': [
       'node_modules',
-      '.(scss|sass|less|css)$'
+      '.(scss|sass|less|css|png|jpg|svg)$'
     ]
   },
   rules: {
