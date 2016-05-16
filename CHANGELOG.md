@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file.  This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.6.1...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.6.2...HEAD)
+
+## [0.6.2](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.6.1...v0.6.2) - 2016-05-16
+
+### Changed
+
+* Disable the `max-statements` rule in Mocha specs ([#15](https://github.com/CodingZeal/eslint-config-zeal/pull/15))
 
 ## [0.6.1](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.6.0...v0.6.1) - 2016-03-21
 
