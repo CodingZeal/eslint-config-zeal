@@ -73,6 +73,8 @@ module.exports = {
     // disallow unreachable statements after a return, throw, continue, or
     // break statement
     'no-unreachable': 1,
+    // disallow control flow statements in finally blocks
+    'no-unsafe-finally': 1,
     // disallow comparisons with the value NaN
     'use-isnan': 1,
     // Ensure JSDoc comments are valid
@@ -200,6 +202,8 @@ module.exports = {
     'no-useless-call': 1,
     // disallow unnecessary concatenation of literals or template literals
     'no-useless-concat': 1,
+    // disallow unnecessary escape characters
+    'no-useless-escape': 1,
     // disallow use of the void operator
     'no-void': 1,
     // disallow usage of configurable warning terms in comments - e.g. TODO
@@ -331,6 +335,8 @@ module.exports = {
     'max-params': [1, 3],
     // specify the maximum number of statement allowed in a function
     'max-statements': 1,
+    // enforce a maximum number of statements allowed per line
+    'max-statements-per-line': 0,
     // require a capital letter for constructors
     'new-cap': 1,
     // disallow the omission of parentheses when invoking a constructor with no
@@ -380,6 +386,8 @@ module.exports = {
     'no-unneeded-ternary': 1,
     // require or disallow padding inside curly braces
     'object-curly-spacing': [1, 'always'],
+    // enforce placing object properties on separate lines
+    'object-property-newline': 0,
     // require or disallow one variable declaration per function
     'one-var': [1, 'never'],
     // require or disallow an newline around variable declarations
@@ -442,10 +450,14 @@ module.exports = {
     'no-const-assign': 1,
     // disallow duplicate name in class members
     'no-dupe-class-members': 1,
+    // disallow duplicate module imports
+    'no-duplicate-imports': 1,
     // disallow use of the new operator with the Symbol object
     'no-new-symbol': 1,
     // disallow use of this/super before calling super() in constructors.
     'no-this-before-super': 1,
+    // disallow unnecessary computed property keys in object literals
+    'no-useless-computed-key': 1,
     // disallow unnecessary constructor
     'no-useless-constructor': 1,
     // require let or const instead of var
@@ -475,6 +487,8 @@ module.exports = {
     //
     // Import Plugin
     //
+    // Import: Static Analysis
+    //
     // Ensure imports point to a file/module that can be resolved
     'import/no-unresolved': [1, { commonjs: true }],
     // Ensure named imports correspond to a named export in the remote file
@@ -484,17 +498,48 @@ module.exports = {
     // Ensure imported namespaces contain dereferenced properties as they are
     // dereferenced
     'import/namespace': 1,
+
+    //
+    // Import: Helpful Warnings
+    //
     // Report any invalid exports, i.e. re-export of the same name
     'import/export': 1,
     // Report use of exported name as identifier of default export
     'import/no-named-as-default': 1,
+    // Report use of exported name as property of default export
+    'import/no-named-as-default-member': 1,
+    // Report imported names marked with @deprecated documentation tag
+    'import/no-deprecated': 1,
+    // Forbid the use of extraneous packages
+    'import/no-extraneous-dependencies': 1,
+    // Forbid the use of mutable exports with var or let.
+    'import/no-mutable-exports': 1,
+
+    //
+    // Import: Module Systems
     // Report CommonJS require calls and module.exports or exports.*
     'import/no-commonjs': 0,
     // Report AMD require and define calls
     'import/no-amd': 1,
+    // No Node.js builtin modules.
+    'import/no-nodejs-modules': 0,
+
+    //
+    // Import: Style guide
+    //
     // Ensure all imports appear before other statements
     'import/imports-first': 1,
     // Report repeated import of the same module in multiple places
-    'import/no-duplicates': 1
+    'import/no-duplicates': 1,
+    // Report namespace imports
+    'import/no-namespace': 0,
+    // Ensure consistent use of file extension within the import path
+    'import/extensions': 1,
+    // Enforce a convention in module import order
+    'import/order': 0,
+    // Enforce a newline after import statements
+    'import/newline-after-import': 1,
+    // Prefer a default export if module exports a single name
+    'import/prefer-default-export': 1
   }
 }

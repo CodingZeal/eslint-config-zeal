@@ -4,7 +4,7 @@
   "version": "0.6.2",
   "main": "index.js",
   "scripts": {
-    "find-new-rules": "eslint-find-new-rules",
+    "find-new-rules": "eslint-find-rules --unused; eslint-find-rules --unused react.js | grep react",
     "test": "eslint ."
   },
   "repository": {
@@ -34,14 +34,15 @@
     "style linter"
   ],
   "devDependencies": {
-    "babel-eslint": "^6.0.0-beta.6",
-    "eslint": "^2.4.0",
-    "eslint-find-new-rules": "^1.0.3",
-    "eslint-plugin-import": "^1.1.0"
+    "babel-eslint": "^6.0.4",
+    "eslint": "^2.10.2",
+    "eslint-find-rules": "^1.9.2",
+    "eslint-plugin-import": "^1.8.0",
+    "eslint-plugin-react": "^5.1.1"
   },
   "peerDependencies": {
-    "babel-eslint": "^6.0.0-beta.6",
-    "eslint": "^2.4.0",
-    "eslint-plugin-import": "^1.1.0"
+    "babel-eslint": "^6.0.4",
+    "eslint": "^2.10.2",
+    "eslint-plugin-import": "^1.8.0"
   }
 }
