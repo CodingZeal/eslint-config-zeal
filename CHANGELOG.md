@@ -2,7 +2,21 @@
 
 All notable changes to this project will be documented in this file.  This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.6.2...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.7.0...HEAD)
+
+## [0.7.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.6.2...v0.7.0) - 2016-05-27
+
+### Added
+
+* Enables warnings for new rules: `no-unsafe-finally`, `no-useless-escape`, `no-duplicate-imports`, `no-useless-computed-key`, `import/no-named-as-default-member`, `import-no-deprecated`, `import/no-extraneous-dependencies`, `import/no-mutable-exports`, `import/no-duplicates`, `import/extensions`, `import/newline-after-import`, and `import/prefer-default-export`. ([#17](https://github.com/CodingZeal/eslint-config-zeal/pull/17))
+
+* Adds support for new rules, but leaves them disabled: `max-statements-per-line`, `object-property-newline`, `import/no-nodejs-modules`, `import/no-namespace`, and `import/order`. ([#17](https://github.com/CodingZeal/eslint-config-zeal/pull/17))
+
+### Changed
+
+* Disable the `react/prop-types` rule.  While propTypes provide handy documentation, we felt that the maintenance cost of keeping them around was too high, so we've disabled the rule by default. ([#16](https://github.com/CodingZeal/eslint-config-zeal/pull/16))
+
+* Update to ESLint 2.10.2, eslint-plugin-import 1.8.0, and eslint-plugin-react 5.1.1. ([#17](https://github.com/CodingZeal/eslint-config-zeal/pull/17))
 
 ## [0.6.2](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.6.1...v0.6.2) - 2016-05-16
 
