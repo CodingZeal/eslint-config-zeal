@@ -72,7 +72,7 @@ module.exports = {
     // Enforce stateless React Components to be written as a pure function
     'react/prefer-stateless-function': 1,
     // Prevent missing props validation in a React component definition
-    'react/prop-types': 1,
+    'react/prop-types': 0,
     // Prevent missing React when using JSX
     'react/react-in-jsx-scope': 1,
     // Restrict file extensions that may be required
