@@ -19,6 +19,8 @@ module.exports = {
     'react/jsx-curly-spacing': 1,
     // Enforce or disallow spaces around equal signs in JSX attributes
     'react/jsx-equals-spacing': 1,
+    // Enforce position of the first prop in JSX
+    'react/jsx-first-prop-new-line': [1, 'multiline'],
     // Enforce event handler naming conventions in JSX
     'react/jsx-handler-names': 1,
     // Validate props indentation in JSX
@@ -35,6 +37,8 @@ module.exports = {
     'react/jsx-no-duplicate-props': 1,
     // Prevent usage of unwrapped JSX strings
     'react/jsx-no-literals': 0,
+    // Prevent usage of unsafe target='_blank'
+    'react/jsx-no-target-blank': 1,
     // Disallow undeclared variables in JSX
     'react/jsx-no-undef': 1,
     // Enforce PascalCase for user-defined JSX components
@@ -77,6 +81,8 @@ module.exports = {
     'react/react-in-jsx-scope': 1,
     // Restrict file extensions that may be required
     'react/require-extension': 1,
+    // Enforce ES5 or ES6 class for returning value in render function
+    'react/require-render-return': 1,
     // Prevent extra closing tags for components without children
     'react/self-closing-comp': 1,
     // Enforce component methods order

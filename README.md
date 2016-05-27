@@ -36,7 +36,7 @@ You can override settings from the configuration(s) by adding them directly to y
 
 We have added some additional optional configurations that you can add on top of the base `zeal` config:
 
-* `zeal/react`: Adds rules for [React](https://github.com/reactjs) development.  You'll need to install [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) `^4.0.0` to use this configuration.
+* `zeal/react`: Adds rules for [React](https://github.com/reactjs) development.  You'll need to install [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) `^5.1.1` to use this configuration.
 * `zeal/mocha`: Overrides rules for use with [Mocha](https://mochajs.org/).  We recommend creating a separate `.eslintrc` file in the directory containing your tests and `extend`ing this config there.
 * `zeal/chai`: Overrides rules for use with [Chai](http://chaijs.com/).  We recommend creating a separate `.eslintrc` file in the directory containing your tests and `extend`ing this config there.
 
@@ -68,7 +68,7 @@ Then, in your `.eslintrc` file, extend both the `zeal` and `zeal/react` configur
 
 ## Usage With Webpack
 
-This configuration uses [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import).  If your project uses Webpack, you'll need to add [eslint-import-resolver-webpack]():
+This configuration uses [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import).  If your project uses Webpack, you'll need to add [eslint-import-resolver-webpack](https://www.npmjs.com/package/eslint-import-resolver-webpack):
 
 ```
 npm install eslint-import-resolver-webpack
@@ -96,9 +96,9 @@ or, if your webpack config file is not in the default location:
 
 This plugin contains all of the rules available in:
 
-* [ESLint](http://eslint.org/): 2.4.0
-* [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): 4.2.3
-* [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import): 1.1.0
+* [ESLint](http://eslint.org/): 2.10.2
+* [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): 5.1.1
+* [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import): 1.8.0
 
 ## License
 
