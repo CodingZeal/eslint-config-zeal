@@ -19,6 +19,8 @@ module.exports = {
     'react/jsx-curly-spacing': 1,
     // Enforce or disallow spaces around equal signs in JSX attributes
     'react/jsx-equals-spacing': 1,
+    // Restrict file extensions that may contain JSX
+    'react/jsx-filename-extension': 0,
     // Enforce position of the first prop in JSX
     'react/jsx-first-prop-new-line': [1, 'multiline'],
     // Enforce event handler naming conventions in JSX
@@ -51,6 +53,8 @@ module.exports = {
     'react/jsx-uses-react': 1,
     // Prevent variables used in JSX to be incorrectly marked as unused
     'react/jsx-uses-vars': 1,
+    // Prevent comments from being inserted as text nodes
+    'react/no-comment-textnodes': 1,
     // Prevent usage of dangerous JSX properties
     'react/no-danger': 1,
     // Prevent usage of deprecated methods
@@ -65,6 +69,8 @@ module.exports = {
     'react/no-is-mounted': 1,
     // Prevent multiple component definition per file
     'react/no-multi-comp': [1, { ignoreStateless: true }],
+    // Prevent usage of the return value of React.render
+    'react/no-render-return-value': 1,
     // Prevent usage of setState
     'react/no-set-state': 1,
     // Prevent using string references in ref attribute
@@ -81,6 +87,8 @@ module.exports = {
     'react/react-in-jsx-scope': 1,
     // Restrict file extensions that may be required
     'react/require-extension': 1,
+    // Enforce React components to have a shouldComponentUpdate method
+    'react/require-optimization': 0,
     // Enforce ES5 or ES6 class for returning value in render function
     'react/require-render-return': 1,
     // Prevent extra closing tags for components without children

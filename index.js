@@ -64,6 +64,8 @@ module.exports = {
     // disallow the use of object properties of the global object (Math and
     // JSON) as functions
     'no-obj-calls': 1,
+    // Disallow use of Object.prototypes builtins directly
+    'no-prototype-builtins': 1,
     // disallow multiple spaces in a regular expression literal
     'no-regex-spaces': 1,
     // disallow sparse arrays
@@ -328,6 +330,8 @@ module.exports = {
     'max-depth': 1,
     // specify the maximum length of a line in your program
     'max-len': [1, 80, 2],
+    // enforce a maximum file length
+    'max-lines': 0,
     // specify the maximum depth callbacks can be nested
     'max-nested-callbacks': [1, 3],
     // limits the number of parameters that can be used in the function
@@ -358,6 +362,8 @@ module.exports = {
     'no-inline-comments': 0,
     // disallow if as the only statement in an else block
     'no-lonely-if': 1,
+    // disallow mixes of different operators
+    'no-mixed-operators': 1,
     // disallow mixed spaces and tabs for indentation
     'no-mixed-spaces-and-tabs': 1,
     // disallow multiple empty lines
@@ -384,6 +390,8 @@ module.exports = {
     'no-underscore-dangle': 1,
     // disallow the use of ternary operators when a simpler alternative exists
     'no-unneeded-ternary': 1,
+    // enforce consistent line breaks inside braces
+    'object-curly-newline': 0,
     // require or disallow padding inside curly braces
     'object-curly-spacing': [1, 'always'],
     // enforce placing object properties on separate lines
@@ -426,6 +434,8 @@ module.exports = {
     // require or disallow a space immediately following the // or /* in a
     // comment
     'spaced-comment': 1,
+    // require or disallow the Unicode BOM
+    'unicode-bom': 1,
     // require regex literals to be wrapped in parentheses
     'wrap-regex': 1,
 
@@ -460,6 +470,9 @@ module.exports = {
     'no-useless-computed-key': 1,
     // disallow unnecessary constructor
     'no-useless-constructor': 1,
+    // disallow renaming import, export, and destructured assignments to the
+    // same name
+    'no-useless-rename': 1,
     // require let or const instead of var
     'no-var': 1,
     // require method and property shorthand syntax for object literals
@@ -479,6 +492,8 @@ module.exports = {
     'prefer-template': 1,
     // disallow generator functions that do not have yield
     'require-yield': 1,
+    // enforce spacing between rest and spread operators and their expressions
+    'rest-spread-spacing': 1,
     // enforce spacing around embedded expressions of template strings
     'template-curly-spacing': 1,
     // enforce spacing around the * in yield* expressions
