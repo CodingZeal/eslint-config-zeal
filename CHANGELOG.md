@@ -2,7 +2,19 @@
 
 All notable changes to this project will be documented in this file.  This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.7.0...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.8.0...HEAD)
+
+## [0.8.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.7.0...v0.8.0) - 2016-06-20
+
+### Added
+
+* Enables warnings for new rules: `no-prototype-builtins`, `no-mixed-operators`, `unicode-bom`, `no-useless-rename`, `rest-spread-spacing`, `react/no-comment-textnodes`, and `react/no-render-return-value`. ([#18](https://github.com/CodingZeal/eslint-config-zeal/pull/18))
+
+* Adds support for new rules, but leaves them disabled: `max-lines`, `object-curly-newline`, `react/jsx-filename-extension`, and `react/require-optimization`. ([#18](https://github.com/CodingZeal/eslint-config-zeal/pull/18))
+
+### Changed
+
+* Update to ESLint 2.13.1 and eslint-plugin-react 5.2.2. ([#18](https://github.com/CodingZeal/eslint-config-zeal/pull/18))
 
 ## [0.7.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.6.2...v0.7.0) - 2016-05-27
 
