@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.  This proje
 
 ## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.8.1...HEAD)
 
-## [0.8.1](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.8.0...v0.8.1) - 2016-06-20
+## [0.8.1](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.8.0...v0.8.1) - 2016-07-19
 
 ### Changed
 
