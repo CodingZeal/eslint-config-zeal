@@ -363,7 +363,16 @@ module.exports = {
     // disallow if as the only statement in an else block
     'no-lonely-if': 1,
     // disallow mixes of different operators
-    'no-mixed-operators': 1,
+    'no-mixed-operators': [1,
+      {
+        groups: [
+          ['&', '|', '^', '~', '<<', '>>', '>>>'],
+          ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
+          ['&&', '||'],
+          ['in', 'instanceof']
+        ]
+      }
+    ],
     // disallow mixed spaces and tabs for indentation
     'no-mixed-spaces-and-tabs': 1,
     // disallow multiple empty lines
