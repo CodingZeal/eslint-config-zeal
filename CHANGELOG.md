@@ -2,7 +2,15 @@
 
 All notable changes to this project will be documented in this file.  This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.8.0...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.8.1...HEAD)
+
+## [0.8.1](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.8.0...v0.8.1) - 2016-06-20
+
+### Changed
+
+* Mark `expect` as a global when using Chai.  Some test runner configurations (such as with Karma) make `expect` available globally.  By marking `expect` as a global, we don't get warnings from the `no-undef` rule. ([#21](https://github.com/CodingZeal/eslint-config-zeal/pull/21))
+
+* Don't report `no-mixed-operators` warnings for arithmetic expressions, while continuing to report them for logical, comparison, and bit-wise expressions.  Most people understand the standard precedence of arithmetic operators and those expressions are more readable without the extra parentheses. ([#20](https://github.com/CodingZeal/eslint-config-zeal/pull/20))
 
 ## [0.8.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.7.0...v0.8.0) - 2016-06-20
 
