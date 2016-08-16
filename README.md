@@ -37,6 +37,7 @@ You can override settings from the configuration(s) by adding them directly to y
 We have added some additional optional configurations that you can add on top of the base `zeal` config:
 
 * `zeal/react`: Adds rules for [React](https://github.com/reactjs) development.  You'll need to install [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) to use this configuration.
+* `zeal/react-native`: Adds rules for [React Native](https://facebook.github.io/react-native/) development.  You'll need to install [eslint-plugin-react-native](https://github.com/intellicode/eslint-plugin-react-native) to use this configuration.
 * `zeal/mocha`: Overrides rules for use with [Mocha](https://mochajs.org/).  We recommend creating a separate `.eslintrc` file in the directory containing your tests and `extend`ing this config there.
 * `zeal/chai`: Overrides rules for use with [Chai](http://chaijs.com/).  We recommend creating a separate `.eslintrc` file in the directory containing your tests and `extend`ing this config there.
 
