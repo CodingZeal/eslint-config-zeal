@@ -7,6 +7,9 @@ module.exports = {
   },
   globals: {},
   parserOptions: {
+    ecmaFeatures: {
+      experimentalObjectRestSpread: true
+    },
     ecmaVersion: 6,
     sourceType: 'module'
   },
