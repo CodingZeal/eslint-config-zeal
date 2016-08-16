@@ -9,6 +9,8 @@ module.exports = {
   rules: {
     // Prevent missing displayName in a React component definition
     'react/display-name': 1,
+    // Forbid certain props on Components
+    'react/forbid-component-props': 0,
     // Forbid certain propTypes
     'react/forbid-prop-types': 1,
     // Enforce boolean attributes notation in JSX
@@ -35,6 +37,8 @@ module.exports = {
     'react/jsx-max-props-per-line': 0,
     // Prevent usage of .bind() and arrow functions in JSX props
     'react/jsx-no-bind': 0,
+    // Prevent comments from being inserted as text nodes
+    'react/jsx-no-comment-textnodes': 1,
     // Prevent duplicate props in JSX
     'react/jsx-no-duplicate-props': 1,
     // Prevent usage of unwrapped JSX strings
@@ -53,10 +57,12 @@ module.exports = {
     'react/jsx-uses-react': 1,
     // Prevent variables used in JSX to be incorrectly marked as unused
     'react/jsx-uses-vars': 1,
-    // Prevent comments from being inserted as text nodes
-    'react/no-comment-textnodes': 1,
+    // Prevent missing parentheses around multilines JSX
+    'react/jsx-wrap-multilines': 1,
     // Prevent usage of dangerous JSX properties
     'react/no-danger': 1,
+    // Prevent problem with children and props.dangerouslySetInnerHTML
+    'react/no-danger-with-children': 0,
     // Prevent usage of deprecated methods
     'react/no-deprecated': 1,
     // Prevent usage of setState in componentDidMount
@@ -65,6 +71,8 @@ module.exports = {
     'react/no-did-update-set-state': 1,
     // Prevent direct mutation of this.state
     'react/no-direct-mutation-state': 1,
+    // Prevent usage of findDOMNode
+    'react/no-find-dom-node': 1,
     // Prevent usage of isMounted
     'react/no-is-mounted': 1,
     // Prevent multiple component definition per file
@@ -85,8 +93,6 @@ module.exports = {
     'react/prop-types': 0,
     // Prevent missing React when using JSX
     'react/react-in-jsx-scope': 1,
-    // Restrict file extensions that may be required
-    'react/require-extension': 1,
     // Enforce React components to have a shouldComponentUpdate method
     'react/require-optimization': 0,
     // Enforce ES5 or ES6 class for returning value in render function
@@ -100,8 +106,6 @@ module.exports = {
       callbacksLast: true,
       ignoreCase: true,
       requiredFirst: true
-    }],
-    // Prevent missing parentheses around multilines JSX
-    'react/wrap-multilines': 1
+    }]
   }
 }
