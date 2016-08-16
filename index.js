@@ -522,6 +522,8 @@ module.exports = {
     // Ensure imported namespaces contain dereferenced properties as they are
     // dereferenced
     'import/namespace': 1,
+    // Restrict which files can be imported in a given folder
+    'import/no-restricted-paths': 0,
 
     //
     // Import: Helpful Warnings
