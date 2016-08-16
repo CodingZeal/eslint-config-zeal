@@ -2,7 +2,33 @@
 
 All notable changes to this project will be documented in this file.  This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.8.1...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.9.0...HEAD)
+
+## [0.9.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.8.1...v0.9.0) - 2016-08-16
+
+### Added
+
+* Enables warnings for new rules: `no-template-curly-in-string`, `no-tabs`,  `react/no-danger-with-children` (temporarily disabled; see [#26](https://github.com/CodingZeal/eslint-config-zeal/issues/26)), and `react/no-find-dom-node`. ([#23](https://github.com/CodingZeal/eslint-config-zeal/pull/23))
+
+* Adds support for new rules, but leaves them disabled: `multiline-ternary`, `sort-keys`,  `react/forbid-component-props`, and `import/no-restricted-paths`. ([#23](https://github.com/CodingZeal/eslint-config-zeal/pull/23))
+
+* Adds support for react-native ([#25](https://github.com/CodingZeal/eslint-config-zeal/pull/25), [#27](https://github.com/CodingZeal/eslint-config-zeal/pull/27))
+
+### Changed
+
+* Update to ESLint 3.3.1, eslint-plugin-react 6.1.1, and eslint-plugin-import 1.13.0. ([#23](https://github.com/CodingZeal/eslint-config-zeal/pull/23))
+
+* Replace deprecated rules with their replacements: ([#23](https://github.com/CodingZeal/eslint-config-zeal/pull/23))
+  * `no-negated-in-lhs` => `no-unsafe-negation`
+  * `no-native-reassign` => `no-global-assign`
+  * `no-spaced-func` => `func-call-spacing`
+  * `react/wrap-multilines` => `react/jsx-wrap-multilines`
+  * `react/no-comment-textnodes` =>  `react/jsx-no-comment-textnodes`
+  * `react/no-comment-textnodes` => `react/jsx-no-comment-textnodes` 
+
+### Removed
+
+* Removed configuration for deprecated rule `react/require-extension`. ([#23](https://github.com/CodingZeal/eslint-config-zeal/pull/23))
 
 ## [0.8.1](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.8.0...v0.8.1) - 2016-07-19
 

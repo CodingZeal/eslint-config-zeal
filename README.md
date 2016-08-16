@@ -114,6 +114,7 @@ This plugin contains all of the rules available in:
 
 * [ESLint](http://eslint.org/): 3.3.1
 * [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): 6.1.1
+* [eslint-plugin-react-native](https://github.com/intellicode/eslint-plugin-react-native): 2.0.0
 * [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import): 1.13.0
 
 ## License
