@@ -4,7 +4,10 @@
   "version": "0.8.1",
   "main": "index.js",
   "scripts": {
-    "missing-rules": "eslint-find-rules --unused && eslint-find-rules --no-core --unused react.js",
+    "missing-rules": "npm-run-all --parallel missing-rules:*",
+    "missing-rules:core": "eslint-find-rules --unused",
+    "missing-rules:react": "eslint-find-rules --no-core --unused react.js",
+    "missing-rules:react-native": "eslint-find-rules --no-core --unused react-native.js",
     "test": "eslint ."
   },
   "repository": {
@@ -38,7 +41,9 @@
     "eslint": "^3.3.1",
     "eslint-find-rules": "^1.13.0",
     "eslint-plugin-import": "^1.13.0",
-    "eslint-plugin-react": "^6.1.1"
+    "eslint-plugin-react": "^6.1.1",
+    "eslint-plugin-react-native": "^2.0.0",
+    "npm-run-all": "^2.2.2"
   },
   "peerDependencies": {
     "babel-eslint": "^6.1.0",
