@@ -62,8 +62,6 @@ module.exports = {
     'no-invalid-regexp': 1,
     // disallow irregular whitespace outside of strings and comments
     'no-irregular-whitespace': 1,
-    // disallow negation of the left operand of an in expression
-    'no-negated-in-lhs': 1,
     // disallow the use of object properties of the global object (Math and
     // JSON) as functions
     'no-obj-calls': 1,
@@ -73,6 +71,8 @@ module.exports = {
     'no-regex-spaces': 1,
     // disallow sparse arrays
     'no-sparse-arrays': 1,
+    // Disallow template literal placeholder syntax in regular strings
+    'no-template-curly-in-string': 1,
     // Avoid code that looks like two expressions but is actually one
     'no-unexpected-multiline': 1,
     // disallow unreachable statements after a return, throw, continue, or
@@ -80,6 +80,8 @@ module.exports = {
     'no-unreachable': 1,
     // disallow control flow statements in finally blocks
     'no-unsafe-finally': 1,
+    // disallow negating the left operand of relational operators
+    'no-unsafe-negation': 1,
     // disallow comparisons with the value NaN
     'use-isnan': 1,
     // Ensure JSDoc comments are valid
@@ -141,6 +143,8 @@ module.exports = {
     // disallow the use of leading or trailing decimal points in numeric
     // literals
     'no-floating-decimal': 1,
+    // disallow assignments to native objects or read-only global variables
+    'no-global-assign': 1,
     // disallow the type conversions with shorter notations
     'no-implicit-coercion': 1,
     // disallow var and named functions in global scope
@@ -163,8 +167,6 @@ module.exports = {
     'no-multi-spaces': 1,
     // disallow use of multiline strings
     'no-multi-str': 1,
-    // disallow reassignments of native objects
-    'no-native-reassign': 1,
     // disallow use of new operator for Function object
     'no-new-func': 1,
     // disallows creating new instances of String,Number, and Boolean
@@ -306,6 +308,9 @@ module.exports = {
     'consistent-this': [1, 'self'],
     // enforce newline at the end of file, with no multiple empty lines
     'eol-last': 1,
+    // require or disallow spacing between function identifiers and their
+    // invocations
+    'func-call-spacing': 1,
     // require function expressions to have a name
     'func-names': 1,
     // enforce use of function declarations or expressions
@@ -344,6 +349,8 @@ module.exports = {
     'max-statements': 1,
     // enforce a maximum number of statements allowed per line
     'max-statements-per-line': 0,
+    // enforce newlines between operands of ternary expressions
+    'multiline-ternary': 0,
     // require a capital letter for constructors
     'new-cap': 1,
     // disallow the omission of parentheses when invoking a constructor with no
@@ -392,8 +399,8 @@ module.exports = {
     'no-restricted-syntax': 0,
     // disallow whitespace before properties
     'no-whitespace-before-property': 1,
-    // disallow space between function identifier and application
-    'no-spaced-func': 1,
+    // Disallow tabs in file
+    'no-tabs': 1,
     // disallow the use of ternary operators
     'no-ternary': 0,
     // disallow trailing whitespace at the end of lines
@@ -429,6 +436,8 @@ module.exports = {
     'semi-spacing': 1,
     // require or disallow use of semicolons instead of ASI
     semi: [1, 'never'],
+    // requires object keys to be sorted
+    'sort-keys': 0,
     // sort import declarations within module
     'sort-imports': 0,
     // sort variables within the same declaration block
