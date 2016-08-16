@@ -62,7 +62,7 @@ module.exports = {
     // Prevent usage of dangerous JSX properties
     'react/no-danger': 1,
     // Prevent problem with children and props.dangerouslySetInnerHTML
-    'react/no-danger-with-children': 1,
+    'react/no-danger-with-children': 0,
     // Prevent usage of deprecated methods
     'react/no-deprecated': 1,
     // Prevent usage of setState in componentDidMount
