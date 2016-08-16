@@ -8,101 +8,101 @@ module.exports = {
 
   rules: {
     // Prevent missing displayName in a React component definition
-    'react/display-name': 1,
+    'react/display-name': 'warn',
     // Forbid certain props on Components
-    'react/forbid-component-props': 0,
+    'react/forbid-component-props': 'off',
     // Forbid certain propTypes
-    'react/forbid-prop-types': 1,
+    'react/forbid-prop-types': 'warn',
     // Enforce boolean attributes notation in JSX
-    'react/jsx-boolean-value': 1,
+    'react/jsx-boolean-value': 'warn',
     // Validate closing bracket location in JSX
-    'react/jsx-closing-bracket-location': [1, 'after-props'],
+    'react/jsx-closing-bracket-location': ['warn', 'after-props'],
     // Enforce or disallow spaces inside of curly braces in JSX attributes
-    'react/jsx-curly-spacing': 1,
+    'react/jsx-curly-spacing': 'warn',
     // Enforce or disallow spaces around equal signs in JSX attributes
-    'react/jsx-equals-spacing': 1,
+    'react/jsx-equals-spacing': 'warn',
     // Restrict file extensions that may contain JSX
-    'react/jsx-filename-extension': 0,
+    'react/jsx-filename-extension': 'off',
     // Enforce position of the first prop in JSX
-    'react/jsx-first-prop-new-line': [1, 'multiline'],
+    'react/jsx-first-prop-new-line': ['warn', 'multiline'],
     // Enforce event handler naming conventions in JSX
-    'react/jsx-handler-names': 1,
+    'react/jsx-handler-names': 'warn',
     // Validate props indentation in JSX
-    'react/jsx-indent-props': [1, 4],
+    'react/jsx-indent-props': ['warn', 4],
     // Validate JSX indentation
-    'react/jsx-indent': [1, 2],
+    'react/jsx-indent': ['warn', 2],
     // Validate JSX has key prop when in array or iterator
-    'react/jsx-key': 1,
+    'react/jsx-key': 'warn',
     // Limit maximum of props on a single line in JSX
-    'react/jsx-max-props-per-line': 0,
+    'react/jsx-max-props-per-line': 'off',
     // Prevent usage of .bind() and arrow functions in JSX props
-    'react/jsx-no-bind': 0,
+    'react/jsx-no-bind': 'off',
     // Prevent comments from being inserted as text nodes
-    'react/jsx-no-comment-textnodes': 1,
+    'react/jsx-no-comment-textnodes': 'warn',
     // Prevent duplicate props in JSX
-    'react/jsx-no-duplicate-props': 1,
+    'react/jsx-no-duplicate-props': 'warn',
     // Prevent usage of unwrapped JSX strings
-    'react/jsx-no-literals': 0,
+    'react/jsx-no-literals': 'off',
     // Prevent usage of unsafe target='_blank'
-    'react/jsx-no-target-blank': 1,
+    'react/jsx-no-target-blank': 'warn',
     // Disallow undeclared variables in JSX
-    'react/jsx-no-undef': 1,
+    'react/jsx-no-undef': 'warn',
     // Enforce PascalCase for user-defined JSX components
-    'react/jsx-pascal-case': 1,
+    'react/jsx-pascal-case': 'warn',
     // Enforce props alphabetical sorting
-    'react/jsx-sort-props': 0,
+    'react/jsx-sort-props': 'off',
     // Validate spacing before closing bracket in JSX
-    'react/jsx-space-before-closing': 1,
+    'react/jsx-space-before-closing': 'warn',
     // Prevent React to be incorrectly marked as unused
-    'react/jsx-uses-react': 1,
+    'react/jsx-uses-react': 'warn',
     // Prevent variables used in JSX to be incorrectly marked as unused
-    'react/jsx-uses-vars': 1,
+    'react/jsx-uses-vars': 'warn',
     // Prevent missing parentheses around multilines JSX
-    'react/jsx-wrap-multilines': 1,
+    'react/jsx-wrap-multilines': 'warn',
     // Prevent usage of dangerous JSX properties
-    'react/no-danger': 1,
+    'react/no-danger': 'warn',
     // Prevent problem with children and props.dangerouslySetInnerHTML
-    'react/no-danger-with-children': 0,
+    'react/no-danger-with-children': 'off',
     // Prevent usage of deprecated methods
-    'react/no-deprecated': 1,
+    'react/no-deprecated': 'warn',
     // Prevent usage of setState in componentDidMount
-    'react/no-did-mount-set-state': 1,
+    'react/no-did-mount-set-state': 'warn',
     // Prevent usage of setState in componentDidUpdate
-    'react/no-did-update-set-state': 1,
+    'react/no-did-update-set-state': 'warn',
     // Prevent direct mutation of this.state
-    'react/no-direct-mutation-state': 1,
+    'react/no-direct-mutation-state': 'warn',
     // Prevent usage of findDOMNode
-    'react/no-find-dom-node': 1,
+    'react/no-find-dom-node': 'warn',
     // Prevent usage of isMounted
-    'react/no-is-mounted': 1,
+    'react/no-is-mounted': 'warn',
     // Prevent multiple component definition per file
-    'react/no-multi-comp': [1, { ignoreStateless: true }],
+    'react/no-multi-comp': ['warn', { ignoreStateless: true }],
     // Prevent usage of the return value of React.render
-    'react/no-render-return-value': 1,
+    'react/no-render-return-value': 'warn',
     // Prevent usage of setState
-    'react/no-set-state': 1,
+    'react/no-set-state': 'warn',
     // Prevent using string references in ref attribute
-    'react/no-string-refs': 1,
+    'react/no-string-refs': 'warn',
     // Prevent usage of unknown DOM property
-    'react/no-unknown-property': 1,
+    'react/no-unknown-property': 'warn',
     // Enforce ES5 or ES6 class for React Components
-    'react/prefer-es6-class': 1,
+    'react/prefer-es6-class': 'warn',
     // Enforce stateless React Components to be written as a pure function
-    'react/prefer-stateless-function': 1,
+    'react/prefer-stateless-function': 'warn',
     // Prevent missing props validation in a React component definition
-    'react/prop-types': 0,
+    'react/prop-types': 'off',
     // Prevent missing React when using JSX
-    'react/react-in-jsx-scope': 1,
+    'react/react-in-jsx-scope': 'warn',
     // Enforce React components to have a shouldComponentUpdate method
-    'react/require-optimization': 0,
+    'react/require-optimization': 'off',
     // Enforce ES5 or ES6 class for returning value in render function
-    'react/require-render-return': 1,
+    'react/require-render-return': 'warn',
     // Prevent extra closing tags for components without children
-    'react/self-closing-comp': 1,
+    'react/self-closing-comp': 'warn',
     // Enforce component methods order
-    'react/sort-comp': 1,
+    'react/sort-comp': 'warn',
     // Enforce propTypes declarations alphabetical sorting
-    'react/sort-prop-types': [1, {
+    'react/sort-prop-types': ['warn', {
       callbacksLast: true,
       ignoreCase: true,
       requiredFirst: true
