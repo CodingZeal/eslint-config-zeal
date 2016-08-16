@@ -66,6 +66,21 @@ Then, in your `.eslintrc` file, extend both the `zeal` and `zeal/react` configur
 }
 ```
 
+## Usage with React Native
+
+If you're using this package in a React Native project, make sure you have both [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) and [eslint-plugin-react-native](https://github.com/intellicode/eslint-plugin-react-native) installed as well:
+
+```
+npm install eslint-plugin-react eslint-plugin-react-native --save-dev
+```
+
+Then, in your `.eslintrc` file, extend the `zeal`, `zeal/react`, and `zeal/react-native` configurations:
+
+```
+{
+  "extends": ["zeal", "zeal/react", "zeal/react-native"]
+}
+
 ## Usage With Webpack
 
 This configuration uses [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import).  If your project uses Webpack, you'll need to add [eslint-import-resolver-webpack](https://www.npmjs.com/package/eslint-import-resolver-webpack):
