@@ -2,7 +2,15 @@
 
 All notable changes to this project will be documented in this file.  This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.9.0...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.10.0...HEAD)
+
+## [0.10.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.9.0...v0.10.0) - 2016-08-17
+
+### Changed
+
+* Update to eslint-plugin-react 6.1.2. ([#28](https://github.com/CodingZeal/eslint-config-zeal/pull/28))
+
+* Enable a warning for the `react/no-danger-with-children` rule.  This rule was disabled when it was first added due to an issue in eslint-plugin-react 6.1.1.  Version 6.1.2 fixes the issue, so the rule is now enabled as a warning. ([#28](https://github.com/CodingZeal/eslint-config-zeal/pull/28))
 
 ## [0.9.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.8.1...v0.9.0) - 2016-08-16
 
@@ -24,7 +32,7 @@ All notable changes to this project will be documented in this file.  This proje
   * `no-spaced-func` => `func-call-spacing`
   * `react/wrap-multilines` => `react/jsx-wrap-multilines`
   * `react/no-comment-textnodes` =>  `react/jsx-no-comment-textnodes`
-  * `react/no-comment-textnodes` => `react/jsx-no-comment-textnodes` 
+  * `react/no-comment-textnodes` => `react/jsx-no-comment-textnodes`
 
 ### Removed
 
