@@ -10,8 +10,6 @@ Zeal's JavaScript coding style is still evolving as we do more projects, but thi
 
 ## Install
 
-**NOTE:** The current version of this package is designed to work with ESLint 2.0 and greater.  If you are still using ESLint 1.x, use version 0.2.0 of this package instead.
-
 To make use of this configuration, install eslint, babel-eslint, eslint-plugin-import, and this package as development dependencies of your project:
 
 ```
