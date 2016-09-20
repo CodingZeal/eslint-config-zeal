@@ -12,9 +12,9 @@ All notable changes to this project will be documented in this file.  This proje
 
 ## Added
 
-* Enables warnings for new rules: `lines-around-directive`, `prefer-numeric-literals`, `symbol-description`, `import/no-absolute-path`, `react/no-children-prop`, `react/no-unescaped-entities`, `react/no-unused-prop-types`, and `react/style-prop-object`.
+* Enables warnings for new rules: `lines-around-directive`, `prefer-numeric-literals`, `symbol-description`, `import/no-absolute-path`, `react/no-children-prop`, `react/no-unescaped-entities`, `react/no-unused-prop-types`, and `react/style-prop-object`. ([#30](https://github.com/CodingZeal/eslint-config-zeal/pull/30))
 
-* Adds support for new rules, but leaves them disabled: `class-methods-use-this`, `line-comment-position`, `no-restricted-properties`, and `import/max-dependencies`.
+* Adds support for new rules, but leaves them disabled: `class-methods-use-this`, `line-comment-position`, `no-restricted-properties`, and `import/max-dependencies`. ([#30](https://github.com/CodingZeal/eslint-config-zeal/pull/30))
 
 ## [0.10.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.9.0...v0.10.0) - 2016-08-17
 
