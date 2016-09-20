@@ -2,7 +2,19 @@
 
 All notable changes to this project will be documented in this file.  This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.10.0...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.11.0...HEAD)
+
+## [0.11.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.10.0...v0.11.0) - 2016-09-20
+
+## Changed
+
+* Update to ESLint 3.5.0, eslint-plugin-react 6.3.0, and eslint-plugin-import 1.15.0. ([#30](https://github.com/CodingZeal/eslint-config-zeal/pull/30))
+
+## Added
+
+* Enables warnings for new rules: `lines-around-directive`, `prefer-numeric-literals`, `symbol-description`, `import/no-absolute-path`, `react/no-children-prop`, `react/no-unescaped-entities`, `react/no-unused-prop-types`, and `react/style-prop-object`.
+
+* Adds support for new rules, but leaves them disabled: `class-methods-use-this`, `line-comment-position`, `no-restricted-properties`, and `import/max-dependencies`.
 
 ## [0.10.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.9.0...v0.10.0) - 2016-08-17
 
