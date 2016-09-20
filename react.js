@@ -59,6 +59,8 @@ module.exports = {
     'react/jsx-uses-vars': 'warn',
     // Prevent missing parentheses around multilines JSX
     'react/jsx-wrap-multilines': 'warn',
+    // Prevent passing of children as props
+    'react/no-children-prop': 'warn',
     // Prevent usage of dangerous JSX properties
     'react/no-danger': 'warn',
     // Prevent problem with children and props.dangerouslySetInnerHTML
@@ -83,8 +85,12 @@ module.exports = {
     'react/no-set-state': 'warn',
     // Prevent using string references in ref attribute
     'react/no-string-refs': 'warn',
+    // Prevent invalid characters from appearing in markup
+    'react/no-unescaped-entities': 'warn',
     // Prevent usage of unknown DOM property
     'react/no-unknown-property': 'warn',
+    // Prevent definitions of unused prop types
+    'react/no-unused-prop-types': 'warn',
     // Enforce ES5 or ES6 class for React Components
     'react/prefer-es6-class': 'warn',
     // Enforce stateless React Components to be written as a pure function
@@ -106,6 +112,8 @@ module.exports = {
       callbacksLast: true,
       ignoreCase: true,
       requiredFirst: true
-    }]
+    }],
+    // Enforce style prop value being an object
+    'react/style-prop-object': 'warn'
   }
 }

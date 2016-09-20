@@ -98,6 +98,8 @@ module.exports = {
     'array-callback-return': 'warn',
     // treat var statements as if they were block scoped
     'block-scoped-var': 'warn',
+    // enforce that class methods utilize this
+    'class-methods-use-this': 'off',
     // specify the maximum cyclomatic complexity allowed in a program
     complexity: ['warn', 2],
     // require return statements to either always or never specify values
@@ -282,6 +284,8 @@ module.exports = {
     'no-process-exit': 'warn',
     // restrict usage of specified node imports
     'no-restricted-imports': 'off',
+    // disallow certain properties on certain objects
+    'no-restricted-properties': 'off',
     // restrict usage of specified node modules
     'no-restricted-modules': 'off',
     // disallow use of synchronous methods
@@ -330,10 +334,14 @@ module.exports = {
     'key-spacing': 'warn',
     // enforce spacing before and after keywords
     'keyword-spacing': 'warn',
+    // enforce position of line comments
+    'line-comment-position': 'off',
     // disallow mixed 'LF' and 'CRLF' as linebreaks
     'linebreak-style': 'warn',
     // enforce empty lines around comments
     'lines-around-comment': 'warn',
+    // require or disallow newlines around directives
+    'lines-around-directive': ['warn', { before: 'never', after: 'always' }],
     // specify the maximum depth that blocks can be nested
     'max-depth': 'warn',
     // specify the maximum length of a line in your program
@@ -503,6 +511,8 @@ module.exports = {
     // suggest using const declaration for variables that are never modified
     // after declared
     'prefer-const': 'warn',
+    // disallow parseInt() in favor of binary, octal, and hexadecimal literals
+    'prefer-numeric-literals': 'warn',
     // suggest using Reflect methods where applicable
     'prefer-reflect': 'off',
     // suggest using the rest parameters instead of arguments
@@ -515,6 +525,8 @@ module.exports = {
     'require-yield': 'warn',
     // enforce spacing between rest and spread operators and their expressions
     'rest-spread-spacing': 'warn',
+    // require symbol descriptions
+    'symbol-description': 'warn',
     // enforce spacing around embedded expressions of template strings
     'template-curly-spacing': 'warn',
     // enforce spacing around the * in yield* expressions
@@ -536,6 +548,8 @@ module.exports = {
     'import/namespace': 'warn',
     // Restrict which files can be imported in a given folder
     'import/no-restricted-paths': 'off',
+    // Forbid import of modules using absolute paths
+    'import/no-absolute-path': 'warn',
 
     //
     // Import: Helpful Warnings
@@ -578,6 +592,8 @@ module.exports = {
     // Enforce a newline after import statements
     'import/newline-after-import': 'warn',
     // Prefer a default export if module exports a single name
-    'import/prefer-default-export': 'warn'
+    'import/prefer-default-export': 'warn',
+    // Limit the maximum number of dependencies a module can have.
+    'import/max-dependencies': 'off'
   }
 }

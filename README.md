@@ -10,8 +10,6 @@ Zeal's JavaScript coding style is still evolving as we do more projects, but thi
 
 ## Install
 
-**NOTE:** The current version of this package is designed to work with ESLint 2.0 and greater.  If you are still using ESLint 1.x, use version 0.2.0 of this package instead.
-
 To make use of this configuration, install eslint, babel-eslint, eslint-plugin-import, and this package as development dependencies of your project:
 
 ```
@@ -112,10 +110,10 @@ or, if your webpack config file is not in the default location:
 
 This plugin contains all of the rules available in:
 
-* [ESLint](http://eslint.org/): 3.3.1
-* [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): 6.1.2
+* [ESLint](http://eslint.org/): 3.5.0
+* [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): 6.3.0
 * [eslint-plugin-react-native](https://github.com/intellicode/eslint-plugin-react-native): 2.0.0
-* [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import): 1.13.0
+* [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import): 1.15.0
 
 ## License
 
