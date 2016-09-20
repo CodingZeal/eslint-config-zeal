@@ -548,6 +548,8 @@ module.exports = {
     'import/namespace': 'warn',
     // Restrict which files can be imported in a given folder
     'import/no-restricted-paths': 'off',
+    // Forbid import of modules using absolute paths
+    'import/no-absolute-path': 'warn',
 
     //
     // Import: Helpful Warnings
@@ -590,6 +592,8 @@ module.exports = {
     // Enforce a newline after import statements
     'import/newline-after-import': 'warn',
     // Prefer a default export if module exports a single name
-    'import/prefer-default-export': 'warn'
+    'import/prefer-default-export': 'warn',
+    // Limit the maximum number of dependencies a module can have.
+    'import/max-dependencies': 'off'
   }
 }
