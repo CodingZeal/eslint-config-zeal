@@ -40,6 +40,7 @@
     "babel-eslint": "^6.1.0",
     "eslint": "^3.5.0",
     "eslint-find-rules": "^1.13.2",
+    "eslint-plugin-babel": "^3.3.0",
     "eslint-plugin-import": "^1.15.0",
     "eslint-plugin-react": "^6.3.0",
     "eslint-plugin-react-native": "^2.0.0",
@@ -48,6 +49,7 @@
   "peerDependencies": {
     "babel-eslint": "^6.1.0",
     "eslint": "^3.5.0",
+    "eslint-plugin-babel": "^3.3.0",
     "eslint-plugin-import": "^1.15.0"
   }
 }

@@ -13,7 +13,10 @@ module.exports = {
     ecmaVersion: 6,
     sourceType: 'module'
   },
-  plugins: ['import'],
+  plugins: [
+    'babel',
+    'import'
+  ],
   settings: {
     'import/ignore': [
       'node_modules',
@@ -295,7 +298,7 @@ module.exports = {
     // Stylistic Issues
     //
     // enforce spacing inside array brackets
-    'array-bracket-spacing': 'warn',
+    'array-bracket-spacing': 'off', // see babel/array-bracket-spacing
     // disallow or enforce spaces inside of single line blocks
     'block-spacing': 'warn',
     // enforce one true brace style
@@ -360,7 +363,7 @@ module.exports = {
     // enforce newlines between operands of ternary expressions
     'multiline-ternary': 'off',
     // require a capital letter for constructors
-    'new-cap': 'warn',
+    'new-cap': 'off', // see babel/new-cap
     // disallow the omission of parentheses when invoking a constructor with no
     // arguments
     'new-parens': 'warn',
@@ -420,7 +423,7 @@ module.exports = {
     // enforce consistent line breaks inside braces
     'object-curly-newline': 'off',
     // require or disallow padding inside curly braces
-    'object-curly-spacing': ['warn', 'always'],
+    'object-curly-spacing': 'off', // see babel/object-curly-spacing
     // enforce placing object properties on separate lines
     'object-property-newline': 'off',
     // require or disallow one variable declaration per function
@@ -474,13 +477,13 @@ module.exports = {
     // require braces in arrow function body
     'arrow-body-style': 'warn',
     // require parens in arrow function arguments
-    'arrow-parens': ['warn', 'as-needed'],
+    'arrow-parens': 'off', // see babel/arrow-parens
     // require space before/after arrow function's arrow
     'arrow-spacing': 'warn',
     // verify calls of super() in constructors
     'constructor-super': 'warn',
     // enforce spacing around the * in generator functions
-    'generator-star-spacing': ['warn', 'after'],
+    'generator-star-spacing': 'off', // See babel/generator-star-spacing
     // disallow modifying variables of class declarations
     'no-class-assign': 'warn',
     // disallow arrow functions where they could be confused with comparisons
@@ -505,7 +508,7 @@ module.exports = {
     // require let or const instead of var
     'no-var': 'warn',
     // require method and property shorthand syntax for object literals
-    'object-shorthand': 'warn',
+    'object-shorthand': 'off', // see babel/object-shorthand
     // suggest using arrow functions as callbacks
     'prefer-arrow-callback': 'warn',
     // suggest using const declaration for variables that are never modified
@@ -594,6 +597,34 @@ module.exports = {
     // Prefer a default export if module exports a single name
     'import/prefer-default-export': 'warn',
     // Limit the maximum number of dependencies a module can have.
-    'import/max-dependencies': 'off'
+    'import/max-dependencies': 'off',
+
+    //
+    // Babel Plugin
+    //
+    // Babel: Base Rule Overrides
+    //
+    // Handles async/await functions correctly
+    'babel/generator-star-spacing': ['warn', 'after'],
+    // Ignores capitalized decorators (@Decorator)
+    'babel/new-cap': 'warn',
+    // Handles destructuring arrays with flow type in function parameters
+    'babel/array-bracket-spacing': 'warn',
+    // doesn't complain about export x from "mod"; or export * as x from "mod";
+    'babel/object-curly-spacing': ['warn', 'always'],
+    // doesn't fail when using object spread (...obj)
+    'babel/object-shorthand': 'warn',
+    // Handles async functions correctly
+    'babel/arrow-parens': ['warn', 'as-needed'],
+
+    //
+    // Babel: Additional rules
+    //
+      // guard against awaiting async functions inside of a loop
+    'babel/no-await-in-loop': 'warn',
+    // Require a particular separator between properties in Flow object types.
+    'babel/flow-object-type': 'off',
+    // Require or forbid trailing commas for function paramater lists
+    'babel/func-params-comma-dangle': 'warn'
   }
 }
