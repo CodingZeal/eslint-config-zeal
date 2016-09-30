@@ -554,6 +554,8 @@ module.exports = {
     'import/no-dynamic-require': 'warn',
     // Prevent importing the submodules of other modules
     'import/no-internal-modules': 'off',
+    // Forbid Webpack loader syntax in imports
+    'import/no-webpack-loader-syntax': 'warn',
 
     //
     // Import: Helpful Warnings
@@ -573,6 +575,8 @@ module.exports = {
 
     //
     // Import: Module Systems
+    // Report potentially ambiguous parse goal (script vs. module)
+    'import/unambiguous': 'off',
     // Report CommonJS require calls and module.exports or exports.*
     'import/no-commonjs': 'off',
     // Report AMD require and define calls
@@ -584,7 +588,7 @@ module.exports = {
     // Import: Style guide
     //
     // Ensure all imports appear before other statements
-    'import/imports-first': 'warn',
+    'import/first': 'warn',
     // Report repeated import of the same module in multiple places
     'import/no-duplicates': 'warn',
     // Report namespace imports
@@ -598,6 +602,8 @@ module.exports = {
     // Prefer a default export if module exports a single name
     'import/prefer-default-export': 'warn',
     // Limit the maximum number of dependencies a module can have.
-    'import/max-dependencies': 'off'
+    'import/max-dependencies': 'off',
+    // Forbid unassigned imports.
+    'import/no-unassigned-import': 'off'
   }
 }
