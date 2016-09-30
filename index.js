@@ -550,6 +550,10 @@ module.exports = {
     'import/no-restricted-paths': 'off',
     // Forbid import of modules using absolute paths
     'import/no-absolute-path': 'warn',
+    // Forbid require() calls with expressions
+    'import/no-dynamic-require': 'warn',
+    // Prevent importing the submodules of other modules
+    'import/no-internal-modules': 'off',
 
     //
     // Import: Helpful Warnings
