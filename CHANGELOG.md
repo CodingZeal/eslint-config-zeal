@@ -2,7 +2,23 @@
 
 All notable changes to this project will be documented in this file.  This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.11.0...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.12.0...HEAD)
+
+## [0.12.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.11.0...v0.12.0) - 2016-10-03
+
+## Changed
+
+* Update to ESLint 3.7.0, eslint-plugin-import 2.0.0, and babel-eslint 7.0.0. ([#33](https://github.com/CodingZeal/eslint-config-zeal/pull/33))
+
+* Change `ecmaVersion` setting to `2017` to get support for ES2017 features like `async`/`await`. ([#33](https://github.com/CodingZeal/eslint-config-zeal/pull/33))
+
+* Rename `import/import-first` to `import/first`. ([#33](https://github.com/CodingZeal/eslint-config-zeal/pull/33))
+
+## Added
+
+* Enables warnings for new rules: `import/no-dynamic-require` and `import/no-webpack-loader-syntax`. ([#33](https://github.com/CodingZeal/eslint-config-zeal/pull/33))
+
+* Adds support for new rules, but leaves them disabled: `import/no-internal-modules`, `import/unambiguous`, and `import/no-unassigned-import`. ([#33](https://github.com/CodingZeal/eslint-config-zeal/pull/33))
 
 ## [0.11.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.10.0...v0.11.0) - 2016-09-20
 
