@@ -609,6 +609,8 @@ module.exports = {
     // Limit the maximum number of dependencies a module can have.
     'import/max-dependencies': 'off',
     // Forbid unassigned imports.
-    'import/no-unassigned-import': 'off'
+    'import/no-unassigned-import': 'off',
+    // Forbid named default exports.
+    'import/no-named-default': 'warn'
   }
 }
