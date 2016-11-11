@@ -191,6 +191,8 @@ module.exports = {
     'no-redeclare': 'warn',
     // disallow use of assignment in return statement
     'no-return-assign': 'warn',
+    // Disallows unnecessary return await
+    'no-return-await': 'warn',
     // disallow use of javascript: urls.
     'no-script-url': 'warn',
     // disallow assignments where both sides are exactly the same
