@@ -111,7 +111,7 @@ or, if your webpack config file is not in the default location:
 This plugin contains all of the rules available in:
 
 * [ESLint](http://eslint.org/): 3.9.1
-* [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): 6.4.1
+* [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): 6.5.0
 * [eslint-plugin-react-native](https://github.com/intellicode/eslint-plugin-react-native): 2.0.0
 * [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import): 2.2.0
 
