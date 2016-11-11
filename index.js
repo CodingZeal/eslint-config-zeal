@@ -213,6 +213,8 @@ module.exports = {
     'no-useless-concat': 'warn',
     // disallow unnecessary escape characters
     'no-useless-escape': 'warn',
+    // Disallow redundant return statements
+    'no-useless-return': 'warn',
     // disallow use of the void operator
     'no-void': 'warn',
     // disallow usage of configurable warning terms in comments - e.g. TODO
