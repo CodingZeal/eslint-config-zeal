@@ -4,7 +4,7 @@
   "version": "0.12.1",
   "main": "index.js",
   "scripts": {
-    "missing-rules": "npm-run-all --parallel missing-rules:*",
+    "missing-rules": "run-p missing-rules:*",
     "missing-rules:core": "eslint-find-rules --unused",
     "missing-rules:react": "eslint-find-rules --no-core --unused react.js",
     "missing-rules:react-native": "eslint-find-rules --no-core --unused react-native.js",
@@ -37,16 +37,16 @@
     "style linter"
   ],
   "devDependencies": {
-    "babel-eslint": "^7.0.0",
+    "babel-eslint": "^7.1.0",
     "eslint": "^3.7.0",
-    "eslint-find-rules": "^1.14.0",
+    "eslint-find-rules": "^1.14.3",
     "eslint-plugin-import": "^2.0.0",
     "eslint-plugin-react": "^6.4.0",
     "eslint-plugin-react-native": "^2.0.0",
-    "npm-run-all": "^3.1.0"
+    "npm-run-all": "^3.1.1"
   },
   "peerDependencies": {
-    "babel-eslint": "^7.0.0",
+    "babel-eslint": "^7.1.0",
     "eslint": "^3.7.0",
     "eslint-plugin-import": "^2.0.0"
   }
