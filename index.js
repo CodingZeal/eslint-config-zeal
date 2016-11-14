@@ -191,6 +191,8 @@ module.exports = {
     'no-redeclare': 'warn',
     // disallow use of assignment in return statement
     'no-return-assign': 'warn',
+    // Disallows unnecessary return await
+    'no-return-await': 'warn',
     // disallow use of javascript: urls.
     'no-script-url': 'warn',
     // disallow assignments where both sides are exactly the same
@@ -213,6 +215,8 @@ module.exports = {
     'no-useless-concat': 'warn',
     // disallow unnecessary escape characters
     'no-useless-escape': 'warn',
+    // Disallow redundant return statements
+    'no-useless-return': 'warn',
     // disallow use of the void operator
     'no-void': 'warn',
     // disallow usage of configurable warning terms in comments - e.g. TODO
@@ -315,6 +319,9 @@ module.exports = {
     // require or disallow spacing between function identifiers and their
     // invocations
     'func-call-spacing': 'warn',
+    // require function names to match the name of the variable or property to
+    // which they are assigned
+    'func-name-matching': 'warn',
     // require function expressions to have a name
     'func-names': 'warn',
     // enforce use of function declarations or expressions
@@ -604,6 +611,8 @@ module.exports = {
     // Limit the maximum number of dependencies a module can have.
     'import/max-dependencies': 'off',
     // Forbid unassigned imports.
-    'import/no-unassigned-import': 'off'
+    'import/no-unassigned-import': 'off',
+    // Forbid named default exports.
+    'import/no-named-default': 'warn'
   }
 }
