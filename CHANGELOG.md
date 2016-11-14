@@ -2,7 +2,18 @@
 
 All notable changes to this project will be documented in this file.  This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.12.1...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.13.0...HEAD)
+
+## [0.13.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.12.1...v0.13.0) - 2016-11-14
+
+## Changed
+
+* Update to ESLint 3.10.0, eslint-plugin-import 2.2.0, eslint-plugin-react 6.6.0, and babel-eslint 7.1.0. ([#36](https://github.com/CodingZeal/eslint-config-zeal/pull/36))
+
+## Added
+
+* Enables warnings for new rules: `no-return-await`, `no-useless-return`, `func-name-matching`, and `import/no-named-default`. ([#36](https://github.com/CodingZeal/eslint-config-zeal/pull/36))
+
 
 ## [0.12.1](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.12.0...v0.12.1) - 2016-10-03
 
