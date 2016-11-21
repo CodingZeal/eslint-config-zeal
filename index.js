@@ -37,11 +37,11 @@ module.exports = {
     // disallow use of debugger
     'no-debugger': 'warn',
     // disallow duplicate arguments in functions
-    'no-dupe-args': 'warn',
+    'no-dupe-args': 'error',
     // disallow duplicate keys when creating object literals
-    'no-dupe-keys': 'warn',
+    'no-dupe-keys': 'error',
     // disallow a duplicate case label.
-    'no-duplicate-case': 'warn',
+    'no-duplicate-case': 'error',
     // disallow the use of empty character classes in regular expressions
     'no-empty-character-class': 'warn',
     // disallow empty statements
@@ -188,7 +188,7 @@ module.exports = {
     // disallow usage of __proto__ property
     'no-proto': 'warn',
     // disallow declaring the same variable more than once
-    'no-redeclare': 'warn',
+    'no-redeclare': 'error',
     // disallow use of assignment in return statement
     'no-return-assign': 'warn',
     // Disallows unnecessary return await
@@ -261,7 +261,7 @@ module.exports = {
     'no-undef-init': 'warn',
     // disallow use of undeclared variables unless mentioned in a /*global */
     // block
-    'no-undef': 'warn',
+    'no-undef': 'error',
     // disallow use of undefined variable
     'no-undefined': 'off',
     // disallow declaration of variables that are not used in the code
@@ -545,9 +545,9 @@ module.exports = {
     // Import: Static Analysis
     //
     // Ensure imports point to a file/module that can be resolved
-    'import/no-unresolved': ['warn', { commonjs: true }],
+    'import/no-unresolved': ['error', { commonjs: true }],
     // Ensure named imports correspond to a named export in the remote file
-    'import/named': 'warn',
+    'import/named': 'error',
     // Ensure a default export is present, given a default import
     'import/default': 'warn',
     // Ensure imported namespaces contain dereferenced properties as they are
