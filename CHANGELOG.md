@@ -2,7 +2,21 @@
 
 All notable changes to this project will be documented in this file.  This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.13.0...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.14.0...HEAD)
+
+## [0.14.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.13.0...v0.14.0) - 2016-12-02
+
+## Changed
+
+* Update to ESLint 3.11.1, eslint-plugin-react 6.7.1, eslint-plugin-react-native 2.2.0, and babel-eslint 7.1.1. ([#38](https://github.com/CodingZeal/eslint-config-zeal/pull/38))
+
+* Configure several rules as errors instead of warnings.  These rules are ones that have a high probability of causing programs to fail, so getting fast feedback about these issues is important.  Rules that are now errors: `no-dupe-args`, `no-dupe-keys`, `no-duplicate-case`, `no-redeclare`, `no-undef`, `import/no-unresolved`, and `import/named`. ([#37](https://github.com/CodingZeal/eslint-config-zeal/pull/37))
+
+## Added
+
+* Enables warnings for new rules: `require-await` and `react/jsx-tag-spacing`, `func-name-matching`, and `import/no-named-default`. ([#38](https://github.com/CodingZeal/eslint-config-zeal/pull/38))
+
+* Adds support for new rule, but leaves it disabled: `capitalized-comments`. ([#38](https://github.com/CodingZeal/eslint-config-zeal/pull/38))
 
 ## [0.13.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.12.1...v0.13.0) - 2016-11-14
 
@@ -13,7 +27,6 @@ All notable changes to this project will be documented in this file.  This proje
 ## Added
 
 * Enables warnings for new rules: `no-return-await`, `no-useless-return`, `func-name-matching`, and `import/no-named-default`. ([#36](https://github.com/CodingZeal/eslint-config-zeal/pull/36))
-
 
 ## [0.12.1](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.12.0...v0.12.1) - 2016-10-03
 
