@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-zeal",
   "description": "ESLint sharable configuration matching Zeal's style guide",
-  "version": "0.14.0",
+  "version": "0.14.1",
   "main": "index.js",
   "scripts": {
     "missing-rules": "run-p missing-rules:*",

@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file.  This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.14.0...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.14.1...HEAD)
+
+## [0.14.1](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.14.0...v0.14.1) - 2016-12-02
+
+## Fixed
+
+* Fixed peer dependency on babel-eslint.  Now 7.1.1.
 
 ## [0.14.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.13.0...v0.14.0) - 2016-12-02
 
