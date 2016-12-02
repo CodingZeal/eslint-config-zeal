@@ -226,6 +226,8 @@ module.exports = {
     'no-with': 'warn',
     // require use of the second argument for parseInt()
     radix: 'warn',
+    // disallow async functions which have no await expression
+    'require-await': 'warn',
     // require declaration of all vars at the top of their containing scope
     'vars-on-top': 'warn',
     // require immediate function invocation to be wrapped in parentheses
@@ -306,6 +308,8 @@ module.exports = {
     'brace-style': 'warn',
     // require camel case names
     camelcase: 'warn',
+    // enforce or disallow capitalization of the first letter of a comment,
+    'capitalized-comments': 'off',
     // enforce spacing before and after comma
     'comma-spacing': 'warn',
     // enforce one true comma style
