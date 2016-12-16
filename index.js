@@ -24,6 +24,8 @@ module.exports = {
     //
     // Possible Errors
     //
+    // Disallow await inside of loops
+    'no-await-in-loop': 'warn',
     // disallow or enforce trailing commas
     'comma-dangle': 'warn',
     // disallow assignment in conditional expressions
