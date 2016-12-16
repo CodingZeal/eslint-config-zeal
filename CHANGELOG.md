@@ -2,7 +2,19 @@
 
 All notable changes to this project will be documented in this file.  This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.14.1...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.15.0...HEAD)
+
+## [0.15.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.14.1...v0.15.0) - 2016-12-16
+
+## Changed
+
+* Update to ESLint 3.12.2, eslint-plugin-react 6.8.0, and eslint-plugin-react-native 2.2.1. ([#39](https://github.com/CodingZeal/eslint-config-zeal/pull/39))
+
+## Added
+
+* Enables warnings for new rules: `no-await-in-loop` and `react/no-array-index-key`. ([#39](https://github.com/CodingZeal/eslint-config-zeal/pull/39))
+
+* Adds support for new rule, but leaves it disabled: `react/require-default-props`. ([#39](https://github.com/CodingZeal/eslint-config-zeal/pull/39))
 
 ## [0.14.1](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.14.0...v0.14.1) - 2016-12-02
 
@@ -20,7 +32,7 @@ All notable changes to this project will be documented in this file.  This proje
 
 ## Added
 
-* Enables warnings for new rules: `require-await` and `react/jsx-tag-spacing`, `func-name-matching`, and `import/no-named-default`. ([#38](https://github.com/CodingZeal/eslint-config-zeal/pull/38))
+* Enables warnings for new rules: `require-await`, `react/jsx-tag-spacing`, `func-name-matching`, and `import/no-named-default`. ([#38](https://github.com/CodingZeal/eslint-config-zeal/pull/38))
 
 * Adds support for new rule, but leaves it disabled: `capitalized-comments`. ([#38](https://github.com/CodingZeal/eslint-config-zeal/pull/38))
 
