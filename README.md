@@ -79,6 +79,7 @@ Then, in your `.eslintrc` file, extend the `zeal`, `zeal/react`, and `zeal/react
 {
   "extends": ["zeal", "zeal/react", "zeal/react-native"]
 }
+```
 
 ## Usage With Webpack
 
