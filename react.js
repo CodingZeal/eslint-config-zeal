@@ -61,6 +61,8 @@ module.exports = {
     'react/jsx-uses-vars': 'warn',
     // Prevent missing parentheses around multilines JSX
     'react/jsx-wrap-multilines': 'warn',
+    //  Prevent using Array index in key props
+    'react/no-array-index-key': 'warn',
     // Prevent passing of children as props
     'react/no-children-prop': 'warn',
     // Prevent usage of dangerous JSX properties
@@ -101,6 +103,9 @@ module.exports = {
     'react/prop-types': 'off',
     // Prevent missing React when using JSX
     'react/react-in-jsx-scope': 'warn',
+    // Enforce a defaultProps definition for every prop that is not a required
+    // prop
+    'react/require-default-props': 'off',
     // Enforce React components to have a shouldComponentUpdate method
     'react/require-optimization': 'off',
     // Enforce ES5 or ES6 class for returning value in render function
