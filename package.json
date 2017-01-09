@@ -3,7 +3,9 @@
   "description": "ESLint sharable configuration matching Zeal's style guide",
   "version": "0.15.0",
   "main": "index.js",
-  "files": ["*.js"],
+  "files": [
+    "*.js"
+  ],
   "scripts": {
     "missing-rules": "run-p missing-rules:*",
     "missing-rules:core": "eslint-find-rules --unused",
@@ -39,16 +41,16 @@
   ],
   "devDependencies": {
     "babel-eslint": "^7.1.1",
-    "eslint": "^3.12.2",
+    "eslint": "^3.13.0",
     "eslint-find-rules": "^1.14.3",
     "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-react": "^6.8.0",
+    "eslint-plugin-react": "^6.9.0",
     "eslint-plugin-react-native": "^2.2.1",
     "npm-run-all": "^4.0.0"
   },
   "peerDependencies": {
     "babel-eslint": "^7.1.1",
-    "eslint": "^3.11.1",
+    "eslint": "^3.13.0",
     "eslint-plugin-import": "^2.2.0"
   }
 }
