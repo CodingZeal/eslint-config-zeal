@@ -44,7 +44,7 @@
     "eslint": "^3.13.0",
     "eslint-find-rules": "^1.14.3",
     "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-react": "^6.8.0",
+    "eslint-plugin-react": "^6.9.0",
     "eslint-plugin-react-native": "^2.2.1",
     "npm-run-all": "^4.0.0"
   },
