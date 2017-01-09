@@ -2,15 +2,29 @@
 
 All notable changes to this project will be documented in this file.  This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.15.0...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.16.0...HEAD)
+
+## [0.16.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.15.0...v0.16.0) - 2017-01-09
+
+### Changed
+
+* Modify published package to include only necessary files. ([#41](https://github.com/CodingZeal/eslint-config-zeal/pull/41))
+
+* Update to ESLint 3.13.0 and eslint-plugin-react 6.9.0 ([#45](https://github.com/CodingZeal/eslint-config-zeal/pull/45))
+
+### Added
+
+* Adds a configuration for [Jest](http://facebook.github.io/jest/), including the use of [eslint-plugin-jest](https://github.com/jkimbo/eslint-plugin-jest).  ([#42](https://github.com/CodingZeal/eslint-config-zeal/pull/42))
+
+* Enables warning for new rule: `prefer-destructuring` ([#45](https://github.com/CodingZeal/eslint-config-zeal/pull/45))
 
 ## [0.15.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.14.1...v0.15.0) - 2016-12-16
 
-## Changed
+### Changed
 
 * Update to ESLint 3.12.2, eslint-plugin-react 6.8.0, and eslint-plugin-react-native 2.2.1. ([#39](https://github.com/CodingZeal/eslint-config-zeal/pull/39))
 
-## Added
+### Added
 
 * Enables warnings for new rules: `no-await-in-loop` and `react/no-array-index-key`. ([#39](https://github.com/CodingZeal/eslint-config-zeal/pull/39))
 
@@ -18,19 +32,19 @@ All notable changes to this project will be documented in this file.  This proje
 
 ## [0.14.1](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.14.0...v0.14.1) - 2016-12-02
 
-## Fixed
+### Fixed
 
 * Fixed peer dependency on babel-eslint.  Now 7.1.1.
 
 ## [0.14.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.13.0...v0.14.0) - 2016-12-02
 
-## Changed
+### Changed
 
 * Update to ESLint 3.11.1, eslint-plugin-react 6.7.1, eslint-plugin-react-native 2.2.0, and babel-eslint 7.1.1. ([#38](https://github.com/CodingZeal/eslint-config-zeal/pull/38))
 
 * Configure several rules as errors instead of warnings.  These rules are ones that have a high probability of causing programs to fail, so getting fast feedback about these issues is important.  Rules that are now errors: `no-dupe-args`, `no-dupe-keys`, `no-duplicate-case`, `no-redeclare`, `no-undef`, `import/no-unresolved`, and `import/named`. ([#37](https://github.com/CodingZeal/eslint-config-zeal/pull/37))
 
-## Added
+### Added
 
 * Enables warnings for new rules: `require-await`, `react/jsx-tag-spacing`, `func-name-matching`, and `import/no-named-default`. ([#38](https://github.com/CodingZeal/eslint-config-zeal/pull/38))
 
@@ -38,23 +52,23 @@ All notable changes to this project will be documented in this file.  This proje
 
 ## [0.13.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.12.1...v0.13.0) - 2016-11-14
 
-## Changed
+### Changed
 
 * Update to ESLint 3.10.0, eslint-plugin-import 2.2.0, eslint-plugin-react 6.6.0, and babel-eslint 7.1.0. ([#36](https://github.com/CodingZeal/eslint-config-zeal/pull/36))
 
-## Added
+### Added
 
 * Enables warnings for new rules: `no-return-await`, `no-useless-return`, `func-name-matching`, and `import/no-named-default`. ([#36](https://github.com/CodingZeal/eslint-config-zeal/pull/36))
 
 ## [0.12.1](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.12.0...v0.12.1) - 2016-10-03
 
-## Changed
+### Changed
 
 * Update to eslint-plugin-react 6.4.0. ([#34](https://github.com/CodingZeal/eslint-config-zeal/pull/34))
 
 ## [0.12.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.11.0...v0.12.0) - 2016-10-03
 
-## Changed
+### Changed
 
 * Update to ESLint 3.7.0, eslint-plugin-import 2.0.0, and babel-eslint 7.0.0. ([#33](https://github.com/CodingZeal/eslint-config-zeal/pull/33))
 
@@ -62,7 +76,7 @@ All notable changes to this project will be documented in this file.  This proje
 
 * Rename `import/import-first` to `import/first`. ([#33](https://github.com/CodingZeal/eslint-config-zeal/pull/33))
 
-## Added
+### Added
 
 * Enables warnings for new rules: `import/no-dynamic-require` and `import/no-webpack-loader-syntax`. ([#33](https://github.com/CodingZeal/eslint-config-zeal/pull/33))
 
@@ -70,11 +84,11 @@ All notable changes to this project will be documented in this file.  This proje
 
 ## [0.11.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.10.0...v0.11.0) - 2016-09-20
 
-## Changed
+### Changed
 
 * Update to ESLint 3.5.0, eslint-plugin-react 6.3.0, and eslint-plugin-import 1.15.0. ([#30](https://github.com/CodingZeal/eslint-config-zeal/pull/30))
 
-## Added
+### Added
 
 * Enables warnings for new rules: `lines-around-directive`, `prefer-numeric-literals`, `symbol-description`, `import/no-absolute-path`, `react/no-children-prop`, `react/no-unescaped-entities`, `react/no-unused-prop-types`, and `react/style-prop-object`. ([#30](https://github.com/CodingZeal/eslint-config-zeal/pull/30))
 
