@@ -524,6 +524,8 @@ module.exports = {
     // suggest using const declaration for variables that are never modified
     // after declared
     'prefer-const': 'warn',
+    // require destructuring from arrays and/or objects
+    'prefer-destructuring': 'warn',
     // disallow parseInt() in favor of binary, octal, and hexadecimal literals
     'prefer-numeric-literals': 'warn',
     // suggest using Reflect methods where applicable
