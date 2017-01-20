@@ -1,7 +1,7 @@
 # eslint-config-zeal
 
 [![npm version](https://badge.fury.io/js/eslint-config-zeal.svg)](https://www.npmjs.com/package/eslint-config-zeal)
-[![Build Status](https://travis-ci.org/CodingZeal/eslint-config-zeal.svg?branch=master)](https://travis-ci.org/CodingZeal/eslint-config-zeal)
+[![CircleCI](https://circleci.com/gh/CodingZeal/eslint-config-zeal.svg?style=svg)](https://circleci.com/gh/CodingZeal/eslint-config-zeal)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 A [shareable ESLint config](http://eslint.org/docs/developer-guide/shareable-configs) for Zeal's coding style.
