@@ -86,7 +86,7 @@ module.exports = {
     // Prevent usage of the return value of React.render
     'react/no-render-return-value': 'warn',
     // Prevent usage of setState
-    'react/no-set-state': 'warn',
+    'react/no-set-state': 'off',
     // Prevent using string references in ref attribute
     'react/no-string-refs': 'warn',
     // Prevent invalid characters from appearing in markup

@@ -103,7 +103,7 @@ module.exports = {
     // enforce that class methods utilize this
     'class-methods-use-this': 'off',
     // specify the maximum cyclomatic complexity allowed in a program
-    complexity: ['warn', 2],
+    complexity: ['warn', 3],
     // require return statements to either always or never specify values
     'consistent-return': 'warn',
     // specify curly brace conventions for all control statements
@@ -156,7 +156,7 @@ module.exports = {
     // disallow use of eval()-like methods
     'no-implied-eval': 'warn',
     // disallow this keywords outside of classes or class-like objects
-    'no-invalid-this': 'warn',
+    'no-invalid-this': 'off',
     // disallow usage of __iterator__ property
     'no-iterator': 'warn',
     // disallow use of labeled statements
@@ -208,7 +208,10 @@ module.exports = {
     // disallow unmodified conditions of loops
     'no-unmodified-loop-condition': 'warn',
     // disallow usage of expressions in statement position
-    'no-unused-expressions': 'warn',
+    'no-unused-expressions': ['warn', {
+      allowShortCircuit: true,
+      allowTernary: true
+    }],
     // disallow unused labels
     'no-unused-labels': 'warn',
     // disallow unnecessary .call() and .apply()
@@ -269,7 +272,7 @@ module.exports = {
     // disallow use of undefined variable
     'no-undefined': 'off',
     // disallow declaration of variables that are not used in the code
-    'no-unused-vars': 'warn',
+    'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
     // disallow use of variables before they are defined
     'no-use-before-define': ['warn', 'nofunc'],
 
@@ -427,7 +430,7 @@ module.exports = {
     // disallow trailing whitespace at the end of lines
     'no-trailing-spaces': 'warn',
     // disallow dangling underscores in identifiers
-    'no-underscore-dangle': 'warn',
+    'no-underscore-dangle': 'off',
     // disallow the use of ternary operators when a simpler alternative exists
     'no-unneeded-ternary': 'warn',
     // enforce consistent line breaks inside braces
@@ -578,9 +581,9 @@ module.exports = {
     // Report any invalid exports, i.e. re-export of the same name
     'import/export': 'warn',
     // Report use of exported name as identifier of default export
-    'import/no-named-as-default': 'warn',
+    'import/no-named-as-default': 'off',
     // Report use of exported name as property of default export
-    'import/no-named-as-default-member': 'warn',
+    'import/no-named-as-default-member': 'off',
     // Report imported names marked with @deprecated documentation tag
     'import/no-deprecated': 'warn',
     // Forbid the use of extraneous packages
@@ -609,13 +612,13 @@ module.exports = {
     // Report namespace imports
     'import/no-namespace': 'off',
     // Ensure consistent use of file extension within the import path
-    'import/extensions': 'warn',
+    'import/extensions': ['warn', 'never', { scss: 'always' }],
     // Enforce a convention in module import order
     'import/order': 'off',
     // Enforce a newline after import statements
     'import/newline-after-import': 'warn',
     // Prefer a default export if module exports a single name
-    'import/prefer-default-export': 'warn',
+    'import/prefer-default-export': 'off',
     // Limit the maximum number of dependencies a module can have.
     'import/max-dependencies': 'off',
     // Forbid unassigned imports.
