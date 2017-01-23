@@ -2,7 +2,36 @@
 
 All notable changes to this project will be documented in this file.  This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.16.0...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.17.0...HEAD)
+
+## [0.17.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.16.0...v0.17.0) - 2017-01-23
+
+### Changed
+
+* Update rule configuration to match our (Zeal's) current practice ([#48](
+  https://github.com/CodingZeal/eslint-config-zeal/pull/48)):
+
+  - `complexity`: Change maximum allowed complexity from 2 to 3.  We knew 2 was probably too low when we started, but we didn’t know how big to make it.  After some experience, we now think 3 is pretty good for most of our projects.  We’ll use comments to bump the level up on a case-by-case basis where needed.  We rarely write code that needs more than 4.
+
+  - `no-invalid-this`: This rule doesn’t yet properly support class property syntax, so we disable it in almost all of our projects.
+
+  - `no-unused-expressions`: We often relax this rule to allow short-circuiting (`someCondition && someAction()`) or ternary expressions (`return someCondition ? someAction() : null`).
+
+  - `no-unused-vars`: Add an `argsIgnorePattern` to allow us to use `_unusedVar` when we want to explicitly name an unused function argument.  This is made possible by the change to `no-underscore-dangle`.
+
+  - `no-underscore-dangle`: There are cases, such as when working with third-party software, that underscores are required, so we now disable this rule.  We still write code without underscored names, except in the case of explicitly ignored function arguments described above.
+
+  - `import/no-named-as-default`: Sometimes we want to provide a name for a default export so that the code is more “greppable”.
+
+  - `import/no-named-as-default-member`: We now disable this rule because it blocks the ability to export localized Redux selectors by name and globalized Redux selectors as the default export as described in [this blog post](http://randycoulman.com/blog/2016/09/27/modular-reducers-and-selectors/).
+
+  - `import/extensions`: We now require extensions for `scss` files to work properly with our create-react-app based boilerplate, [generator-react-zeal](https://github.com/CodingZeal/generator-react-zeal).
+
+  - `import/prefer-default-export`: We now disable this rule.  Often, we’ll create a file that will eventually have multiple named exports, but for now does not.  We now prefer the flexibility to choose between default and named exports on a case-by-case basis.
+
+  - `react/no-set-state`: We now disable this rule.  While we still use Redux for most of our state management, there are cases when it makes more sense for a React component to maintain its own state.
+
+* Update to ESLint 3.13.1 ([#46](https://github.com/CodingZeal/eslint-config-zeal/pull/46))
 
 ## [0.16.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.15.0...v0.16.0) - 2017-01-09
 
