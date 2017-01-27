@@ -120,4 +120,6 @@ This plugin contains all of the rules available in:
 
 ## License
 
+Authored by the Engineering Team of [Coding ZEAL](https://codingzeal.com?utm_source=github)
+
 Copyright (c) 2016 - 2017 Zeal, LLC.  Licensed under the [MIT license](https://opensource.org/licenses/MIT).
