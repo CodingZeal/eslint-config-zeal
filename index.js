@@ -229,6 +229,8 @@ module.exports = {
     'no-warning-comments': 'warn',
     // disallow use of the with statement
     'no-with': 'warn',
+    // require using Error objects as Promise rejection reasons
+    'prefer-promise-reject-errors': 'off',
     // require use of the second argument for parseInt()
     radix: 'warn',
     // disallow async functions which have no await expression
@@ -409,6 +411,8 @@ module.exports = {
     ],
     // disallow mixed spaces and tabs for indentation
     'no-mixed-spaces-and-tabs': 'warn',
+    // disallow use of chained assignment expressions
+    'no-multi-assign': 'off',
     // disallow multiple empty lines
     'no-multiple-empty-lines': ['warn', { max: 1 }],
     // disallow negated conditions
