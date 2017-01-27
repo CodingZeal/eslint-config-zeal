@@ -2,7 +2,17 @@
 
 All notable changes to this project will be documented in this file.  This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.17.0...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.18.0...HEAD)
+
+## [0.18.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.17.0...v0.18.0) - 2017-01-27
+
+### Changed
+
+* Update to ESLint 3.14.1. ([#49](https://github.com/CodingZeal/eslint-config-zeal/pull/49))
+
+### Added
+
+* Adds support for new rule, but leaves them disabled: `prefer-promise-reject-errors` and `no-multi-assign`. ([#49](https://github.com/CodingZeal/eslint-config-zeal/pull/49))
 
 ## [0.17.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.16.0...v0.17.0) - 2017-01-23
 
