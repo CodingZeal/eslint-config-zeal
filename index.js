@@ -483,6 +483,8 @@ module.exports = {
     // require or disallow a space immediately following the // or /* in a
     // comment
     'spaced-comment': 'warn',
+    // Require or disallow spacing between template tags and their literals
+    'template-tag-spacing': 'warn',
     // require or disallow the Unicode BOM
     'unicode-bom': 'warn',
     // require regex literals to be wrapped in parentheses
