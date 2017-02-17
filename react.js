@@ -11,6 +11,10 @@ module.exports = {
     'react/display-name': 'warn',
     // Forbid certain props on Components
     'react/forbid-component-props': 'off',
+    //  Forbid certain elements
+    'react/forbid-elements': 'off',
+    // Forbid foreign propTypes
+    'react/forbid-foreign-prop-types': 'off',
     // Forbid certain propTypes
     'react/forbid-prop-types': 'warn',
     // Enforce boolean attributes notation in JSX
@@ -121,6 +125,8 @@ module.exports = {
       requiredFirst: true
     }],
     // Enforce style prop value being an object
-    'react/style-prop-object': 'warn'
+    'react/style-prop-object': 'warn',
+    // Prevent void DOM elements (e.g. <img />, <br />) from receiving children
+    'react/void-dom-elements-no-children': 'warn'
   }
 }
