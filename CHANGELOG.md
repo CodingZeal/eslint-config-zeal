@@ -2,7 +2,21 @@
 
 All notable changes to this project will be documented in this file.  This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.18.0...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.19.0...HEAD)
+
+## [0.19.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.18.0...v0.19.0) - 2017-02-17
+
+### Changed
+
+* Update to ESLint 3.15.0. ([#50](https://github.com/CodingZeal/eslint-config-zeal/pull/50))
+
+* Update to eslint-plugin-react 6.10.0. ([#52](https://github.com/CodingZeal/eslint-config-zeal/pull/52))
+
+### Added
+
+* Enables warnings for new rules: `template-tag-spacing` and `react/void-dom-elements-no-children`. ([#50](https://github.com/CodingZeal/eslint-config-zeal/pull/50), [#52](https://github.com/CodingZeal/eslint-config-zeal/pull/52))
+
+* Adds support for new rules, but leaves them disabled: `react/forbid-elements` and `react/forbid-foreign-prop-types`. ([#52](https://github.com/CodingZeal/eslint-config-zeal/pull/52))
 
 ## [0.18.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.17.0...v0.18.0) - 2017-01-27
 
