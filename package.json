@@ -8,9 +8,9 @@
   ],
   "scripts": {
     "missing-rules": "run-p missing-rules:*",
-    "missing-rules:core": "eslint-find-rules --unused",
-    "missing-rules:react": "eslint-find-rules --no-core --unused react.js",
-    "missing-rules:react-native": "eslint-find-rules --no-core --unused react-native.js",
+    "missing-rules:core": "eslint-find-rules --unused --no-error",
+    "missing-rules:react": "eslint-find-rules --no-core --unused --no-error react.js",
+    "missing-rules:react-native": "eslint-find-rules --no-core --unused --no-error react-native.js",
     "test": "eslint ."
   },
   "repository": {
