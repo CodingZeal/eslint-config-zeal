@@ -24,10 +24,10 @@ module.exports = {
     //
     // Possible Errors
     //
-    // Disallow await inside of loops
+    // disallow await inside of loops
     'no-await-in-loop': 'warn',
-    // disallow or enforce trailing commas
-    'comma-dangle': 'warn',
+    // disallow comparing against -0
+    'no-compare-neg-zero': 'warn',
     // disallow assignment in conditional expressions
     'no-cond-assign': 'warn',
     // disallow use of console in the node environment
@@ -317,6 +317,8 @@ module.exports = {
     camelcase: 'warn',
     // enforce or disallow capitalization of the first letter of a comment,
     'capitalized-comments': 'off',
+    // disallow or enforce trailing commas
+    'comma-dangle': 'warn',
     // enforce spacing before and after comma
     'comma-spacing': 'warn',
     // enforce one true comma style
@@ -425,8 +427,6 @@ module.exports = {
     'no-plusplus': 'warn',
     // disallow use of certain syntax in code
     'no-restricted-syntax': 'off',
-    // disallow whitespace before properties
-    'no-whitespace-before-property': 'warn',
     // Disallow tabs in file
     'no-tabs': 'warn',
     // disallow the use of ternary operators
@@ -437,6 +437,10 @@ module.exports = {
     'no-underscore-dangle': 'off',
     // disallow the use of ternary operators when a simpler alternative exists
     'no-unneeded-ternary': 'warn',
+    // disallow whitespace before properties
+    'no-whitespace-before-property': 'warn',
+    // enforce the location of single-line statements
+    'nonblock-statement-body-position': 'warn',
     // enforce consistent line breaks inside braces
     'object-curly-newline': 'off',
     // require or disallow padding inside curly braces
