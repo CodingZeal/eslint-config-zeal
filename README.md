@@ -38,7 +38,7 @@ We have added some additional optional configurations that you can add on top of
 * `zeal/react-native`: Adds rules for [React Native](https://facebook.github.io/react-native/) development.  You'll need to install [eslint-plugin-react-native](https://github.com/intellicode/eslint-plugin-react-native) to use this configuration.
 * `zeal/mocha`: Overrides rules for use with [Mocha](https://mochajs.org/).  We recommend creating a separate `.eslintrc` file in the directory containing your tests and `extend`ing this config there.
 * `zeal/chai`: Overrides rules for use with [Chai](http://chaijs.com/).  We recommend creating a separate `.eslintrc` file in the directory containing your tests and `extend`ing this config there.
-* `zeal/jest`: Adds and overrides rules for use with [Jest](http://facebook.github.io/jest/). You'll have to install [eslint-plugin-jest](https://github.com/jkimbo/eslint-plugin-jest) to use this configuration. We recommend creating a separate `.estlintrc` file in the directory containing your tests and `extend`ing this config there.
+* `zeal/jest`: Adds and overrides rules for use with [Jest](http://facebook.github.io/jest/). You'll have to install [eslint-plugin-jest](https://www.npmjs.com/package/eslint-plugin-jest) to use this configuration. We recommend creating a separate `.estlintrc` file in the directory containing your tests and `extend`ing this config there.
 
 You can extend multiple configurations using an array:
 
@@ -116,7 +116,7 @@ This plugin contains all of the rules available in:
 * [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): 6.10.0
 * [eslint-plugin-react-native](https://github.com/intellicode/eslint-plugin-react-native): 2.2.1
 * [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import): 2.2.0
-* [eslint-plugin-jest](https://github.com/jkimbo/eslint-plugin-jest): 1.0.2
+* [eslint-plugin-jest](https://github.com/jkimbo/eslint-plugin-jest): 19.0.1
 
 ## License
 
