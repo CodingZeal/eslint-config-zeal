@@ -12,7 +12,8 @@
     "missing-rules:jest": "eslint-find-rules --no-core --unused jest.js",
     "missing-rules:react": "eslint-find-rules --no-core --unused --no-error react.js",
     "missing-rules:react-native": "eslint-find-rules --no-core --unused react-native.js",
-    "test": "eslint ."
+    "test": "eslint .",
+    "validate": "run-p test missing-rules"
   },
   "repository": {
     "type": "git",
