@@ -11,4 +11,4 @@ dependencies:
     - yarn
 test:
   override:
-    - yarn test
+    - yarn validate
