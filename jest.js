@@ -10,9 +10,13 @@ module.exports = {
     'max-nested-callbacks': 'off',
     // specify the maximum number of statement allowed in a function
     'max-statements': 'off',
-    // disallow exclusive tests
-    'jest/no-exclusive-tests': 'warn',
+    // disallow disabled tests
+    'jest/no-disabled-tests': 'warn',
+    // disallow focused tests
+    'jest/no-focused-tests': 'warn',
     // disallow identical titles
-    'jest/no-identical-title': 'warn'
+    'jest/no-identical-title': 'warn',
+    // ensure expect is called correctly
+    'jest/valid-expect': 'warn'
   }
 }
