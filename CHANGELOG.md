@@ -2,7 +2,23 @@
 
 All notable changes to this project will be documented in this file.  This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.19.0...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.20.0...HEAD)
+
+## [0.20.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.19.0...v0.20.0) - 2017-03-17
+
+### Changed
+
+* Update to ESLint 3.17.1. ([#53](https://github.com/CodingZeal/eslint-config-zeal/pull/53))
+
+* Update to eslint-plugin-react-native 2.3.1. ([#53](https://github.com/CodingZeal/eslint-config-zeal/pull/53))
+
+* Update to eslint-plugin-jest 19.0.1. ([#53](https://github.com/CodingZeal/eslint-config-zeal/pull/53))
+
+* Adjust for renamed rule: `jest/no-exclusive-tests` is now `jest/no-focused-tests`. ([#53](https://github.com/CodingZeal/eslint-config-zeal/pull/53))
+
+### Added
+
+* Enables warnings for new rules: `no-compare-neg-zero`, `nonblock-statement-body-position`, `jest/no-disabled-tests`, and `jest/valid-expect`. ([#53](https://github.com/CodingZeal/eslint-config-zeal/pull/53))
 
 ## [0.19.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.18.0...v0.19.0) - 2017-02-17
 
