@@ -2,7 +2,19 @@
 
 All notable changes to this project will be documented in this file.  This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.20.0...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.20.1...HEAD)
+
+## [0.20.1](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.20.0...v0.20.1) - 2017-05-05
+
+### Changed
+
+* Update to ESLint 3.19.0. ([#56](https://github.com/CodingZeal/eslint-config-zeal/pull/56))
+
+* Update to eslint-plugin-react 6.10.3. ([#56](https://github.com/CodingZeal/eslint-config-zeal/pull/56))
+
+* Update to eslint-plugin-react-native 2.3.2. ([#56](https://github.com/CodingZeal/eslint-config-zeal/pull/56))
+
+* Update to use babel-eslint 7.2.3. ([#56](https://github.com/CodingZeal/eslint-config-zeal/pull/56))
 
 ## [0.20.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.19.0...v0.20.0) - 2017-03-17
 
