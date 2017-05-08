@@ -1,5 +1,7 @@
 # eslint-config-zeal
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/CodingZeal/eslint-config-zeal.svg)](https://greenkeeper.io/)
+
 [![npm version](https://badge.fury.io/js/eslint-config-zeal.svg)](https://www.npmjs.com/package/eslint-config-zeal)
 [![CircleCI](https://circleci.com/gh/CodingZeal/eslint-config-zeal.svg?style=shield)](https://circleci.com/gh/CodingZeal/eslint-config-zeal)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
