@@ -2,7 +2,17 @@
 
 All notable changes to this project will be documented in this file.  This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.20.1...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.20.2...HEAD)
+
+## [0.20.2](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.20.1...v0.20.2) - 2017-05-10
+
+### Changed
+
+* Update to eslint-plugin-jest 20.0.0. ([#60](https://github.com/CodingZeal/eslint-config-zeal/pull/60))
+
+### Fixed
+
+* Resolve `Definition for rule 'jest/valid-expect' was not found` error.  That rule was added in eslint-plugin-jest 20.0.0, but we added a definition for it in v0.20.0.  We now depend on the correct version of eslint-plugin-jest, so the error no longer occurs. ([#60](https://github.com/CodingZeal/eslint-config-zeal/pull/60))
 
 ## [0.20.1](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.20.0...v0.20.1) - 2017-05-05
 
