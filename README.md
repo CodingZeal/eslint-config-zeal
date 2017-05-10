@@ -116,7 +116,7 @@ This plugin contains all of the rules available in:
 * [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): 6.10.3
 * [eslint-plugin-react-native](https://github.com/intellicode/eslint-plugin-react-native): 2.3.2
 * [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import): 2.2.0
-* [eslint-plugin-jest](https://github.com/jkimbo/eslint-plugin-jest): 19.0.1
+* [eslint-plugin-jest](https://www.npmjs.com/package/eslint-plugin-jest): 20.0.0
 
 ## License
 
