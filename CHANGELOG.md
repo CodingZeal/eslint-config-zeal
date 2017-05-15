@@ -2,7 +2,24 @@
 
 All notable changes to this project will be documented in this file.  This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.20.2...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.21.0...HEAD)
+
+## [0.21.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.20.2...v0.21.0) - 2017-05-15
+
+### Changed
+
+* Update to eslint-plugin-react 7.0.1. ([#59](https://github.com/CodingZeal/eslint-config-zeal/pull/59))
+
+* Use default configuration for the `react/jsx-first-prop-new-line` rule (`multiline-multiprop`) instead of `mutliline` as the default configuration better reflects what we want: a single property that spans multiple lines can start on the same line as the component name. ([#59](https://github.com/CodingZeal/eslint-config-zeal/pull/59))
+
+### Added
+
+* Enables warnings for new rule: `react/no-will-update-set-state` ([#59](https://github.com/CodingZeal/eslint-config-zeal/pull/59))
+
+### Removed
+
+* Removes configuration for deprecated rule: `react/jsx-space-before-closing`.  Its behavior is already checked by our configuration of `react/jsx-tag-spacing`.
+([#59](https://github.com/CodingZeal/eslint-config-zeal/pull/59))
 
 ## [0.20.2](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.20.1...v0.20.2) - 2017-05-10
 
