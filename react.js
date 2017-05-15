@@ -28,7 +28,7 @@ module.exports = {
     // Restrict file extensions that may contain JSX
     'react/jsx-filename-extension': 'off',
     // Enforce position of the first prop in JSX
-    'react/jsx-first-prop-new-line': ['warn', 'multiline'],
+    'react/jsx-first-prop-new-line': 'warn',
     // Enforce event handler naming conventions in JSX
     'react/jsx-handler-names': 'warn',
     // Validate props indentation in JSX
@@ -55,8 +55,6 @@ module.exports = {
     'react/jsx-pascal-case': 'warn',
     // Enforce props alphabetical sorting
     'react/jsx-sort-props': 'off',
-    // Validate spacing before closing bracket in JSX
-    'react/jsx-space-before-closing': 'warn',
     // Validate whitespace in and around the JSX opening and closing brackets
     'react/jsx-tag-spacing': 'warn',
     // Prevent React to be incorrectly marked as unused
@@ -99,6 +97,8 @@ module.exports = {
     'react/no-unknown-property': 'warn',
     // Prevent definitions of unused prop types
     'react/no-unused-prop-types': 'warn',
+    // Prevent usage of setState in componentWillUpdate
+    'react/no-will-update-set-state': 'warn',
     // Enforce ES5 or ES6 class for React Components
     'react/prefer-es6-class': 'warn',
     // Enforce stateless React Components to be written as a pure function

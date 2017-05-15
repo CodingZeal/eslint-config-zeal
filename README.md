@@ -1,5 +1,7 @@
 # eslint-config-zeal
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/CodingZeal/eslint-config-zeal.svg)](https://greenkeeper.io/)
+
 [![npm version](https://badge.fury.io/js/eslint-config-zeal.svg)](https://www.npmjs.com/package/eslint-config-zeal)
 [![CircleCI](https://circleci.com/gh/CodingZeal/eslint-config-zeal.svg?style=shield)](https://circleci.com/gh/CodingZeal/eslint-config-zeal)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
@@ -113,7 +115,7 @@ or, if your webpack config file is not in the default location:
 This plugin contains all of the rules available in:
 
 * [ESLint](http://eslint.org/): 3.19.0
-* [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): 6.10.3
+* [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): 7.0.1
 * [eslint-plugin-react-native](https://github.com/intellicode/eslint-plugin-react-native): 2.3.2
 * [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import): 2.2.0
 * [eslint-plugin-jest](https://www.npmjs.com/package/eslint-plugin-jest): 20.0.0
