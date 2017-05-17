@@ -7,7 +7,7 @@
 
 A [shareable ESLint config](http://eslint.org/docs/developer-guide/shareable-configs) for Zeal's coding style.
 
-Zeal's JavaScript coding style is still evolving as we do more projects, but this represents our current thinking.  After it stabilizes more, we'll release a version 1.0.
+Zeal's JavaScript coding style is still evolving as we do more projects, but this represents our current thinking.
 
 ## Install
 
