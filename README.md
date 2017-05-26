@@ -111,7 +111,7 @@ or, if your webpack config file is not in the default location:
 
 ## Usage With Prettier
 
-To use this configuration with [prettier](https://github.com/prettier/prettier), do the following:
+To use this configuration with [prettier](https://github.com/prettier/prettier), use [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) to override any conflicting rules:
 
 ```
 npm install eslint-config-prettier --save-dev
