@@ -109,6 +109,24 @@ or, if your webpack config file is not in the default location:
 }
 ```
 
+## Usage With Prettier
+
+To use this configuration with [prettier](https://github.com/prettier/prettier), do the following:
+
+```
+npm install eslint-config-prettier --save-dev
+```
+
+Then, in your `.eslintrc` file, extend the `prettier` (and `prettier/react`) configurations after any `zeal` configurations.  For example:
+
+```
+{
+  "extends": ["zeal", "zeal/react", "prettier", "prettier/react"]
+}
+```
+
+That way, the `prettier` configurations will override any `zeal` configurations that would otherwise conflict with prettier's formatting.
+
 ## Supported Versions
 
 This plugin contains all of the rules available in:
