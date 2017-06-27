@@ -8,9 +8,9 @@
   ],
   "scripts": {
     "missing-rules": "run-p missing-rules:*",
-    "missing-rules:core": "eslint-find-rules --unused --no-error",
+    "missing-rules:core": "eslint-find-rules --unused",
     "missing-rules:jest": "eslint-find-rules --no-core --unused jest.js",
-    "missing-rules:react": "eslint-find-rules --no-core --unused --no-error react.js",
+    "missing-rules:react": "eslint-find-rules --no-core --unused react.js",
     "missing-rules:react-native": "eslint-find-rules --no-core --unused react-native.js",
     "test": "eslint .",
     "validate": "run-p test missing-rules"
@@ -43,12 +43,12 @@
   ],
   "devDependencies": {
     "babel-eslint": "^7.2.3",
-    "eslint": "^3.19.0",
-    "eslint-find-rules": "^1.14.3",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jest": "^20.0.0",
-    "eslint-plugin-react": "^7.0.1",
-    "eslint-plugin-react-native": "^2.3.2",
+    "eslint": "3.19.0",
+    "eslint-find-rules": "^3.0.0",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-jest": "20.0.0",
+    "eslint-plugin-react": "7.0.1",
+    "eslint-plugin-react-native": "2.3.2",
     "npm-run-all": "^4.0.2"
   },
   "peerDependencies": {
