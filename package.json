@@ -52,8 +52,8 @@
     "npm-run-all": "^4.0.2"
   },
   "peerDependencies": {
-    "babel-eslint": "^7.2.3",
-    "eslint": "^3.19.0",
-    "eslint-plugin-import": "^2.2.0"
+    "babel-eslint": ">=7",
+    "eslint": ">=3",
+    "eslint-plugin-import": ">=2"
   }
 }
