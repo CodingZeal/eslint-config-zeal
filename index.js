@@ -24,6 +24,8 @@ module.exports = {
     //
     // Possible Errors
     //
+    // enforce for loop update clause moving the counter in the right direction.
+    'for-direction': 'warn',
     // disallow await inside of loops
     'no-await-in-loop': 'warn',
     // disallow comparing against -0
@@ -287,6 +289,8 @@ module.exports = {
     'global-require': 'warn',
     // enforce error handling in callbacks
     'handle-callback-err': 'warn',
+    // disallow use of the Buffer() constructor
+    'no-buffer-constructor': 'warn',
     // disallow mixing regular variable and require declarations
     'no-mixed-requires': 'warn',
     // disallow use of new operator with the require function
@@ -307,8 +311,12 @@ module.exports = {
     //
     // Stylistic Issues
     //
+    // enforce linebreaks after opening and before closing array brackets
+    'array-bracket-newline': 'off',
     // enforce spacing inside array brackets
     'array-bracket-spacing': 'warn',
+    // enforce line breaks after each array element
+    'array-element-newline': 'off',
     // disallow or enforce spaces inside of single line blocks
     'block-spacing': 'warn',
     // enforce one true brace style
@@ -458,6 +466,18 @@ module.exports = {
     'operator-linebreak': 'warn',
     // enforce padding within blocks
     'padded-blocks': ['warn', 'never'],
+    // require or disallow padding lines between statements
+    'padding-line-between-statements': ['warn',
+      { blankLine: 'always', prev: '*', next: 'return' },
+      { blankLine: 'always', prev: ['const', 'let', 'var'], next: '*' },
+      {
+        blankLine: 'any',
+        prev: ['const', 'let', 'var'],
+        next: ['const', 'let', 'var']
+      },
+      { blankLine: 'always', prev: 'directive', next: '*' },
+      { blankLine: 'any', prev: 'directive', next: 'directive' }
+    ],
     // require quotes around object literal property names
     'quote-props': ['warn', 'as-needed'],
     // specify whether backticks, double or single quotes should be used
@@ -466,6 +486,8 @@ module.exports = {
     'require-jsdoc': 'off',
     // enforce spacing before and after semicolons
     'semi-spacing': 'warn',
+    // enforce location of semicolons
+    'semi-style': ['warn', 'last'],
     // require or disallow use of semicolons instead of ASI
     semi: ['warn', 'never'],
     // requires object keys to be sorted
@@ -487,6 +509,8 @@ module.exports = {
     // require or disallow a space immediately following the // or /* in a
     // comment
     'spaced-comment': 'warn',
+    // enforce spacing around colons of switch statements
+    'switch-colon-spacing': 'warn',
     // Require or disallow spacing between template tags and their literals
     'template-tag-spacing': 'warn',
     // require or disallow the Unicode BOM
