@@ -368,8 +368,6 @@ module.exports = {
     'linebreak-style': 'warn',
     // enforce empty lines around comments
     'lines-around-comment': 'warn',
-    // require or disallow newlines around directives
-    'lines-around-directive': ['warn', { before: 'never', after: 'always' }],
     // specify the maximum depth that blocks can be nested
     'max-depth': 'warn',
     // specify the maximum length of a line in your program
@@ -392,10 +390,6 @@ module.exports = {
     // disallow the omission of parentheses when invoking a constructor with no
     // arguments
     'new-parens': 'warn',
-    // require or disallow an empty newline after variable declarations
-    'newline-after-var': 'warn',
-    // require newline before return statement
-    'newline-before-return': 'off',
     //  enforce newline after each call when chaining the calls
     'newline-per-chained-call': 'off',
     // disallow use of the Array constructor
@@ -468,7 +462,6 @@ module.exports = {
     'padded-blocks': ['warn', 'never'],
     // require or disallow padding lines between statements
     'padding-line-between-statements': ['warn',
-      { blankLine: 'always', prev: '*', next: 'return' },
       { blankLine: 'always', prev: ['const', 'let', 'var'], next: '*' },
       {
         blankLine: 'any',
@@ -492,8 +485,6 @@ module.exports = {
     semi: ['warn', 'never'],
     // requires object keys to be sorted
     'sort-keys': 'off',
-    // sort import declarations within module
-    'sort-imports': 'off',
     // sort variables within the same declaration block
     'sort-vars': 'off',
     // require or disallow a space before blocks
@@ -577,6 +568,8 @@ module.exports = {
     'require-yield': 'warn',
     // enforce spacing between rest and spread operators and their expressions
     'rest-spread-spacing': 'warn',
+    // sort import declarations within module
+    'sort-imports': 'off',
     // require symbol descriptions
     'symbol-description': 'warn',
     // enforce spacing around embedded expressions of template strings
@@ -660,6 +653,6 @@ module.exports = {
     // Forbid named default exports.
     'import/no-named-default': 'warn',
     // Forbid anonymous values as default exports
-    'import/no-anonymous-default-export': 'warn'
+    'import/no-anonymous-default-export': 'off'
   }
 }
