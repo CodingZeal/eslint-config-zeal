@@ -24,6 +24,8 @@ module.exports = {
     //
     // Possible Errors
     //
+    // enforce for loop update clause moving the counter in the right direction.
+    'for-direction': 'warn',
     // disallow await inside of loops
     'no-await-in-loop': 'warn',
     // disallow comparing against -0
@@ -287,6 +289,8 @@ module.exports = {
     'global-require': 'warn',
     // enforce error handling in callbacks
     'handle-callback-err': 'warn',
+    // disallow use of the Buffer() constructor
+    'no-buffer-constructor': 'warn',
     // disallow mixing regular variable and require declarations
     'no-mixed-requires': 'warn',
     // disallow use of new operator with the require function
@@ -307,8 +311,12 @@ module.exports = {
     //
     // Stylistic Issues
     //
+    // enforce linebreaks after opening and before closing array brackets
+    'array-bracket-newline': 'off',
     // enforce spacing inside array brackets
     'array-bracket-spacing': 'warn',
+    // enforce line breaks after each array element
+    'array-element-newline': 'off',
     // disallow or enforce spaces inside of single line blocks
     'block-spacing': 'warn',
     // enforce one true brace style
@@ -360,8 +368,6 @@ module.exports = {
     'linebreak-style': 'warn',
     // enforce empty lines around comments
     'lines-around-comment': 'warn',
-    // require or disallow newlines around directives
-    'lines-around-directive': ['warn', { before: 'never', after: 'always' }],
     // specify the maximum depth that blocks can be nested
     'max-depth': 'warn',
     // specify the maximum length of a line in your program
@@ -384,10 +390,6 @@ module.exports = {
     // disallow the omission of parentheses when invoking a constructor with no
     // arguments
     'new-parens': 'warn',
-    // require or disallow an empty newline after variable declarations
-    'newline-after-var': 'warn',
-    // require newline before return statement
-    'newline-before-return': 'off',
     //  enforce newline after each call when chaining the calls
     'newline-per-chained-call': 'off',
     // disallow use of the Array constructor
@@ -458,6 +460,17 @@ module.exports = {
     'operator-linebreak': 'warn',
     // enforce padding within blocks
     'padded-blocks': ['warn', 'never'],
+    // require or disallow padding lines between statements
+    'padding-line-between-statements': ['warn',
+      { blankLine: 'always', prev: ['const', 'let', 'var'], next: '*' },
+      {
+        blankLine: 'any',
+        prev: ['const', 'let', 'var'],
+        next: ['const', 'let', 'var']
+      },
+      { blankLine: 'always', prev: 'directive', next: '*' },
+      { blankLine: 'any', prev: 'directive', next: 'directive' }
+    ],
     // require quotes around object literal property names
     'quote-props': ['warn', 'as-needed'],
     // specify whether backticks, double or single quotes should be used
@@ -466,12 +479,12 @@ module.exports = {
     'require-jsdoc': 'off',
     // enforce spacing before and after semicolons
     'semi-spacing': 'warn',
+    // enforce location of semicolons
+    'semi-style': ['warn', 'last'],
     // require or disallow use of semicolons instead of ASI
     semi: ['warn', 'never'],
     // requires object keys to be sorted
     'sort-keys': 'off',
-    // sort import declarations within module
-    'sort-imports': 'off',
     // sort variables within the same declaration block
     'sort-vars': 'off',
     // require or disallow a space before blocks
@@ -487,6 +500,8 @@ module.exports = {
     // require or disallow a space immediately following the // or /* in a
     // comment
     'spaced-comment': 'warn',
+    // enforce spacing around colons of switch statements
+    'switch-colon-spacing': 'warn',
     // Require or disallow spacing between template tags and their literals
     'template-tag-spacing': 'warn',
     // require or disallow the Unicode BOM
@@ -553,6 +568,8 @@ module.exports = {
     'require-yield': 'warn',
     // enforce spacing between rest and spread operators and their expressions
     'rest-spread-spacing': 'warn',
+    // sort import declarations within module
+    'sort-imports': 'off',
     // require symbol descriptions
     'symbol-description': 'warn',
     // enforce spacing around embedded expressions of template strings
@@ -634,6 +651,8 @@ module.exports = {
     // Forbid unassigned imports.
     'import/no-unassigned-import': 'off',
     // Forbid named default exports.
-    'import/no-named-default': 'warn'
+    'import/no-named-default': 'warn',
+    // Forbid anonymous values as default exports
+    'import/no-anonymous-default-export': 'off'
   }
 }

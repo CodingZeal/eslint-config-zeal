@@ -7,6 +7,8 @@ module.exports = {
   plugins: ['react'],
 
   rules: {
+    //  Prevent extraneous defaultProps on components
+    'react/default-props-match-prop-types': 'off',
     // Prevent missing displayName in a React component definition
     'react/display-name': 'warn',
     // Forbid certain props on Components
@@ -21,6 +23,8 @@ module.exports = {
     'react/jsx-boolean-value': 'warn',
     // Validate closing bracket location in JSX
     'react/jsx-closing-bracket-location': ['warn', 'after-props'],
+    // Validate closing tag location in JSX
+    'react/jsx-closing-tag-location': 'warn',
     // Enforce or disallow spaces inside of curly braces in JSX attributes
     'react/jsx-curly-spacing': 'warn',
     // Enforce or disallow spaces around equal signs in JSX attributes
@@ -85,6 +89,8 @@ module.exports = {
     'react/no-is-mounted': 'warn',
     // Prevent multiple component definition per file
     'react/no-multi-comp': ['warn', { ignoreStateless: true }],
+    // Prevent usage of shouldComponentUpdate when extending React.PureComponent
+    'react/no-redundant-should-component-update': 'warn',
     // Prevent usage of the return value of React.render
     'react/no-render-return-value': 'warn',
     // Prevent usage of setState
