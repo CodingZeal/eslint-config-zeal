@@ -2,7 +2,38 @@
 
 All notable changes to this project will be documented in this file.  This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.0.1...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.1.0...HEAD)
+
+## [1.1.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.0.1...v1.1.0) - 2017-07-14
+
+### Changed
+
+* Update to eslint 4.2.0 ([#69](https://github.com/CodingZeal/eslint-config-zeal/pull/69), [#71](https://github.com/CodingZeal/eslint-config-zeal/pull/71))
+* Update to eslint-find-rules 3.1.1 ([#69](https://github.com/CodingZeal/eslint-config-zeal/pull/69))
+* Update to eslint-plugin-import 2.7.0 ([#69](https://github.com/CodingZeal/eslint-config-zeal/pull/69), [#70](https://github.com/CodingZeal/eslint-config-zeal/pull/70))
+* Update to eslint-plugin-jest 20.0.3 ([#69](https://github.com/CodingZeal/eslint-config-zeal/pull/69))
+* Update to eslint-plugin-react 7.1.0 ([#69](https://github.com/CodingZeal/eslint-config-zeal/pull/69))
+
+### Added
+
+* New rule: `for-direction` defaults to `warn` ([#69](https://github.com/CodingZeal/eslint-config-zeal/pull/69))
+* New rule: `getter-return` defaults to `warn` ([#71](https://github.com/CodingZeal/eslint-config-zeal/pull/71))
+* New rule: `no-buffer-constructor` defaults to `warn` ([#69](https://github.com/CodingZeal/eslint-config-zeal/pull/69))
+* New rule: `array-bracket-newline` defaults to `off` ([#69](https://github.com/CodingZeal/eslint-config-zeal/pull/69))
+* New rule: `array-element-newline` defaults to `off` ([#69](https://github.com/CodingZeal/eslint-config-zeal/pull/69))
+* New rule: `padding-line-between-statements` configures line breaks after vars and around directives ([#69](https://github.com/CodingZeal/eslint-config-zeal/pull/69))
+* New rule: `semi-style` defaults to `warn` if they are not at end of line ([#69](https://github.com/CodingZeal/eslint-config-zeal/pull/69))
+* New rule: `switch-colon-spacing` defaults to `warn` ([#69](https://github.com/CodingZeal/eslint-config-zeal/pull/69))
+* New rule: `import/no-anonymous-default-export` defaults to `off` ([#69](https://github.com/CodingZeal/eslint-config-zeal/pull/69))
+* New rule: `react/default-props-match-prop-types` defaults to `off` ([#69](https://github.com/CodingZeal/eslint-config-zeal/pull/69))
+* New rule: `react/jsx-closing-tag-location` defaults to `warn` ([#69](https://github.com/CodingZeal/eslint-config-zeal/pull/69))
+* New rule: `react/no-redundant-should-component-update` defaults to `warn` ([#69](https://github.com/CodingZeal/eslint-config-zeal/pull/69))
+
+### Removed
+
+* Deprecated rule: `lines-around-directive` covered by `padding-line-between-statements` ([#69](https://github.com/CodingZeal/eslint-config-zeal/pull/69))
+* Deprecated rule: `newline-after-var` covered by `padding-line-between-statements` ([#69](https://github.com/CodingZeal/eslint-config-zeal/pull/69))
+* Deprecated rule: `newline-before-return` covered by `padding-line-between-statements` ([#69](https://github.com/CodingZeal/eslint-config-zeal/pull/69))
 
 ## [1.0.1](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.0.0...v1.0.1) - 2017-06-27
 
