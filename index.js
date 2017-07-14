@@ -26,6 +26,8 @@ module.exports = {
     //
     // enforce for loop update clause moving the counter in the right direction.
     'for-direction': 'warn',
+    // enforce return statements in getters
+    'getter-return': 'warn',
     // disallow await inside of loops
     'no-await-in-loop': 'warn',
     // disallow comparing against -0
