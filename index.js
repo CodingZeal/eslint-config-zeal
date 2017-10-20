@@ -636,6 +636,8 @@ module.exports = {
     //
     // Ensure all imports appear before other statements
     'import/first': 'warn',
+    // Ensure all exports appear after other statements
+    'import/exports-last': 'off',
     // Report repeated import of the same module in multiple places
     'import/no-duplicates': 'warn',
     // Report namespace imports
