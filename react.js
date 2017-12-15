@@ -9,8 +9,13 @@ module.exports = {
   rules: {
     // Enforces consistent naming for boolean props
     'react/boolean-prop-naming': 'off',
+    // Prevent usage of button elements without an explicit type attribute
+    'react/button-has-type': 'warn',
     //  Prevent extraneous defaultProps on components
     'react/default-props-match-prop-types': 'off',
+    // Enforce consistent usage of destructuring assignment of props, state,
+    // and context
+    'react/destructuring-assignment': 'warn',
     // Prevent missing displayName in a React component definition
     'react/display-name': 'warn',
     // Forbid certain props on Components
@@ -19,8 +24,13 @@ module.exports = {
     'react/forbid-elements': 'off',
     // Forbid foreign propTypes
     'react/forbid-foreign-prop-types': 'off',
+    // Prevent using this.state within a this.setState
+    'react/no-access-state-in-setstate': 'warn',
     // Forbid certain propTypes
-    'react/forbid-prop-types': 'warn',
+    'react/forbid-prop-types': [
+      'warn',
+      { checkContextTypes: true, checkChildContextTypes: true }
+    ],
     // Enforce boolean attributes notation in JSX
     'react/jsx-boolean-value': 'warn',
     // Validate closing bracket location in JSX
@@ -60,6 +70,8 @@ module.exports = {
     'react/jsx-no-target-blank': 'warn',
     // Disallow undeclared variables in JSX
     'react/jsx-no-undef': 'warn',
+    // One JSX Element Per Line
+    'react/jsx-one-expression-per-line': 'warn',
     // Enforce PascalCase for user-defined JSX components
     'react/jsx-pascal-case': 'warn',
     // Enforce props alphabetical sorting
@@ -139,7 +151,8 @@ module.exports = {
       {
         callbacksLast: true,
         ignoreCase: true,
-        requiredFirst: true
+        requiredFirst: true,
+        sortShapeProp: true
       }
     ],
     // Enforce style prop value being an object
