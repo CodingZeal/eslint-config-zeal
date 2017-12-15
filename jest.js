@@ -14,6 +14,14 @@ module.exports = {
     'jest/no-focused-tests': 'warn',
     // disallow identical titles
     'jest/no-identical-title': 'warn',
+    // disallow large snapshots
+    'jest/no-large-snapshots': 'warn',
+    // Suggest using toHaveLength()
+    'jest/prefer-to-have-length': 'warn',
+    // Suggest using toBeNull()
+    'jest/prefer-to-be-null': 'warn',
+    // Suggest using toBeUndefined()
+    'jest/prefer-to-be-undefined': 'warn',
     // ensure expect is called correctly
     'jest/valid-expect': 'warn'
   }
