@@ -7,6 +7,8 @@ module.exports = {
   plugins: ['react'],
 
   rules: {
+    // Enforces consistent naming for boolean props
+    'react/boolean-prop-naming': 'off',
     //  Prevent extraneous defaultProps on components
     'react/default-props-match-prop-types': 'off',
     // Prevent missing displayName in a React component definition
@@ -25,6 +27,9 @@ module.exports = {
     'react/jsx-closing-bracket-location': ['warn', 'after-props'],
     // Validate closing tag location in JSX
     'react/jsx-closing-tag-location': 'warn',
+    // Enforce curly braces or disallow unnecessary curly braces in JSX props
+    // and/or children.
+    'react/jsx-curly-brace-presence': ['warn', 'never'],
     // Enforce or disallow spaces inside of curly braces in JSX attributes
     'react/jsx-curly-spacing': 'warn',
     // Enforce or disallow spaces around equal signs in JSX attributes
@@ -95,6 +100,8 @@ module.exports = {
     'react/no-render-return-value': 'warn',
     // Prevent usage of setState
     'react/no-set-state': 'off',
+    // Prevents common typos
+    'react/no-typos': 'warn',
     // Prevent using string references in ref attribute
     'react/no-string-refs': 'warn',
     // Prevent invalid characters from appearing in markup
@@ -103,6 +110,8 @@ module.exports = {
     'react/no-unknown-property': 'warn',
     // Prevent definitions of unused prop types
     'react/no-unused-prop-types': 'warn',
+    // Prevent definitions of unused state
+    'react/no-unused-state': 'warn',
     // Prevent usage of setState in componentWillUpdate
     'react/no-will-update-set-state': 'warn',
     // Enforce ES5 or ES6 class for React Components

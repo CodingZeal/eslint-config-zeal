@@ -349,6 +349,8 @@ module.exports = {
     'func-names': 'warn',
     // enforce use of function declarations or expressions
     'func-style': ['warn', 'declaration', { allowArrowFunctions: true }],
+    // enforce consistent line breaks inside function parentheses
+    'function-paren-newline': ['warn', 'consistent'],
     // blacklist certain identifiers to prevent them being used
     'id-blacklist': 'off',
     // this option enforces minimum and maximum identifier lengths (variable
@@ -370,6 +372,10 @@ module.exports = {
     'linebreak-style': 'warn',
     // enforce empty lines around comments
     'lines-around-comment': 'warn',
+    // require or disallow an empty line between class members
+    'lines-between-class-members': ['warn', 'always', {
+      exceptAfterSingleLine: true
+    }],
     // specify the maximum depth that blocks can be nested
     'max-depth': 'warn',
     // specify the maximum length of a line in your program
@@ -385,6 +391,8 @@ module.exports = {
     'max-statements': 'warn',
     // enforce a maximum number of statements allowed per line
     'max-statements-per-line': 'off',
+    // enforce a particular style for multiline comments
+    'multiline-comment-style': 'off',
     // enforce newlines between operands of ternary expressions
     'multiline-ternary': 'off',
     // require a capital letter for constructors
@@ -636,6 +644,8 @@ module.exports = {
     //
     // Ensure all imports appear before other statements
     'import/first': 'warn',
+    // Ensure all exports appear after other statements
+    'import/exports-last': 'off',
     // Report repeated import of the same module in multiple places
     'import/no-duplicates': 'warn',
     // Report namespace imports
