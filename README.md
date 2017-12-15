@@ -131,7 +131,7 @@ That way, the `prettier` configurations will override any `zeal` configurations 
 
 This plugin contains all of the rules available in:
 
-* [ESLint](http://eslint.org/): 4.9.0
+* [ESLint](http://eslint.org/): 4.13.1
 * [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): 7.4.0
 * [eslint-plugin-react-native](https://github.com/intellicode/eslint-plugin-react-native): 3.1.0
 * [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import): 2.8.0
