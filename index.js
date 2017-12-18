@@ -15,10 +15,7 @@ module.exports = {
   },
   plugins: ['import'],
   settings: {
-    'import/ignore': [
-      'node_modules',
-      '.(scss|sass|less|css|png|jpg|svg)$'
-    ]
+    'import/ignore': ['node_modules', '.(scss|sass|less|css|png|jpg|svg)$']
   },
   rules: {
     //
@@ -212,10 +209,13 @@ module.exports = {
     // disallow unmodified conditions of loops
     'no-unmodified-loop-condition': 'warn',
     // disallow usage of expressions in statement position
-    'no-unused-expressions': ['warn', {
-      allowShortCircuit: true,
-      allowTernary: true
-    }],
+    'no-unused-expressions': [
+      'warn',
+      {
+        allowShortCircuit: true,
+        allowTernary: true
+      }
+    ],
     // disallow unused labels
     'no-unused-labels': 'warn',
     // disallow unnecessary .call() and .apply()
@@ -373,9 +373,13 @@ module.exports = {
     // enforce empty lines around comments
     'lines-around-comment': 'warn',
     // require or disallow an empty line between class members
-    'lines-between-class-members': ['warn', 'always', {
-      exceptAfterSingleLine: true
-    }],
+    'lines-between-class-members': [
+      'warn',
+      'always',
+      {
+        exceptAfterSingleLine: true
+      }
+    ],
     // specify the maximum depth that blocks can be nested
     'max-depth': 'warn',
     // specify the maximum length of a line in your program
@@ -413,7 +417,8 @@ module.exports = {
     // disallow if as the only statement in an else block
     'no-lonely-if': 'warn',
     // disallow mixes of different operators
-    'no-mixed-operators': ['warn',
+    'no-mixed-operators': [
+      'warn',
       {
         groups: [
           ['&', '|', '^', '~', '<<', '>>', '>>>'],
@@ -471,7 +476,8 @@ module.exports = {
     // enforce padding within blocks
     'padded-blocks': ['warn', 'never'],
     // require or disallow padding lines between statements
-    'padding-line-between-statements': ['warn',
+    'padding-line-between-statements': [
+      'warn',
       { blankLine: 'always', prev: ['const', 'let', 'var'], next: '*' },
       {
         blankLine: 'any',

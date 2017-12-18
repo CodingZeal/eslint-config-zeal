@@ -134,11 +134,14 @@ module.exports = {
     // Enforce component methods order
     'react/sort-comp': 'warn',
     // Enforce propTypes declarations alphabetical sorting
-    'react/sort-prop-types': ['warn', {
-      callbacksLast: true,
-      ignoreCase: true,
-      requiredFirst: true
-    }],
+    'react/sort-prop-types': [
+      'warn',
+      {
+        callbacksLast: true,
+        ignoreCase: true,
+        requiredFirst: true
+      }
+    ],
     // Enforce style prop value being an object
     'react/style-prop-object': 'warn',
     // Prevent void DOM elements (e.g. <img />, <br />) from receiving children
