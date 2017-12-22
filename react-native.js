@@ -1,7 +1,5 @@
 module.exports = {
-  extends: [
-    'plugin:import/react-native'
-  ],
+  extends: ['plugin:import/react-native'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true

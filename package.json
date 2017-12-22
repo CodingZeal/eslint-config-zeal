@@ -7,11 +7,13 @@
     "*.js"
   ],
   "scripts": {
+    "format": "prettier --write '**/*.js'",
     "missing-rules": "run-p missing-rules:*",
     "missing-rules:core": "eslint-find-rules --unused",
     "missing-rules:jest": "eslint-find-rules --no-core --unused jest.js",
     "missing-rules:react": "eslint-find-rules --no-core --unused react.js",
     "missing-rules:react-native": "eslint-find-rules --no-core --unused react-native.js",
+    "precommit": "lint-staged",
     "test": "eslint .",
     "validate": "run-p test missing-rules"
   },
@@ -49,11 +51,19 @@
     "eslint-plugin-jest": "21.2.0",
     "eslint-plugin-react": "7.4.0",
     "eslint-plugin-react-native": "3.1.0",
-    "npm-run-all": "^4.1.1"
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
+    "npm-run-all": "^4.1.1",
+    "prettier": "^1.9.2"
   },
   "peerDependencies": {
     "babel-eslint": ">=7.2.3",
     "eslint": ">=4.9.0",
     "eslint-plugin-import": ">=2.8.0"
+  },
+  "lint-staged": {
+    "linters": {
+      "*.js": "prettier --list-different"
+    }
   }
 }

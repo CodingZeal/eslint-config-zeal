@@ -2,9 +2,7 @@ module.exports = {
   env: {
     jest: true
   },
-  plugins: [
-    'jest'
-  ],
+  plugins: ['jest'],
   rules: {
     // specify the maximum depth callbacks can be nested
     'max-nested-callbacks': 'off',
