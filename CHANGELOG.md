@@ -2,7 +2,30 @@
 
 All notable changes to this project will be documented in this file.  This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.2.0...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.3.0...HEAD)
+
+## [1.3.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.2.0...v1.3.0) - 2018-02-09
+
+### Changed
+
+* Update to eslint 4.13.1 ([#81](https://github.com/CodingZeal/eslint-config-zeal/pull/81))
+* Update to eslint-plugin-react 7.5.1 ([#81](https://github.com/CodingZeal/eslint-config-zeal/pull/81))
+* Update to eslint-plugin-react-native 3.2.0 ([#81](https://github.com/CodingZeal/eslint-config-zeal/pull/81))
+* Update to eslint-plugin-jest 21.5.0 ([#81](https://github.com/CodingZeal/eslint-config-zeal/pull/81))
+* Update rule: `react/forbid-prop-types` adds `checkContextTypes: true` and `checkChildContextTypes: true` ([#81](https://github.com/CodingZeal/eslint-config-zeal/pull/81))
+* Update rule: `react/sort-prop-types` adds `sortShapeProp: true` ([#81](https://github.com/CodingZeal/eslint-config-zeal/pull/81))
+
+### Added
+
+* New rule: `implicit-arrow-linebreak` defaults to `off` ([#81](https://github.com/CodingZeal/eslint-config-zeal/pull/81))
+* New rule: `jest/no-large-snapshots` defaults to `warn` ([#81](https://github.com/CodingZeal/eslint-config-zeal/pull/81))
+* New rule: `jest/prefer-to-have-length` defaults to `warn` ([#81](https://github.com/CodingZeal/eslint-config-zeal/pull/81))
+* New rule: `jest/prefer-to-be-null` defaults to `warn` ([#81](https://github.com/CodingZeal/eslint-config-zeal/pull/81))
+* New rule: `jest/prefer-to-be-undefined` defaults to `warn` ([#81](https://github.com/CodingZeal/eslint-config-zeal/pull/81))
+* New rule: `react/button-has-type` defaults to `warn` ([#81](https://github.com/CodingZeal/eslint-config-zeal/pull/81))
+* New rule: `react/destructuring-assignment` defaults to `warn` ([#81](https://github.com/CodingZeal/eslint-config-zeal/pull/81))
+* New rule: `react/no-access-state-in-setstate` defaults to `warn` ([#81](https://github.com/CodingZeal/eslint-config-zeal/pull/81))
+* New rule: `react/jsx-one-expression-per-line` defaults to `warn` ([#81](https://github.com/CodingZeal/eslint-config-zeal/pull/81))
 
 ## [1.2.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.1.0...v1.2.0) - 2018-02-09
 
