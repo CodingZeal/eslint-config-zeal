@@ -2,7 +2,29 @@
 
 All notable changes to this project will be documented in this file.  This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.1.0...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.2.0...HEAD)
+
+## [1.2.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.1.0...v1.2.0) - 2018-02-09
+
+### Changed
+
+* Update to eslint 4.9.0 ([#79](https://github.com/CodingZeal/eslint-config-zeal/pull/79))
+* Update to eslint-plugin-react 7.4.0 ([#79](https://github.com/CodingZeal/eslint-config-zeal/pull/79))
+* Update to eslint-plugin-import 2.8.0 ([#79](https://github.com/CodingZeal/eslint-config-zeal/pull/79))
+* Update to eslint-plugin-jest 21.2.0 ([#79](https://github.com/CodingZeal/eslint-config-zeal/pull/79))
+* Update to eslint-plugin-react-native 3.1.0 ([#79](https://github.com/CodingZeal/eslint-config-zeal/pull/79))
+* Update to babel-eslint 8.0.1 ([#79](https://github.com/CodingZeal/eslint-config-zeal/pull/79))
+
+### Added
+
+* New rule: `function-paren-newline` defaults to `warn` ([#79](https://github.com/CodingZeal/eslint-config-zeal/pull/79))
+* New rule: `lines-between-class-members` defaults to `warn` ([#79](https://github.com/CodingZeal/eslint-config-zeal/pull/79))
+* New rule: `multiline-comment-style` defaults to `off` ([#79](https://github.com/CodingZeal/eslint-config-zeal/pull/79))
+* New rule: `import/exports-last` defaults to `off` ([#79](https://github.com/CodingZeal/eslint-config-zeal/pull/79))
+* New rule: `react/boolean-prop-naming` defaults to `off` ([#79](https://github.com/CodingZeal/eslint-config-zeal/pull/79))
+* New rule: `react/jsx-curly-brace-presence` defaults to `warn` ([#79](https://github.com/CodingZeal/eslint-config-zeal/pull/79))
+* New rule: `react/no-typos` defaults to `warn` ([#79](https://github.com/CodingZeal/eslint-config-zeal/pull/79))
+* New rule: `react/no-unused-state` defaults to `warn` ([#79](https://github.com/CodingZeal/eslint-config-zeal/pull/79))
 
 ## [1.1.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.0.1...v1.1.0) - 2017-07-14
 
