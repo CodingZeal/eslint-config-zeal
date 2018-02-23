@@ -1,6 +1,6 @@
 # Change Log
 
-All notable changes to this project will be documented in this file.  This project adheres to [Semantic Versioning](http://semver.org/).
+All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.3.0...HEAD)
 
@@ -104,8 +104,8 @@ Releasing 0.21.0 as 1.0.0 with only minor README changes.
 
 ### Removed
 
-* Removes configuration for deprecated rule: `react/jsx-space-before-closing`.  Its behavior is already checked by our configuration of `react/jsx-tag-spacing`.
-([#59](https://github.com/CodingZeal/eslint-config-zeal/pull/59))
+* Removes configuration for deprecated rule: `react/jsx-space-before-closing`. Its behavior is already checked by our configuration of `react/jsx-tag-spacing`.
+  ([#59](https://github.com/CodingZeal/eslint-config-zeal/pull/59))
 
 ## [0.20.2](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.20.1...v0.20.2) - 2017-05-10
 
@@ -115,7 +115,7 @@ Releasing 0.21.0 as 1.0.0 with only minor README changes.
 
 ### Fixed
 
-* Resolve `Definition for rule 'jest/valid-expect' was not found` error.  That rule was added in eslint-plugin-jest 20.0.0, but we added a definition for it in v0.20.0.  We now depend on the correct version of eslint-plugin-jest, so the error no longer occurs. ([#60](https://github.com/CodingZeal/eslint-config-zeal/pull/60))
+* Resolve `Definition for rule 'jest/valid-expect' was not found` error. That rule was added in eslint-plugin-jest 20.0.0, but we added a definition for it in v0.20.0. We now depend on the correct version of eslint-plugin-jest, so the error no longer occurs. ([#60](https://github.com/CodingZeal/eslint-config-zeal/pull/60))
 
 ## [0.20.1](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.20.0...v0.20.1) - 2017-05-05
 
@@ -173,28 +173,27 @@ Releasing 0.21.0 as 1.0.0 with only minor README changes.
 
 ### Changed
 
-* Update rule configuration to match our (Zeal's) current practice ([#48](
-  https://github.com/CodingZeal/eslint-config-zeal/pull/48)):
+* Update rule configuration to match our (Zeal's) current practice ([#48](https://github.com/CodingZeal/eslint-config-zeal/pull/48)):
 
-  - `complexity`: Change maximum allowed complexity from 2 to 3.  We knew 2 was probably too low when we started, but we didn’t know how big to make it.  After some experience, we now think 3 is pretty good for most of our projects.  We’ll use comments to bump the level up on a case-by-case basis where needed.  We rarely write code that needs more than 4.
+  * `complexity`: Change maximum allowed complexity from 2 to 3. We knew 2 was probably too low when we started, but we didn’t know how big to make it. After some experience, we now think 3 is pretty good for most of our projects. We’ll use comments to bump the level up on a case-by-case basis where needed. We rarely write code that needs more than 4.
 
-  - `no-invalid-this`: This rule doesn’t yet properly support class property syntax, so we disable it in almost all of our projects.
+  * `no-invalid-this`: This rule doesn’t yet properly support class property syntax, so we disable it in almost all of our projects.
 
-  - `no-unused-expressions`: We often relax this rule to allow short-circuiting (`someCondition && someAction()`) or ternary expressions (`return someCondition ? someAction() : null`).
+  * `no-unused-expressions`: We often relax this rule to allow short-circuiting (`someCondition && someAction()`) or ternary expressions (`return someCondition ? someAction() : null`).
 
-  - `no-unused-vars`: Add an `argsIgnorePattern` to allow us to use `_unusedVar` when we want to explicitly name an unused function argument.  This is made possible by the change to `no-underscore-dangle`.
+  * `no-unused-vars`: Add an `argsIgnorePattern` to allow us to use `_unusedVar` when we want to explicitly name an unused function argument. This is made possible by the change to `no-underscore-dangle`.
 
-  - `no-underscore-dangle`: There are cases, such as when working with third-party software, that underscores are required, so we now disable this rule.  We still write code without underscored names, except in the case of explicitly ignored function arguments described above.
+  * `no-underscore-dangle`: There are cases, such as when working with third-party software, that underscores are required, so we now disable this rule. We still write code without underscored names, except in the case of explicitly ignored function arguments described above.
 
-  - `import/no-named-as-default`: Sometimes we want to provide a name for a default export so that the code is more “greppable”.
+  * `import/no-named-as-default`: Sometimes we want to provide a name for a default export so that the code is more “greppable”.
 
-  - `import/no-named-as-default-member`: We now disable this rule because it blocks the ability to export localized Redux selectors by name and globalized Redux selectors as the default export as described in [this blog post](http://randycoulman.com/blog/2016/09/27/modular-reducers-and-selectors/).
+  * `import/no-named-as-default-member`: We now disable this rule because it blocks the ability to export localized Redux selectors by name and globalized Redux selectors as the default export as described in [this blog post](http://randycoulman.com/blog/2016/09/27/modular-reducers-and-selectors/).
 
-  - `import/extensions`: We now require extensions for `scss` files to work properly with our create-react-app based boilerplate, [generator-react-zeal](https://github.com/CodingZeal/generator-react-zeal).
+  * `import/extensions`: We now require extensions for `scss` files to work properly with our create-react-app based boilerplate, [generator-react-zeal](https://github.com/CodingZeal/generator-react-zeal).
 
-  - `import/prefer-default-export`: We now disable this rule.  Often, we’ll create a file that will eventually have multiple named exports, but for now does not.  We now prefer the flexibility to choose between default and named exports on a case-by-case basis.
+  * `import/prefer-default-export`: We now disable this rule. Often, we’ll create a file that will eventually have multiple named exports, but for now does not. We now prefer the flexibility to choose between default and named exports on a case-by-case basis.
 
-  - `react/no-set-state`: We now disable this rule.  While we still use Redux for most of our state management, there are cases when it makes more sense for a React component to maintain its own state.
+  * `react/no-set-state`: We now disable this rule. While we still use Redux for most of our state management, there are cases when it makes more sense for a React component to maintain its own state.
 
 * Update to ESLint 3.13.1 ([#46](https://github.com/CodingZeal/eslint-config-zeal/pull/46))
 
@@ -208,7 +207,7 @@ Releasing 0.21.0 as 1.0.0 with only minor README changes.
 
 ### Added
 
-* Adds a configuration for [Jest](http://facebook.github.io/jest/), including the use of [eslint-plugin-jest](https://github.com/jkimbo/eslint-plugin-jest).  ([#42](https://github.com/CodingZeal/eslint-config-zeal/pull/42))
+* Adds a configuration for [Jest](http://facebook.github.io/jest/), including the use of [eslint-plugin-jest](https://github.com/jkimbo/eslint-plugin-jest). ([#42](https://github.com/CodingZeal/eslint-config-zeal/pull/42))
 
 * Enables warning for new rule: `prefer-destructuring` ([#45](https://github.com/CodingZeal/eslint-config-zeal/pull/45))
 
@@ -228,7 +227,7 @@ Releasing 0.21.0 as 1.0.0 with only minor README changes.
 
 ### Fixed
 
-* Fixed peer dependency on babel-eslint.  Now 7.1.1.
+* Fixed peer dependency on babel-eslint. Now 7.1.1.
 
 ## [0.14.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.13.0...v0.14.0) - 2016-12-02
 
@@ -236,7 +235,7 @@ Releasing 0.21.0 as 1.0.0 with only minor README changes.
 
 * Update to ESLint 3.11.1, eslint-plugin-react 6.7.1, eslint-plugin-react-native 2.2.0, and babel-eslint 7.1.1. ([#38](https://github.com/CodingZeal/eslint-config-zeal/pull/38))
 
-* Configure several rules as errors instead of warnings.  These rules are ones that have a high probability of causing programs to fail, so getting fast feedback about these issues is important.  Rules that are now errors: `no-dupe-args`, `no-dupe-keys`, `no-duplicate-case`, `no-redeclare`, `no-undef`, `import/no-unresolved`, and `import/named`. ([#37](https://github.com/CodingZeal/eslint-config-zeal/pull/37))
+* Configure several rules as errors instead of warnings. These rules are ones that have a high probability of causing programs to fail, so getting fast feedback about these issues is important. Rules that are now errors: `no-dupe-args`, `no-dupe-keys`, `no-duplicate-case`, `no-redeclare`, `no-undef`, `import/no-unresolved`, and `import/named`. ([#37](https://github.com/CodingZeal/eslint-config-zeal/pull/37))
 
 ### Added
 
@@ -294,15 +293,15 @@ Releasing 0.21.0 as 1.0.0 with only minor README changes.
 
 * Update to eslint-plugin-react 6.1.2. ([#28](https://github.com/CodingZeal/eslint-config-zeal/pull/28))
 
-* Enable a warning for the `react/no-danger-with-children` rule.  This rule was disabled when it was first added due to an issue in eslint-plugin-react 6.1.1.  Version 6.1.2 fixes the issue, so the rule is now enabled as a warning. ([#28](https://github.com/CodingZeal/eslint-config-zeal/pull/28))
+* Enable a warning for the `react/no-danger-with-children` rule. This rule was disabled when it was first added due to an issue in eslint-plugin-react 6.1.1. Version 6.1.2 fixes the issue, so the rule is now enabled as a warning. ([#28](https://github.com/CodingZeal/eslint-config-zeal/pull/28))
 
 ## [0.9.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.8.1...v0.9.0) - 2016-08-16
 
 ### Added
 
-* Enables warnings for new rules: `no-template-curly-in-string`, `no-tabs`,  `react/no-danger-with-children` (temporarily disabled; see [#26](https://github.com/CodingZeal/eslint-config-zeal/issues/26)), and `react/no-find-dom-node`. ([#23](https://github.com/CodingZeal/eslint-config-zeal/pull/23))
+* Enables warnings for new rules: `no-template-curly-in-string`, `no-tabs`, `react/no-danger-with-children` (temporarily disabled; see [#26](https://github.com/CodingZeal/eslint-config-zeal/issues/26)), and `react/no-find-dom-node`. ([#23](https://github.com/CodingZeal/eslint-config-zeal/pull/23))
 
-* Adds support for new rules, but leaves them disabled: `multiline-ternary`, `sort-keys`,  `react/forbid-component-props`, and `import/no-restricted-paths`. ([#23](https://github.com/CodingZeal/eslint-config-zeal/pull/23))
+* Adds support for new rules, but leaves them disabled: `multiline-ternary`, `sort-keys`, `react/forbid-component-props`, and `import/no-restricted-paths`. ([#23](https://github.com/CodingZeal/eslint-config-zeal/pull/23))
 
 * Adds support for react-native ([#25](https://github.com/CodingZeal/eslint-config-zeal/pull/25), [#27](https://github.com/CodingZeal/eslint-config-zeal/pull/27))
 
@@ -315,7 +314,7 @@ Releasing 0.21.0 as 1.0.0 with only minor README changes.
   * `no-native-reassign` => `no-global-assign`
   * `no-spaced-func` => `func-call-spacing`
   * `react/wrap-multilines` => `react/jsx-wrap-multilines`
-  * `react/no-comment-textnodes` =>  `react/jsx-no-comment-textnodes`
+  * `react/no-comment-textnodes` => `react/jsx-no-comment-textnodes`
   * `react/no-comment-textnodes` => `react/jsx-no-comment-textnodes`
 
 ### Removed
@@ -326,9 +325,9 @@ Releasing 0.21.0 as 1.0.0 with only minor README changes.
 
 ### Changed
 
-* Mark `expect` as a global when using Chai.  Some test runner configurations (such as with Karma) make `expect` available globally.  By marking `expect` as a global, we don't get warnings from the `no-undef` rule. ([#21](https://github.com/CodingZeal/eslint-config-zeal/pull/21))
+* Mark `expect` as a global when using Chai. Some test runner configurations (such as with Karma) make `expect` available globally. By marking `expect` as a global, we don't get warnings from the `no-undef` rule. ([#21](https://github.com/CodingZeal/eslint-config-zeal/pull/21))
 
-* Don't report `no-mixed-operators` warnings for arithmetic expressions, while continuing to report them for logical, comparison, and bit-wise expressions.  Most people understand the standard precedence of arithmetic operators and those expressions are more readable without the extra parentheses. ([#20](https://github.com/CodingZeal/eslint-config-zeal/pull/20))
+* Don't report `no-mixed-operators` warnings for arithmetic expressions, while continuing to report them for logical, comparison, and bit-wise expressions. Most people understand the standard precedence of arithmetic operators and those expressions are more readable without the extra parentheses. ([#20](https://github.com/CodingZeal/eslint-config-zeal/pull/20))
 
 ## [0.8.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.7.0...v0.8.0) - 2016-06-20
 
@@ -352,7 +351,7 @@ Releasing 0.21.0 as 1.0.0 with only minor README changes.
 
 ### Changed
 
-* Disable the `react/prop-types` rule.  While propTypes provide handy documentation, we felt that the maintenance cost of keeping them around was too high, so we've disabled the rule by default. ([#16](https://github.com/CodingZeal/eslint-config-zeal/pull/16))
+* Disable the `react/prop-types` rule. While propTypes provide handy documentation, we felt that the maintenance cost of keeping them around was too high, so we've disabled the rule by default. ([#16](https://github.com/CodingZeal/eslint-config-zeal/pull/16))
 
 * Update to ESLint 2.10.2, eslint-plugin-import 1.8.0, and eslint-plugin-react 5.1.1. ([#17](https://github.com/CodingZeal/eslint-config-zeal/pull/17))
 
@@ -382,7 +381,7 @@ Releasing 0.21.0 as 1.0.0 with only minor README changes.
 
 ### Fixed
 
-* The configuration options for the `react/display-name` rule changed in eslint-plugin-react 4.0.  `react.js` has been updated to adapt to the new options. ([#10](https://github.com/CodingZeal/eslint-config-zeal/pull/10))
+* The configuration options for the `react/display-name` rule changed in eslint-plugin-react 4.0. `react.js` has been updated to adapt to the new options. ([#10](https://github.com/CodingZeal/eslint-config-zeal/pull/10))
 
 ## [0.5.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.4.0...v0.5.0) - 2016-03-01
 
@@ -398,17 +397,17 @@ Releasing 0.21.0 as 1.0.0 with only minor README changes.
 
 ### Changed
 
-* Disable the [newline-per-chained-call](http://eslint.org/docs/rules/newline-per-chained-call) rule. It fires too frequently, especially when using Chai expectations.  Given that we have a pretty short line-length limit (80 chars), that tends to limit the length of chained calls already. ([#8](https://github.com/CodingZeal/eslint-config-zeal/pull/8))
+* Disable the [newline-per-chained-call](http://eslint.org/docs/rules/newline-per-chained-call) rule. It fires too frequently, especially when using Chai expectations. Given that we have a pretty short line-length limit (80 chars), that tends to limit the length of chained calls already. ([#8](https://github.com/CodingZeal/eslint-config-zeal/pull/8))
 
 ## [0.3.1](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.3.0...v0.3.1) - 2016-02-12
 
 ### Removed
 
-* Temporarily remove the `react/jsx-space-before-closing` rule.  It hasn't been released in eslint-plugin-react yet. ([#6](https://github.com/CodingZeal/eslint-config-zeal/pull/6))
+* Temporarily remove the `react/jsx-space-before-closing` rule. It hasn't been released in eslint-plugin-react yet. ([#6](https://github.com/CodingZeal/eslint-config-zeal/pull/6))
 
 ## [0.3.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v0.2.0...v0.3.0) - 2016-02-12
 
-This release is updated for ESLint 2.0, which has some backwards-incompatible changes in it.  If you need to continue using ESLint 1.x, please keep using version 0.2.0 instead of upgrading.
+This release is updated for ESLint 2.0, which has some backwards-incompatible changes in it. If you need to continue using ESLint 1.x, please keep using version 0.2.0 instead of upgrading.
 
 ### Changed
 
@@ -425,6 +424,7 @@ This release is updated for ESLint 2.0, which has some backwards-incompatible ch
 ## 0.1.0 - 2016-01-28
 
 ### Added
+
 * Shareable ESLint configuration representing Zeal's JavaScript coding standards
 * Additional configuration module for React development (requires [esling-plugin-react](https://github.com/yannickcr/eslint-plugin-react))
 * Additional configuration module for MochaJS tests

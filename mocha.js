@@ -5,8 +5,8 @@ module.exports = {
 
   rules: {
     // specify the maximum depth callbacks can be nested
-    'max-nested-callbacks': 'off',
+    "max-nested-callbacks": "off",
     // specify the maximum number of statement allowed in a function
-    'max-statements': 'off'
+    "max-statements": "off"
   }
-}
+};
