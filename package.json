@@ -5,7 +5,7 @@
   "main": "index.js",
   "files": ["*.js"],
   "scripts": {
-    "format": "prettier --write '**/*.js'",
+    "format": "prettier --write '**/*.{js,json,md}'",
     "missing-rules": "run-p missing-rules:*",
     "missing-rules:core": "eslint-find-rules --unused --deprecated",
     "missing-rules:jest":
@@ -47,6 +47,7 @@
   "devDependencies": {
     "babel-eslint": "^8.0.3",
     "eslint": "4.13.1",
+    "eslint-config-prettier": "^2.9.0",
     "eslint-find-rules": "^3.2.1",
     "eslint-plugin-import": "2.8.0",
     "eslint-plugin-jest": "21.5.0",
@@ -64,7 +65,7 @@
   },
   "lint-staged": {
     "linters": {
-      "*.js": "prettier --list-different"
+      "*.{js,json,md}": "prettier --list-different"
     }
   }
 }

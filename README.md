@@ -29,16 +29,16 @@ Add this to your `.eslintrc` file:
 }
 ```
 
-*Note: ESLint assumes the `eslint-config-` prefix, so we can omit it.*
+_Note: ESLint assumes the `eslint-config-` prefix, so we can omit it._
 
 You can override settings from the configuration(s) by adding them directly to your `.eslintrc` file.
 
 We have added some additional optional configurations that you can add on top of the base `zeal` config:
 
-* `zeal/react`: Adds rules for [React](https://github.com/reactjs) development.  You'll need to install [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) to use this configuration.
-* `zeal/react-native`: Adds rules for [React Native](https://facebook.github.io/react-native/) development.  You'll need to install [eslint-plugin-react-native](https://github.com/intellicode/eslint-plugin-react-native) to use this configuration.
-* `zeal/mocha`: Overrides rules for use with [Mocha](https://mochajs.org/).  We recommend creating a separate `.eslintrc` file in the directory containing your tests and `extend`ing this config there.
-* `zeal/chai`: Overrides rules for use with [Chai](http://chaijs.com/).  We recommend creating a separate `.eslintrc` file in the directory containing your tests and `extend`ing this config there.
+* `zeal/react`: Adds rules for [React](https://github.com/reactjs) development. You'll need to install [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) to use this configuration.
+* `zeal/react-native`: Adds rules for [React Native](https://facebook.github.io/react-native/) development. You'll need to install [eslint-plugin-react-native](https://github.com/intellicode/eslint-plugin-react-native) to use this configuration.
+* `zeal/mocha`: Overrides rules for use with [Mocha](https://mochajs.org/). We recommend creating a separate `.eslintrc` file in the directory containing your tests and `extend`ing this config there.
+* `zeal/chai`: Overrides rules for use with [Chai](http://chaijs.com/). We recommend creating a separate `.eslintrc` file in the directory containing your tests and `extend`ing this config there.
 * `zeal/jest`: Adds and overrides rules for use with [Jest](http://facebook.github.io/jest/). You'll have to install [eslint-plugin-jest](https://www.npmjs.com/package/eslint-plugin-jest) to use this configuration. We recommend creating a separate `.estlintrc` file in the directory containing your tests and `extend`ing this config there.
 
 You can extend multiple configurations using an array:
@@ -85,7 +85,7 @@ Then, in your `.eslintrc` file, extend the `zeal`, `zeal/react`, and `zeal/react
 
 ## Usage With Webpack
 
-This configuration uses [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import).  If your project uses Webpack, you'll need to add [eslint-import-resolver-webpack](https://www.npmjs.com/package/eslint-import-resolver-webpack):
+This configuration uses [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import). If your project uses Webpack, you'll need to add [eslint-import-resolver-webpack](https://www.npmjs.com/package/eslint-import-resolver-webpack):
 
 ```
 npm install eslint-import-resolver-webpack
@@ -117,7 +117,7 @@ To use this configuration with [prettier](https://github.com/prettier/prettier),
 npm install eslint-config-prettier --save-dev
 ```
 
-Then, in your `.eslintrc` file, extend the `prettier` (and `prettier/react`) configurations after any `zeal` configurations.  For example:
+Then, in your `.eslintrc` file, extend the `prettier` (and `prettier/react`) configurations after any `zeal` configurations. For example:
 
 ```
 {
@@ -141,4 +141,4 @@ This plugin contains all of the rules available in:
 
 Authored by the Engineering Team of [Coding ZEAL](https://codingzeal.com?utm_source=github)
 
-Copyright (c) 2016 - 2017 Zeal, LLC.  Licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Copyright (c) 2016 - 2018 Zeal, LLC. Licensed under the [MIT license](https://opensource.org/licenses/MIT).

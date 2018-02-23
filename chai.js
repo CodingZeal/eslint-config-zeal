@@ -4,6 +4,6 @@ module.exports = {
   },
   rules: {
     // disallow usage of expressions in statement position
-    'no-unused-expressions': 'off'
+    "no-unused-expressions": "off"
   }
-}
+};
