@@ -617,6 +617,8 @@ module.exports = {
     "import/no-internal-modules": "off",
     // Forbid Webpack loader syntax in imports
     "import/no-webpack-loader-syntax": "warn",
+    // Forbid a module from importing itself
+    "import/no-self-import": "warn",
 
     //
     // Import: Helpful Warnings
@@ -670,7 +672,13 @@ module.exports = {
     "import/no-unassigned-import": "off",
     // Forbid named default exports.
     "import/no-named-default": "warn",
+    // Forbid default exports
+    "import/no-default-export": "off",
     // Forbid anonymous values as default exports
-    "import/no-anonymous-default-export": "off"
+    "import/no-anonymous-default-export": "off",
+    // Prefer named exports to be grouped together in a single export declaration
+    "import/group-exports": "off",
+    // Ensures that there are no useless path segments
+    "import/no-useless-path-segments": "warn"
   }
 };
