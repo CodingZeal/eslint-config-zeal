@@ -20,12 +20,12 @@ module.exports = {
     "react/display-name": "warn",
     // Forbid certain props on Components
     "react/forbid-component-props": "off",
+    // Forbid certain props on DOM Nodes
+    "react/forbid-dom-props": "off",
     //  Forbid certain elements
     "react/forbid-elements": "off",
     // Forbid foreign propTypes
     "react/forbid-foreign-prop-types": "off",
-    // Prevent using this.state within a this.setState
-    "react/no-access-state-in-setstate": "warn",
     // Forbid certain propTypes
     "react/forbid-prop-types": [
       "warn",
@@ -33,6 +33,8 @@ module.exports = {
     ],
     // Enforce boolean attributes notation in JSX
     "react/jsx-boolean-value": "warn",
+    // Enforce or disallow spaces inside of curly braces in JSX attributes and expressions.
+    "react/jsx-child-element-spacing": "warn",
     // Validate closing bracket location in JSX
     "react/jsx-closing-bracket-location": ["warn", "after-props"],
     // Validate closing tag location in JSX
@@ -56,6 +58,8 @@ module.exports = {
     "react/jsx-indent": ["warn", 2],
     // Validate JSX has key prop when in array or iterator
     "react/jsx-key": "warn",
+    // Validate JSX maximum depth
+    "react/jsx-max-depth": "off",
     // Limit maximum of props on a single line in JSX
     "react/jsx-max-props-per-line": "off",
     // Prevent usage of .bind() and arrow functions in JSX props
@@ -74,6 +78,8 @@ module.exports = {
     "react/jsx-one-expression-per-line": "warn",
     // Enforce PascalCase for user-defined JSX components
     "react/jsx-pascal-case": "warn",
+    // Enforce default props alphabetical sorting
+    "react/jsx-sort-default-props": "off",
     // Enforce props alphabetical sorting
     "react/jsx-sort-props": "off",
     // Validate whitespace in and around the JSX opening and closing brackets
@@ -84,6 +90,8 @@ module.exports = {
     "react/jsx-uses-vars": "warn",
     // Prevent missing parentheses around multilines JSX
     "react/jsx-wrap-multilines": "warn",
+    // Prevent using this.state within a this.setState
+    "react/no-access-state-in-setstate": "warn",
     //  Prevent using Array index in key props
     "react/no-array-index-key": "warn",
     // Prevent passing of children as props
@@ -112,6 +120,8 @@ module.exports = {
     "react/no-render-return-value": "warn",
     // Prevent usage of setState
     "react/no-set-state": "off",
+    // Prevent using this in stateless functional components
+    "react/no-this-in-sfc": "warn",
     // Prevents common typos
     "react/no-typos": "warn",
     // Prevent using string references in ref attribute
