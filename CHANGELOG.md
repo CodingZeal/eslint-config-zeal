@@ -2,7 +2,44 @@
 
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.3.0...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.4.0...HEAD)
+
+## [1.4.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.3.0...v1.4.0) - 2018-03-02
+
+### Changed
+
+* Update to eslint 4.18.1 ([#94](https://github.com/CodingZeal/eslint-config-zeal/pull/94))
+* Update to eslint-plugin-import 2.9.0 ([#94](https://github.com/CodingZeal/eslint-config-zeal/pull/94))
+* Update to eslint-plugin-jest 21.12.2 ([#94](https://github.com/CodingZeal/eslint-config-zeal/pull/94))
+* Update to eslint-plugin-react 7.7.0 ([#94](https://github.com/CodingZeal/eslint-config-zeal/pull/94))
+* Update to eslint-plugin-react-native 3.2.1 ([#94](https://github.com/CodingZeal/eslint-config-zeal/pull/94))
+
+### Added
+
+* New rule: `import/no-self-import` defaults to `warn` ([#94](https://github.com/CodingZeal/eslint-config-zeal/pull/94))
+* New rule: `import/no-default-export` defaults to `off` ([#94](https://github.com/CodingZeal/eslint-config-zeal/pull/94))
+* New rule: `import/group-exports` defaults to `off` ([#94](https://github.com/CodingZeal/eslint-config-zeal/pull/94))
+* New rule: `import/no-useless-path-segments` defaults to `warn` ([#94](https://github.com/CodingZeal/eslint-config-zeal/pull/94))
+* New rule: `jest/consistent-test-it` defaults to `warn`; set to always use `test` and never `it` ([#94](https://github.com/CodingZeal/eslint-config-zeal/pull/94))
+* New rule: `jest/lowercase-name` defaults to `warn` ([#94](https://github.com/CodingZeal/eslint-config-zeal/pull/94))
+* New rule: `jest/no-hooks` defaults to `off` ([#94](https://github.com/CodingZeal/eslint-config-zeal/pull/94))
+* New rule: `jest/no-test-prefixes` defaults to `off` ([#94](https://github.com/CodingZeal/eslint-config-zeal/pull/94))
+* New rule: `jest/prefer-expect-assertions` defaults to `off` ([#94](https://github.com/CodingZeal/eslint-config-zeal/pull/94))
+* New rule: `jest/valid-describe` defaults to `warn` ([#94](https://github.com/CodingZeal/eslint-config-zeal/pull/94))
+* New rule: `jest/valid-expect-in-promise` defaults to `warn` ([#94](https://github.com/CodingZeal/eslint-config-zeal/pull/94))
+* New rule: `react/forbid-dom-props` defaults to `off` ([#94](https://github.com/CodingZeal/eslint-config-zeal/pull/94))
+* New rule: `react/jsx-child-element-spacing` defaults to `warn` ([#94](https://github.com/CodingZeal/eslint-config-zeal/pull/94))
+* New rule: `react/jsx-max-depth` defaults to `off` ([#94](https://github.com/CodingZeal/eslint-config-zeal/pull/94))
+* New rule: `react/jsx-sort-default-props` defaults to `off` ([#94](https://github.com/CodingZeal/eslint-config-zeal/pull/94))
+* New rule: `react/no-this-in-sfs` defaults to `warn` ([#94](https://github.com/CodingZeal/eslint-config-zeal/pull/94))
+
+### Removed
+
+* Remove deprecated rule: `prefer-reflect` ([#91](https://github.com/CodingZeal/eslint-config-zeal/pull/91))
+
+### Internal
+
+* The `missing-rules` npm scripts now report when there are deprecated rules in use ([#91](https://github.com/CodingZeal/eslint-config-zeal/pull/91))
 
 ## [1.3.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.2.0...v1.3.0) - 2018-02-09
 
