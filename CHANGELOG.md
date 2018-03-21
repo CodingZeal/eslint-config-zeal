@@ -2,7 +2,18 @@
 
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.4.0...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.5.0...HEAD)
+
+## [1.5.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.4.0...v1.5.0) - 2018-03-21
+
+## Changed
+
+* Update to eslint 4.19.0 ([#98](https://github.com/CodingZeal/eslint-config-zeal/pull/98))
+* Update to eslint-plugin-jest 21.15.0 ([#99](https://github.com/CodingZeal/eslint-config-zeal/pull/99))
+
+## Added
+
+* New rule: `jest/no-jest-import` defaults to `warn` ([#99](https://github.com/CodingZeal/eslint-config-zeal/pull/99))
 
 ## [1.4.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.3.0...v1.4.0) - 2018-03-02
 
