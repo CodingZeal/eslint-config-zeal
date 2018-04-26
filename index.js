@@ -660,6 +660,8 @@ module.exports = {
     "import/no-namespace": "off",
     // Ensure consistent use of file extension within the import path
     "import/extensions": ["warn", "never", { scss: "always" }],
+    // Ensures that there is no resolvable path back to this module via its dependencies.
+    "import/no-cycle": "off",
     // Enforce a convention in module import order
     "import/order": "off",
     // Enforce a newline after import statements
