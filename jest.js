@@ -25,6 +25,8 @@ module.exports = {
     "jest/no-focused-tests": "warn",
     // Disallow setup and teardown hooks
     "jest/no-hooks": "off",
+    // Disallow Jasmine globals
+    "jest/no-jasmine-globals": "warn",
     // Disallow importing jest
     "jest/no-jest-import": "warn",
     // Disallow identical titles
