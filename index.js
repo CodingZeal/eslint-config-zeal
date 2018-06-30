@@ -7,10 +7,7 @@ module.exports = {
   globals: {},
   parser: "babel-eslint",
   parserOptions: {
-    ecmaFeatures: {
-      experimentalObjectRestSpread: true
-    },
-    ecmaVersion: 2017,
+    ecmaVersion: 2018,
     sourceType: "module"
   },
   plugins: ["import"],
@@ -119,6 +116,8 @@ module.exports = {
     eqeqeq: "warn",
     // make sure for-in loops have an if statement
     "guard-for-in": "warn",
+    // enforce a maximum number of classes per file
+    "max-classes-per-file": "off",
     // disallow the use of alert, confirm, and prompt
     "no-alert": "warn",
     // disallow use of arguments.caller or arguments.callee
@@ -388,6 +387,8 @@ module.exports = {
     "max-len": ["warn", 80, 2],
     // enforce a maximum file length
     "max-lines": "off",
+    // enforce a maximum function length
+    "max-lines-per-function": "off",
     // specify the maximum depth callbacks can be nested
     "max-nested-callbacks": ["warn", 3],
     // limits the number of parameters that can be used in the function
@@ -489,6 +490,8 @@ module.exports = {
       { blankLine: "always", prev: "directive", next: "*" },
       { blankLine: "any", prev: "directive", next: "directive" }
     ],
+    // Prefer use of an object spread over Object.assign
+    "prefer-object-spread": "warn",
     // require quotes around object literal property names
     "quote-props": ["warn", "as-needed"],
     // specify whether backticks, double or single quotes should be used
