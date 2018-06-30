@@ -78,6 +78,8 @@ module.exports = {
     "react/jsx-one-expression-per-line": "warn",
     // Enforce PascalCase for user-defined JSX components
     "react/jsx-pascal-case": "warn",
+    // Disallow multiple spaces between inline JSX props
+    "react/jsx-props-no-multi-spaces": "warn",
     // Enforce default props alphabetical sorting
     "react/jsx-sort-default-props": "off",
     // Enforce props alphabetical sorting
@@ -130,6 +132,8 @@ module.exports = {
     "react/no-unescaped-entities": "warn",
     // Prevent usage of unknown DOM property
     "react/no-unknown-property": "warn",
+    // Prevent usage of UNSAFE_ methods
+    "react/no-unsafe": "warn",
     // Prevent definitions of unused prop types
     "react/no-unused-prop-types": "warn",
     // Prevent definitions of unused state
