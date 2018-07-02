@@ -3,17 +3,16 @@
   "description": "ESLint sharable configuration matching Zeal's style guide",
   "version": "1.5.0",
   "main": "index.js",
-  "files": ["*.js"],
+  "files": [
+    "*.js"
+  ],
   "scripts": {
     "format": "prettier --write '**/*.{js,json,md}'",
     "missing-rules": "run-p missing-rules:*",
     "missing-rules:core": "eslint-find-rules --unused --deprecated",
-    "missing-rules:jest":
-      "eslint-find-rules --no-core --unused --deprecated jest.js",
-    "missing-rules:react":
-      "eslint-find-rules --no-core --unused --deprecated react.js",
-    "missing-rules:react-native":
-      "eslint-find-rules --no-core --unused --deprecated react-native.js",
+    "missing-rules:jest": "eslint-find-rules --no-core --unused --deprecated jest.js",
+    "missing-rules:react": "eslint-find-rules --no-core --unused --deprecated react.js",
+    "missing-rules:react-native": "eslint-find-rules --no-core --unused --deprecated react-native.js",
     "precommit": "lint-staged",
     "test": "eslint .",
     "validate": "run-p test missing-rules"
@@ -45,23 +44,23 @@
     "style linter"
   ],
   "devDependencies": {
-    "babel-eslint": "^8.2.2",
-    "eslint": "4.19.0",
+    "babel-eslint": "^8.2.5",
+    "eslint": "4.19.1",
     "eslint-config-prettier": "^2.9.0",
-    "eslint-find-rules": "^3.2.1",
-    "eslint-plugin-import": "2.9.0",
-    "eslint-plugin-jest": "21.15.0",
-    "eslint-plugin-react": "7.7.0",
+    "eslint-find-rules": "^3.3.1",
+    "eslint-plugin-import": "2.13.0",
+    "eslint-plugin-jest": "21.17.0",
+    "eslint-plugin-react": "7.10.0",
     "eslint-plugin-react-native": "3.2.1",
     "husky": "^0.14.3",
-    "lint-staged": "^7.0.0",
-    "npm-run-all": "^4.1.2",
-    "prettier": "^1.10.2"
+    "lint-staged": "^7.2.0",
+    "npm-run-all": "^4.1.3",
+    "prettier": "^1.13.7"
   },
   "peerDependencies": {
     "babel-eslint": ">=8.2.2",
-    "eslint": ">=4.19.0",
-    "eslint-plugin-import": ">=2.9.0"
+    "eslint": ">=4.19.1",
+    "eslint-plugin-import": ">=2.13.0"
   },
   "lint-staged": {
     "linters": {

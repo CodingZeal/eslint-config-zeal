@@ -619,6 +619,12 @@ module.exports = {
     "import/no-webpack-loader-syntax": "warn",
     // Forbid a module from importing itself
     "import/no-self-import": "warn",
+    // Forbid a module from importing a module with a dependency path back to itself
+    "import/no-cycle": "warn",
+    // Ensures that there are no useless path segments
+    "import/no-useless-path-segments": "warn",
+    // Forbid importing modules from parent directories
+    "import/no-relative-parent-imports": "off",
 
     //
     // Import: Helpful Warnings
@@ -678,7 +684,7 @@ module.exports = {
     "import/no-anonymous-default-export": "off",
     // Prefer named exports to be grouped together in a single export declaration
     "import/group-exports": "off",
-    // Ensures that there are no useless path segments
-    "import/no-useless-path-segments": "warn"
+    // Enforce a leading comment with the webpackChunkName for dynamic imports
+    "import/dynamic-import-chunkname": "warn"
   }
 };
