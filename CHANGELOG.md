@@ -2,7 +2,25 @@
 
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.5.0...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.6.0...HEAD)
+
+## [1.6.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.5.0...v1.6.0) - 2018-07-13
+
+## Changed
+
+- Update to eslint 4.19.1 ([#105](https://github.com/CodingZeal/eslint-config-zeal/pull/105))
+- Update to eslint-plugin-jest 21.17.0 ([#105](https://github.com/CodingZeal/eslint-config-zeal/pull/105))
+- Update to eslint-plugin-import 2.13.0 ([#105](https://github.com/CodingZeal/eslint-config-zeal/pull/105))
+- Update to eslint-plugin-react 7.10.0 ([#105](https://github.com/CodingZeal/eslint-config-zeal/pull/105))
+- Update to babel-eslint 8.25.0 ([#105](https://github.com/CodingZeal/eslint-config-zeal/pull/105))
+
+## Added
+
+- New rule: `jest/no-jasmine-globals` defaults to `warn` ([#105](https://github.com/CodingZeal/eslint-config-zeal/pull/105))
+- New rule: `import/no-cycle` defaults to `warn` ([#105](https://github.com/CodingZeal/eslint-config-zeal/pull/105))
+- New rule: `import/dynamic-import-chunkname` defaults to `warn` ([#105](https://github.com/CodingZeal/eslint-config-zeal/pull/105))
+- New rule: `react/jsx-props-no-multi-spaces` defaults to `warn` ([#105](https://github.com/CodingZeal/eslint-config-zeal/pull/105))
+- New rule: `react/no-unsafe` defaults to `warn` ([#105](https://github.com/CodingZeal/eslint-config-zeal/pull/105))
 
 ## [1.5.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.4.0...v1.5.0) - 2018-03-21
 
