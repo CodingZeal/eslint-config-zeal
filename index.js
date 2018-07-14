@@ -256,9 +256,6 @@ module.exports = {
     //
     // enforce or disallow variable initializations at definition
     "init-declarations": "warn",
-    // disallow the catch clause parameter name being the same as a variable in
-    // the outer scope
-    "no-catch-shadow": "warn",
     // disallow deletion of variables
     "no-delete-var": "warn",
     // disallow labels that share a name with a variable
