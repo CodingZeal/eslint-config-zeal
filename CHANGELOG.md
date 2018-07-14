@@ -2,7 +2,24 @@
 
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.6.0...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.7.0...HEAD)
+
+## [1.7.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.6.0...v1.7.0) - 2018-07-13
+
+## Removed
+
+- Remove deprecated `no-catch-shadow` rule ([#106](https://github.com/CodingZeal/eslint-config-zeal/pull/106))
+
+## Changed
+
+**NOTE:** This version upgrade to eslint 5.1.0. If you're still using eslint 4.x, please continue to use version 1.6.0.
+
+- Update to eslint 5.1.0 ([#106](https://github.com/CodingZeal/eslint-config-zeal/pull/106))
+- Update to babel-eslint 8.2.6 ([#106](https://github.com/CodingZeal/eslint-config-zeal/pull/106))
+
+## Added
+
+- New rule: `prefer-object-spread` defaults to `warn` ([#106](https://github.com/CodingZeal/eslint-config-zeal/pull/106))
 
 ## [1.6.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.5.0...v1.6.0) - 2018-07-13
 
@@ -12,7 +29,7 @@ All notable changes to this project will be documented in this file. This projec
 - Update to eslint-plugin-jest 21.17.0 ([#105](https://github.com/CodingZeal/eslint-config-zeal/pull/105))
 - Update to eslint-plugin-import 2.13.0 ([#105](https://github.com/CodingZeal/eslint-config-zeal/pull/105))
 - Update to eslint-plugin-react 7.10.0 ([#105](https://github.com/CodingZeal/eslint-config-zeal/pull/105))
-- Update to babel-eslint 8.25.0 ([#105](https://github.com/CodingZeal/eslint-config-zeal/pull/105))
+- Update to babel-eslint 8.2.5 ([#105](https://github.com/CodingZeal/eslint-config-zeal/pull/105))
 
 ## Added
 
