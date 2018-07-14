@@ -6,13 +6,13 @@ All notable changes to this project will be documented in this file. This projec
 
 ## [1.7.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.6.0...v1.7.0) - 2018-07-13
 
+**NOTE:** This version upgrades to eslint 5.1.0. If you're still using eslint 4.x, please continue to use version 1.6.0.
+
 ## Removed
 
 - Remove deprecated `no-catch-shadow` rule ([#106](https://github.com/CodingZeal/eslint-config-zeal/pull/106))
 
 ## Changed
-
-**NOTE:** This version upgrade to eslint 5.1.0. If you're still using eslint 4.x, please continue to use version 1.6.0.
 
 - Update to eslint 5.1.0 ([#106](https://github.com/CodingZeal/eslint-config-zeal/pull/106))
 - Update to babel-eslint 8.2.6 ([#106](https://github.com/CodingZeal/eslint-config-zeal/pull/106))
