@@ -43,7 +43,7 @@
     "style linter"
   ],
   "devDependencies": {
-    "babel-eslint": "^8.2.6",
+    "babel-eslint": "^10.0.1",
     "eslint": "5.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-find-rules": "^3.3.1",
@@ -57,7 +57,7 @@
     "prettier": "^1.14.3"
   },
   "peerDependencies": {
-    "babel-eslint": ">=8.2.6",
+    "babel-eslint": ">=10.0.1",
     "eslint": ">=5.1.0",
     "eslint-plugin-import": ">=2.13.0"
   },
