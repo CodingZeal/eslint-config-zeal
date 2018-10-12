@@ -5,7 +5,11 @@ module.exports = {
     }
   },
   plugins: ["react"],
-
+  settings: {
+    react: {
+      version: "16.5.2"
+    }
+  },
   rules: {
     // Enforces consistent naming for boolean props
     "react/boolean-prop-naming": "off",
@@ -75,7 +79,7 @@ module.exports = {
     // Disallow undeclared variables in JSX
     "react/jsx-no-undef": "warn",
     // One JSX Element Per Line
-    "react/jsx-one-expression-per-line": "warn",
+    "react/jsx-one-expression-per-line": ["warn", { allow: "literal" }],
     // Enforce PascalCase for user-defined JSX components
     "react/jsx-pascal-case": "warn",
     // Disallow multiple spaces between inline JSX props
