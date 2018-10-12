@@ -36,7 +36,7 @@ You can override settings from the configuration(s) by adding them directly to y
 We have added some additional optional configurations that you can add on top of the base `zeal` config:
 
 - `zeal/ramda`: Adds rules for [Ramda.js](https://ramdajs.com/) development. You'll need to install [eslint-plugin-ramda](https://github.com/ramda/eslint-plugin-ramda) to use this configuration.
-- `zeal/react`: Adds rules for [React](https://github.com/reactjs) development. You'll need to install [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) to use this configuration.
+- `zeal/react`: Adds rules for [React](https://github.com/reactjs) development. You'll need to install [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) and [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y) to use this configuration.
 - `zeal/react-native`: Adds rules for [React Native](https://facebook.github.io/react-native/) development. You'll need to install [eslint-plugin-react-native](https://github.com/intellicode/eslint-plugin-react-native) to use this configuration.
 - `zeal/mocha`: Overrides rules for use with [Mocha](https://mochajs.org/). We recommend creating a separate `.eslintrc` file in the directory containing your tests and `extend`ing this config there.
 - `zeal/chai`: Overrides rules for use with [Chai](http://chaijs.com/). We recommend creating a separate `.eslintrc` file in the directory containing your tests and `extend`ing this config there.
@@ -70,10 +70,10 @@ Then, in your `.eslintrc` file, extend both the `zeal` and `zeal/ramda` configur
 
 ## Usage With React
 
-If you're using this package in a React project, make sure you have [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) installed as well:
+If you're using this package in a React project, make sure you have [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) and [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y) installed as well:
 
 ```
-npm install eslint-plugin-react --save-dev
+npm install eslint-plugin-react eslint-plugin-jsx-a11y --save-dev
 ```
 
 Then, in your `.eslintrc` file, extend both the `zeal` and `zeal/react` configurations:
@@ -150,10 +150,11 @@ This plugin contains all of the rules available in:
 
 - [ESLint](http://eslint.org/): 5.6.1
 - [eslint-plugin-ramda](https://github.com/ramda/eslint-plugin-ramda): 2.5.1
-- [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): 7.11.1
-- [eslint-plugin-react-native](https://github.com/intellicode/eslint-plugin-react-native): 3.4.0
 - [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import): 2.14.0
 - [eslint-plugin-jest](https://www.npmjs.com/package/eslint-plugin-jest): 21.24.1
+- [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y): 6.1.2
+- [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): 7.11.1
+- [eslint-plugin-react-native](https://github.com/intellicode/eslint-plugin-react-native): 3.4.0
 
 ## License
 
