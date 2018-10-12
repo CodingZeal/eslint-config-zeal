@@ -35,6 +35,7 @@ You can override settings from the configuration(s) by adding them directly to y
 
 We have added some additional optional configurations that you can add on top of the base `zeal` config:
 
+- `zeal/ramda`: Adds rules for [Ramda.js](https://ramdajs.com/) development. You'll need to install [eslint-plugin-ramda](https://github.com/ramda/eslint-plugin-ramda) to use this configuration.
 - `zeal/react`: Adds rules for [React](https://github.com/reactjs) development. You'll need to install [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) to use this configuration.
 - `zeal/react-native`: Adds rules for [React Native](https://facebook.github.io/react-native/) development. You'll need to install [eslint-plugin-react-native](https://github.com/intellicode/eslint-plugin-react-native) to use this configuration.
 - `zeal/mocha`: Overrides rules for use with [Mocha](https://mochajs.org/). We recommend creating a separate `.eslintrc` file in the directory containing your tests and `extend`ing this config there.
@@ -50,6 +51,22 @@ You can extend multiple configurations using an array:
 ```
 
 See the [ESLint configuration documentation](http://eslint.org/docs/user-guide/configuring) for more information on configuring ESLint.
+
+## Usage with Ramda
+
+If you're using [Ramda.js](https://ramdajs.com/) in your project, make sure you have [eslint-plugin-ramda](https://github.com/ramda/eslint-plugin-ramda) installed as well:
+
+```
+npm install eslint-plugin-ramda --save-dev
+```
+
+Then, in your `.eslintrc` file, extend both the `zeal` and `zeal/ramda` configurations:
+
+```
+{
+  "extends": ["zeal", "zeal/ramda"]
+}
+```
 
 ## Usage With React
 
@@ -132,6 +149,7 @@ That way, the `prettier` configurations will override any `zeal` configurations 
 This plugin contains all of the rules available in:
 
 - [ESLint](http://eslint.org/): 5.6.1
+- [eslint-plugin-ramda](https://github.com/ramda/eslint-plugin-ramda): 2.5.1
 - [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): 7.11.1
 - [eslint-plugin-react-native](https://github.com/intellicode/eslint-plugin-react-native): 3.4.0
 - [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import): 2.14.0
