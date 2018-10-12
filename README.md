@@ -133,7 +133,7 @@ This plugin contains all of the rules available in:
 
 - [ESLint](http://eslint.org/): 5.1.0
 - [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): 7.11.1
-- [eslint-plugin-react-native](https://github.com/intellicode/eslint-plugin-react-native): 3.2.1
+- [eslint-plugin-react-native](https://github.com/intellicode/eslint-plugin-react-native): 3.4.0
 - [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import): 2.14.0
 - [eslint-plugin-jest](https://www.npmjs.com/package/eslint-plugin-jest): 21.24.1
 
