@@ -5,11 +5,6 @@ module.exports = {
     },
   },
   plugins: ["react"],
-  settings: {
-    react: {
-      version: "16.5.2",
-    },
-  },
   rules: {
     // Enforces consistent naming for boolean props
     "react/boolean-prop-naming": "off",
@@ -33,7 +28,7 @@ module.exports = {
     // Forbid certain propTypes
     "react/forbid-prop-types": [
       "warn",
-      { checkContextTypes: true, checkChildContextTypes: true },
+      { checkChildContextTypes: true, checkContextTypes: true },
     ],
     // Enforce boolean attributes notation in JSX
     "react/jsx-boolean-value": "warn",
@@ -56,10 +51,10 @@ module.exports = {
     "react/jsx-first-prop-new-line": "warn",
     // Enforce event handler naming conventions in JSX
     "react/jsx-handler-names": "warn",
-    // Validate props indentation in JSX
-    "react/jsx-indent-props": ["warn", 4],
     // Validate JSX indentation
     "react/jsx-indent": ["warn", 2],
+    // Validate props indentation in JSX
+    "react/jsx-indent-props": ["warn", 4],
     // Validate JSX has key prop when in array or iterator
     "react/jsx-key": "warn",
     // Validate JSX maximum depth
@@ -87,7 +82,16 @@ module.exports = {
     // Enforce default props alphabetical sorting
     "react/jsx-sort-default-props": "off",
     // Enforce props alphabetical sorting
-    "react/jsx-sort-props": "off",
+    "react/jsx-sort-props": [
+      "warn",
+      {
+        callbacksLast: false,
+        ignoreCase: true,
+        shorthandFirst: false,
+        shorthandLast: false,
+      },
+    ],
+
     // Validate whitespace in and around the JSX opening and closing brackets
     "react/jsx-tag-spacing": "warn",
     // Prevent React to be incorrectly marked as unused
@@ -126,12 +130,12 @@ module.exports = {
     "react/no-render-return-value": "warn",
     // Prevent usage of setState
     "react/no-set-state": "off",
+    // Prevent using string references in ref attribute
+    "react/no-string-refs": "warn",
     // Prevent using this in stateless functional components
     "react/no-this-in-sfc": "warn",
     // Prevents common typos
     "react/no-typos": "warn",
-    // Prevent using string references in ref attribute
-    "react/no-string-refs": "warn",
     // Prevent invalid characters from appearing in markup
     "react/no-unescaped-entities": "warn",
     // Prevent usage of unknown DOM property
@@ -177,5 +181,10 @@ module.exports = {
     "react/style-prop-object": "warn",
     // Prevent void DOM elements (e.g. <img />, <br />) from receiving children
     "react/void-dom-elements-no-children": "warn",
+  },
+  settings: {
+    react: {
+      version: "16.5.2",
+    },
   },
 };
