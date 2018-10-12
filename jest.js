@@ -1,6 +1,6 @@
 module.exports = {
   env: {
-    jest: true
+    jest: true,
   },
   plugins: ["jest"],
   rules: {
@@ -21,7 +21,7 @@ module.exports = {
     // Off for now, pending a resolution to https://github.com/jest-community/eslint-plugin-jest/issues/175
     "jest/expect-expect": [
       "warn",
-      { assertFunctionNames: ["expect", "td.verify"] }
+      { assertFunctionNames: ["expect", "td.verify"] },
     ],
     // Disallow capitalized test names
     "jest/lowercase-name": "warn",
@@ -64,6 +64,6 @@ module.exports = {
     // Ensure expect is called correctly
     "jest/valid-expect": "warn",
     // Enforce having return statement when testing with promises
-    "jest/valid-expect-in-promise": "warn"
-  }
+    "jest/valid-expect-in-promise": "warn",
+  },
 };

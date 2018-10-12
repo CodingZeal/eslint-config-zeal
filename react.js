@@ -1,14 +1,14 @@
 module.exports = {
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
-    }
+      jsx: true,
+    },
   },
   plugins: ["react"],
   settings: {
     react: {
-      version: "16.5.2"
-    }
+      version: "16.5.2",
+    },
   },
   rules: {
     // Enforces consistent naming for boolean props
@@ -33,7 +33,7 @@ module.exports = {
     // Forbid certain propTypes
     "react/forbid-prop-types": [
       "warn",
-      { checkContextTypes: true, checkChildContextTypes: true }
+      { checkContextTypes: true, checkChildContextTypes: true },
     ],
     // Enforce boolean attributes notation in JSX
     "react/jsx-boolean-value": "warn",
@@ -170,12 +170,12 @@ module.exports = {
         callbacksLast: true,
         ignoreCase: true,
         requiredFirst: true,
-        sortShapeProp: true
-      }
+        sortShapeProp: true,
+      },
     ],
     // Enforce style prop value being an object
     "react/style-prop-object": "warn",
     // Prevent void DOM elements (e.g. <img />, <br />) from receiving children
-    "react/void-dom-elements-no-children": "warn"
-  }
+    "react/void-dom-elements-no-children": "warn",
+  },
 };
