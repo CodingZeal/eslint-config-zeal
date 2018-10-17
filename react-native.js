@@ -2,8 +2,8 @@ module.exports = {
   extends: ["plugin:import/react-native"],
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
-    }
+      jsx: true,
+    },
   },
   plugins: ["react-native"],
   rules: {
@@ -11,6 +11,6 @@ module.exports = {
     "react-native/no-inline-styles": "warn",
     "react-native/no-raw-text": "warn",
     "react-native/no-unused-styles": "warn",
-    "react-native/split-platform-components": "warn"
-  }
+    "react-native/split-platform-components": "warn",
+  },
 };

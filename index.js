@@ -2,17 +2,17 @@ module.exports = {
   env: {
     browser: true,
     node: true,
-    es6: true
+    es6: true,
   },
   globals: {},
   parser: "babel-eslint",
   parserOptions: {
     ecmaVersion: 2018,
-    sourceType: "module"
+    sourceType: "module",
   },
   plugins: ["import"],
   settings: {
-    "import/ignore": ["node_modules", ".(scss|sass|less|css|png|jpg|svg)$"]
+    "import/ignore": ["node_modules", ".(scss|sass|less|css|png|jpg|svg)$"],
   },
   rules: {
     //
@@ -218,8 +218,8 @@ module.exports = {
       "warn",
       {
         allowShortCircuit: true,
-        allowTernary: true
-      }
+        allowTernary: true,
+      },
     ],
     // disallow unused labels
     "no-unused-labels": "warn",
@@ -383,8 +383,8 @@ module.exports = {
       "warn",
       "always",
       {
-        exceptAfterSingleLine: true
-      }
+        exceptAfterSingleLine: true,
+      },
     ],
     // specify the maximum depth that blocks can be nested
     "max-depth": "warn",
@@ -432,9 +432,9 @@ module.exports = {
           ["&", "|", "^", "~", "<<", ">>", ">>>"],
           ["==", "!=", "===", "!==", ">", ">=", "<", "<="],
           ["&&", "||"],
-          ["in", "instanceof"]
-        ]
-      }
+          ["in", "instanceof"],
+        ],
+      },
     ],
     // disallow mixed spaces and tabs for indentation
     "no-mixed-spaces-and-tabs": "warn",
@@ -490,10 +490,10 @@ module.exports = {
       {
         blankLine: "any",
         prev: ["const", "let", "var"],
-        next: ["const", "let", "var"]
+        next: ["const", "let", "var"],
       },
       { blankLine: "always", prev: "directive", next: "*" },
-      { blankLine: "any", prev: "directive", next: "directive" }
+      { blankLine: "any", prev: "directive", next: "directive" },
     ],
     // Prefer use of an object spread over Object.assign
     "prefer-object-spread": "warn",
@@ -693,6 +693,6 @@ module.exports = {
     // Prefer named exports to be grouped together in a single export declaration
     "import/group-exports": "off",
     // Enforce a leading comment with the webpackChunkName for dynamic imports
-    "import/dynamic-import-chunkname": "warn"
-  }
+    "import/dynamic-import-chunkname": "warn",
+  },
 };
