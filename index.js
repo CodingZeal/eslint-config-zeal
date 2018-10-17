@@ -22,6 +22,8 @@ module.exports = {
     "for-direction": "warn",
     // enforce return statements in getters
     "getter-return": "warn",
+    // disallow using an async function as a Promise executor
+    "no-async-promise-executor": "warn",
     // disallow await inside of loops
     "no-await-in-loop": "warn",
     // disallow comparing against -0
@@ -62,6 +64,8 @@ module.exports = {
     "no-invalid-regexp": "warn",
     // disallow irregular whitespace outside of strings and comments
     "no-irregular-whitespace": "warn",
+    // Disallow characters which are made with multiple code points in character class syntax
+    "no-misleading-character-class": "warn",
     // disallow the use of object properties of the global object (Math and
     // JSON) as functions
     "no-obj-calls": "warn",
@@ -82,6 +86,8 @@ module.exports = {
     "no-unsafe-finally": "warn",
     // disallow negating the left operand of relational operators
     "no-unsafe-negation": "warn",
+    // Disallow assignments that can lead to race conditions due to usage of await or yield
+    "require-atomic-updates": "warn",
     // disallow comparisons with the value NaN
     "use-isnan": "warn",
     // Ensure JSDoc comments are valid
@@ -238,6 +244,8 @@ module.exports = {
     radix: "warn",
     // disallow async functions which have no await expression
     "require-await": "warn",
+    // Enforce the use of u flag on RegExp
+    "require-unicode-regexp": "warn",
     // require declaration of all vars at the top of their containing scope
     "vars-on-top": "warn",
     // require immediate function invocation to be wrapped in parentheses
