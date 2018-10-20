@@ -2,7 +2,36 @@
 
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.7.0...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.8.0...HEAD)
+
+## [1.8.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.7.0...v1.8.0) - 2018-10-19
+
+## Changed
+
+- Update to eslint 5.6.1 ([#114](https://github.com/CodingZeal/eslint-config-zeal/pull/114))
+- Update to babel-eslint 10.0.1 ([#114](https://github.com/CodingZeal/eslint-config-zeal/pull/114))
+- Update to eslint-config-import 2.14.0 ([#114](https://github.com/CodingZeal/eslint-config-zeal/pull/114))
+- Update to eslint-plugin-jest 21.24.2 ([#114](https://github.com/CodingZeal/eslint-config-zeal/pull/114))
+- Update to eslint-plugin-react 7.11.1 ([#114](https://github.com/CodingZeal/eslint-config-zeal/pull/114))
+- Update to eslint-plugin-react-native 3.4.0 ([#114](https://github.com/CodingZeal/eslint-config-zeal/pull/114))
+- Turn on rules to enforce sorting in various contexts (`sort-keys`, `import/order`, and `react/jsx-sort-props`) ([#117](https://github.com/CodingZeal/eslint-config-zeal/pull/117))
+- Update rule: `react/jsx-one-expression-per-line`: enable new `allow: "literal"` option ([#114](https://github.com/CodingZeal/eslint-config-zeal/pull/114))
+
+## Added
+
+- Add eslint-plugin-ramda as an optional extension (extend `zeal/ramda` to use). ([#116](https://github.com/CodingZeal/eslint-config-zeal/pull/116))
+- Add eslint-plugin-jsx-a11y to `zeal/react` ([#117](https://github.com/CodingZeal/eslint-config-zeal/pull/117))
+- New rule: `no-async-promise-executor` defaults to `warn` ([#114](https://github.com/CodingZeal/eslint-config-zeal/pull/114))
+- New rule: `no-misleading-character-class` defaults to `warn` ([#114](https://github.com/CodingZeal/eslint-config-zeal/pull/114))
+- New rule: `require-atomic-updates` defaults to `warn` ([#114](https://github.com/CodingZeal/eslint-config-zeal/pull/114))
+- New rule: `require-unicode-regexp` defaults to `warn` ([#114](https://github.com/CodingZeal/eslint-config-zeal/pull/114))
+- New rule: `jest/expect-expect` defaults to `warn` with `td.verify` configured as an assertion method ([#114](https://github.com/CodingZeal/eslint-config-zeal/pull/114))
+- New rule: `jest/no-alias-methods` defaults to `off` because we prefer `toThrowError` over `toThrow` and there's no way to configure the rule to allow some aliases but not all ([#114](https://github.com/CodingZeal/eslint-config-zeal/pull/114))
+- New rule: `jest/no-test-return-statement` defaults to `warn` ([#114](https://github.com/CodingZeal/eslint-config-zeal/pull/114))
+- New rule: `jest/prefer-inline-snapshots` defaults to `off` ([#114](https://github.com/CodingZeal/eslint-config-zeal/pull/114))
+- New rule: `jest/prefer-strict-equal` defaults to `warn` ([#114](https://github.com/CodingZeal/eslint-config-zeal/pull/114))
+- New rule: `jest/require-tothrow-message` defaults to `warn` ([#114](https://github.com/CodingZeal/eslint-config-zeal/pull/114))
+- New rule: `react-native/no-raw-text` defaults to `warn` ([#114](https://github.com/CodingZeal/eslint-config-zeal/pull/114))
 
 ## [1.7.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.6.0...v1.7.0) - 2018-07-13
 

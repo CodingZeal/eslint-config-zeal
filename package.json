@@ -1,10 +1,11 @@
 {
   "name": "eslint-config-zeal",
   "description": "ESLint sharable configuration matching Zeal's style guide",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "main": "index.js",
   "files": [
-    "*.js"
+    "*.js",
+    "!.prettierrc.js"
   ],
   "scripts": {
     "format": "prettier --write '**/*.{js,json,md}'",
