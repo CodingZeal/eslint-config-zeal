@@ -148,7 +148,7 @@ That way, the `prettier` configurations will override any `zeal` configurations 
 
 This plugin contains all of the rules available in:
 
-- [ESLint](http://eslint.org/): 5.6.1
+- [ESLint](http://eslint.org/): 5.14.1
 - [eslint-plugin-ramda](https://github.com/ramda/eslint-plugin-ramda): 2.5.1
 - [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import): 2.14.0
 - [eslint-plugin-jest](https://www.npmjs.com/package/eslint-plugin-jest): 22.3.0
