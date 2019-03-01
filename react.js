@@ -26,6 +26,8 @@ module.exports = {
     "jsx-a11y/aria-unsupported-elements": "warn",
     // Enforce a clickable non-interactive element has at least one keyboard event listener.
     "jsx-a11y/click-events-have-key-events": "warn",
+    // Enforce that a control (an interactive element) has a text label.
+    "jsx-a11y/control-has-associated-label": "warn",
     // Enforce heading (h1, h2, etc) elements contain accessible content.
     "jsx-a11y/heading-has-content": "warn",
     // Enforce <html> element has lang prop.
