@@ -154,7 +154,7 @@ This plugin contains all of the rules available in:
 - [eslint-plugin-jest](https://www.npmjs.com/package/eslint-plugin-jest): 22.3.0
 - [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y): 6.2.1
 - [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): 7.12.4
-- [eslint-plugin-react-native](https://github.com/intellicode/eslint-plugin-react-native): 3.4.0
+- [eslint-plugin-react-native](https://github.com/intellicode/eslint-plugin-react-native): 3.6.0
 
 ## License
 
