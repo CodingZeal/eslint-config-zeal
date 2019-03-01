@@ -2,7 +2,41 @@
 
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.8.0...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.9.0...HEAD)
+
+## [1.9.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.8.0...v1.9.0) - 2019-03-01
+
+## Changed
+
+- Replace the `import/order` rule with eslint-plugin-import-order-alphabetical ([#130](https://github.com/CodingZeal/eslint-config-zeal/pull/130))
+  This continues to group imports the same way as `import/order`, but also sorts
+  the imports alphabetically within the groups.
+- Upgrade to eslint-plugin-import 2.16.0 ([#128](https://github.com/CodingZeal/eslint-config-zeal/pull/128))
+- Upgrade to eslint-plugin-jest 22.3.0 ([#128](https://github.com/CodingZeal/eslint-config-zeal/pull/128))
+- Upgrade to eslint-plugin-jsx-a11y 6.2.1 ([#128](https://github.com/CodingZeal/eslint-config-zeal/pull/128))
+- Upgrade to eslint-plugin-react 7.12.4 ([#128](https://github.com/CodingZeal/eslint-config-zeal/pull/128))
+- Upgrade to eslint-plugin-react-native 3.6.0 ([#128](https://github.com/CodingZeal/eslint-config-zeal/pull/128))
+- Upgrade to eslint 5.14.1 ([#128](https://github.com/CodingZeal/eslint-config-zeal/pull/128))
+
+## Added
+
+- Add eslint-plugin-react-hooks to `zeal/react` ([#129](https://github.com/CodingZeal/eslint-config-zeal/pull/129))
+- New rule: `import/no-named-export` defaults to `off` ([#128](https://github.com/CodingZeal/eslint-config-zeal/pull/128))
+- New rule: `jest/no-test-callback` defaults to `warn` ([#128](https://github.com/CodingZeal/eslint-config-zeal/pull/128))
+- New rule: `jest/no-truthy-falsy` defaults to `warn` ([#128](https://github.com/CodingZeal/eslint-config-zeal/pull/128))
+- New rule: `jest/prefer-called-with` defaults to `warn` ([#128](https://github.com/CodingZeal/eslint-config-zeal/pull/128))
+- New rule: `jest/prefer-spy-on` defaults to `warn` ([#128](https://github.com/CodingZeal/eslint-config-zeal/pull/128))
+- New rule: `jest/prefer-to-contain` defaults to `warn` ([#128](https://github.com/CodingZeal/eslint-config-zeal/pull/128))
+- New rule: `jest/prefer-todo` defaults to `warn` ([#128](https://github.com/CodingZeal/eslint-config-zeal/pull/128))
+- New rule: `jsx-a11y/control-has-associated-label` defaults to `warn` ([#128](https://github.com/CodingZeal/eslint-config-zeal/pull/128))
+- New rule: `react/jsx-fragments` defaults to `warn` in "syntax" mode (i.e., prefer the <>...</> shorthand syntax) ([#128](https://github.com/CodingZeal/eslint-config-zeal/pull/128))
+- New rule: `react-native/sort-styles` defaults to `warn` ([#128](https://github.com/CodingZeal/eslint-config-zeal/pull/128))
+- New rule: `no-useless-catch` defaults to `warn` ([#128](https://github.com/CodingZeal/eslint-config-zeal/pull/128))
+
+## Removed
+
+- Remove rule: `require-jsdoc` deprecated upstream ([#128](https://github.com/CodingZeal/eslint-config-zeal/pull/128))
+- Remove rule: `valid-jsdoc` deprecated upstream ([#128](https://github.com/CodingZeal/eslint-config-zeal/pull/128))
 
 ## [1.8.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.7.0...v1.8.0) - 2018-10-19
 
