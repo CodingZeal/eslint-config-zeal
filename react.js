@@ -195,6 +195,8 @@ module.exports = {
     "react/jsx-filename-extension": "off",
     // Enforce position of the first prop in JSX
     "react/jsx-first-prop-new-line": "warn",
+    // Enforce shorthand or standard form for React fragments
+    "react/jsx-fragments": ["warn", "syntax"],
     // Enforce event handler naming conventions in JSX
     "react/jsx-handler-names": "warn",
     // Validate JSX indentation
