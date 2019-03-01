@@ -4,7 +4,7 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: ["jsx-a11y", "react"],
+  plugins: ["jsx-a11y", "react", "react-hooks"],
   rules: {
     // Enforce emojis are wrapped in and provide screenreader access.
     "jsx-a11y/accessible-emoji": "warn",
@@ -329,10 +329,14 @@ module.exports = {
     "react/style-prop-object": "warn",
     // Prevent void DOM elements (e.g. <img />, <br />) from receiving children
     "react/void-dom-elements-no-children": "warn",
+    // Verify the list of dependencies for Hooks like useEffect and similar
+    "react-hooks/exhaustive-deps": "warn",
+    // Enforce the rules of hooks
+    "react-hooks/rules-of-hooks": "error",
   },
   settings: {
     react: {
-      version: "16.5.2",
+      version: "detect",
     },
   },
 };
