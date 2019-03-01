@@ -156,6 +156,8 @@ module.exports = {
     "import/no-named-as-default-member": "off",
     // Forbid named default exports.
     "import/no-named-default": "warn",
+    // Forbid named exports
+    "import/no-named-export": "off",
     // Report namespace imports
     "import/no-namespace": "off",
     // No Node.js builtin modules.
@@ -511,6 +513,8 @@ module.exports = {
     "no-use-before-define": ["warn", "nofunc"],
     // disallow unnecessary .call() and .apply()
     "no-useless-call": "warn",
+    // Disallow unnecessary catch clauses
+    "no-useless-catch": "warn",
     // disallow unnecessary computed property keys in object literals
     "no-useless-computed-key": "warn",
     // disallow unnecessary concatenation of literals or template literals
@@ -597,8 +601,6 @@ module.exports = {
     "require-atomic-updates": "warn",
     // disallow async functions which have no await expression
     "require-await": "warn",
-    // Require JSDoc comment
-    "require-jsdoc": "off",
     // Enforce the use of u flag on RegExp
     "require-unicode-regexp": "warn",
     // disallow generator functions that do not have yield
@@ -644,8 +646,6 @@ module.exports = {
     "unicode-bom": "warn",
     // disallow comparisons with the value NaN
     "use-isnan": "warn",
-    // Ensure JSDoc comments are valid
-    "valid-jsdoc": "warn",
     // Ensure that the results of typeof are compared against a valid string
     "valid-typeof": "warn",
     // require declaration of all vars at the top of their containing scope

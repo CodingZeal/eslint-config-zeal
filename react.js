@@ -26,6 +26,8 @@ module.exports = {
     "jsx-a11y/aria-unsupported-elements": "warn",
     // Enforce a clickable non-interactive element has at least one keyboard event listener.
     "jsx-a11y/click-events-have-key-events": "warn",
+    // Enforce that a control (an interactive element) has a text label.
+    "jsx-a11y/control-has-associated-label": "warn",
     // Enforce heading (h1, h2, etc) elements contain accessible content.
     "jsx-a11y/heading-has-content": "warn",
     // Enforce <html> element has lang prop.
@@ -193,6 +195,8 @@ module.exports = {
     "react/jsx-filename-extension": "off",
     // Enforce position of the first prop in JSX
     "react/jsx-first-prop-new-line": "warn",
+    // Enforce shorthand or standard form for React fragments
+    "react/jsx-fragments": ["warn", "syntax"],
     // Enforce event handler naming conventions in JSX
     "react/jsx-handler-names": "warn",
     // Validate JSX indentation

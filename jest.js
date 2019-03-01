@@ -33,22 +33,34 @@ module.exports = {
     "jest/no-jest-import": "warn",
     // Disallow large snapshots
     "jest/no-large-snapshots": "warn",
+    // Avoid using a callback in asynchronous tests
+    "jest/no-test-callback": "warn",
     // Disallow using f & x prefixes to define focused/skipped tests
     "jest/no-test-prefixes": "off",
     // Disallow explicitly returning from tests
     "jest/no-test-return-statement": "warn",
+    // Disallow using toBeTruthy() & toBeFalsy()
+    "jest/no-truthy-falsy": "warn",
+    // Suggest using toBeCalledWith OR toHaveBeenCalledWith
+    "jest/prefer-called-with": "warn",
     // Suggest using expect.assertions() OR expect.hasAssertions()
     "jest/prefer-expect-assertions": "off",
     // Suggest using inline snapshots
     "jest/prefer-inline-snapshots": "off",
+    // Suggest using jest.spyOn()
+    "jest/prefer-spy-on": "warn",
     // Suggest using toStrictEqual()
     "jest/prefer-strict-equal": "warn",
     // Suggest using toBeNull()
     "jest/prefer-to-be-null": "warn",
     // Suggest using toBeUndefined()
     "jest/prefer-to-be-undefined": "warn",
+    // Suggest using toContain()
+    "jest/prefer-to-contain": "warn",
     // Suggest using toHaveLength()
     "jest/prefer-to-have-length": "warn",
+    // Suggest using test.todo
+    "jest/prefer-todo": "warn",
     // Require a message for toThrow()
     "jest/require-tothrow-message": "warn",
     // Enforce valid describe() callback
