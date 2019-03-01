@@ -11,10 +11,12 @@ Zeal's JavaScript coding style is still evolving as we do more projects, but thi
 
 ## Install
 
-To make use of this configuration, install eslint, babel-eslint, eslint-plugin-import, and this package as development dependencies of your project:
+To make use of this configuration, install eslint, babel-eslint,
+eslint-plugin-import, eslint-plugin-import-order-alphabetical and this package
+as development dependencies of your project:
 
 ```
-npm install eslint babel-eslint eslint-plugin-import eslint-config-zeal --save-dev
+npm install eslint babel-eslint eslint-plugin-import eslint-plugin-import-order-alphabetical eslint-config-zeal --save-dev
 ```
 
 These packages are marked as peer dependencies, so you will get a warning if they're not installed.
@@ -159,6 +161,7 @@ This plugin contains all of the rules available in:
 - [ESLint](http://eslint.org/): 5.14.1
 - [eslint-plugin-ramda](https://github.com/ramda/eslint-plugin-ramda): 2.5.1
 - [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import): 2.14.0
+- [eslint-plugin-import-order-alphabetical](https://www.npmjs.com/package/eslint-plugin-import-order-alphabetical): 0.0.1
 - [eslint-plugin-jest](https://www.npmjs.com/package/eslint-plugin-jest): 22.3.0
 - [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y): 6.2.1
 - [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): 7.12.4

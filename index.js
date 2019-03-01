@@ -10,7 +10,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: "module",
   },
-  plugins: ["import"],
+  plugins: ["import", "import-order-alphabetical"],
   rules: {
     // Enforces getter/setter pairs in objects
     "accessor-pairs": "warn",
@@ -177,7 +177,13 @@ module.exports = {
     // Forbid Webpack loader syntax in imports
     "import/no-webpack-loader-syntax": "warn",
     // Enforce a convention in module import order
-    "import/order": [
+    "import/order": "off",
+    // Prefer a default export if module exports a single name
+    "import/prefer-default-export": "off",
+    // Report potentially ambiguous parse goal (script vs. module)
+    "import/unambiguous": "off",
+    // eslint-plugin-import/order, but with alphabetical sorting
+    "import-order-alphabetical/order": [
       "warn",
       {
         groups: [
@@ -189,10 +195,6 @@ module.exports = {
         "newlines-between": "always",
       },
     ],
-    // Prefer a default export if module exports a single name
-    "import/prefer-default-export": "off",
-    // Report potentially ambiguous parse goal (script vs. module)
-    "import/unambiguous": "off",
     // specify tab or space width for your code
     indent: ["warn", 2, { SwitchCase: 1 }],
     // enforce or disallow variable initializations at definition
