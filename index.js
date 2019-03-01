@@ -156,6 +156,8 @@ module.exports = {
     "import/no-named-as-default-member": "off",
     // Forbid named default exports.
     "import/no-named-default": "warn",
+    // Forbid named exports
+    "import/no-named-export": "off",
     // Report namespace imports
     "import/no-namespace": "off",
     // No Node.js builtin modules.
