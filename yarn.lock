@@ -820,7 +820,7 @@ eslint-module-utils@^2.2.0, eslint-module-utils@^2.3.0:
     debug "^2.6.8"
     pkg-dir "^2.0.0"
 
-eslint-plugin-import-order-alphabetical@^0.0.1:
+eslint-plugin-import-order-alphabetical@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-import-order-alphabetical/-/eslint-plugin-import-order-alphabetical-0.0.1.tgz#b37baa49f32660d5cae8f2edb7d90d81bbcedd22"
   integrity sha512-TZUkw2z9/U2XiuTwW2JgYZhJ//QQuZpA6XqqhIvqmiol+gSrpJofpDwjfxMOZcxjq/G/TDyWMdjgxQ+ikppTkA==
@@ -873,10 +873,10 @@ eslint-plugin-ramda@2.5.1:
     ramda "0.25.0"
     req-all "^1.0.0"
 
-eslint-plugin-react-hooks@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-1.4.0.tgz#ad86001e05519368e55a888b1b31004b8e2ae8f6"
-  integrity sha512-fMGlzztW/5hSQT0UBnlPwulao0uF8Kyp0Uv6PA81lzmcDz2LBtthkWQaE8Wz2F2kEe7mSRDgK8ABEFK1ipeDxw==
+eslint-plugin-react-hooks@1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-1.5.0.tgz#cdd958cfff55bd5fa4f84db90d1490fb5ca4ae2b"
+  integrity sha512-iwDuWR2ReRgvJsNm8fXPtTKdg78IVQF8I4+am3ntztPf/+nPnWZfArFu6aXpaC75/iCYRrkqI8nPCYkxJstmpA==
 
 eslint-plugin-react-native-globals@^0.1.1:
   version "0.1.2"
