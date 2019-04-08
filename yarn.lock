@@ -820,10 +820,10 @@ eslint-module-utils@^2.2.0, eslint-module-utils@^2.3.0:
     debug "^2.6.8"
     pkg-dir "^2.0.0"
 
-eslint-plugin-import-order-alphabetical@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-import-order-alphabetical/-/eslint-plugin-import-order-alphabetical-0.0.1.tgz#b37baa49f32660d5cae8f2edb7d90d81bbcedd22"
-  integrity sha512-TZUkw2z9/U2XiuTwW2JgYZhJ//QQuZpA6XqqhIvqmiol+gSrpJofpDwjfxMOZcxjq/G/TDyWMdjgxQ+ikppTkA==
+eslint-plugin-import-order-alphabetical@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-import-order-alphabetical/-/eslint-plugin-import-order-alphabetical-0.0.2.tgz#301e1a7d7cef3790f417d4dceb4b62291ac5ddff"
+  integrity sha512-9WBxC3RzQrJTAJ/epl64k4pvug/Le1OvhydICoQydK/2M4+36lnAlsn/3dsvXR+1WnRuc2mziNTkFUs+tx+22w==
   dependencies:
     eslint-module-utils "^2.2.0"
     lodash "^4.17.4"
