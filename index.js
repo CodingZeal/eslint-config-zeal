@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-unused-modules
 module.exports = {
   env: {
     browser: true,
@@ -172,6 +173,15 @@ module.exports = {
     "import/no-unassigned-import": "off",
     // Ensure imports point to a file/module that can be resolved
     "import/no-unresolved": ["error", { commonjs: true }],
+    // Report modules without exports, or exports without matching import in
+    // another module
+    "import/no-unused-modules": [
+      "warn",
+      {
+        missingExports: true,
+        unusedExports: true,
+      },
+    ],
     // Ensures that there are no useless path segments
     "import/no-useless-path-segments": "warn",
     // Forbid Webpack loader syntax in imports
