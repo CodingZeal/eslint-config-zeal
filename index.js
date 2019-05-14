@@ -581,6 +581,8 @@ module.exports = {
     "prefer-const": "warn",
     // require destructuring from arrays and/or objects
     "prefer-destructuring": "warn",
+    // Suggest using named capture group in regular expression
+    "prefer-named-capture-group": "off",
     // disallow parseInt() in favor of binary, octal, and hexadecimal literals
     "prefer-numeric-literals": "warn",
     // Prefer use of an object spread over Object.assign
