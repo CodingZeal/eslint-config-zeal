@@ -228,6 +228,8 @@ module.exports = {
     "react/jsx-pascal-case": "warn",
     // Disallow multiple spaces between inline JSX props
     "react/jsx-props-no-multi-spaces": "warn",
+    // Disallow JSX props spreading
+    "react/jsx-props-no-spreading": "off",
     // Enforce default props alphabetical sorting
     "react/jsx-sort-default-props": "off",
     // Enforce props alphabetical sorting
@@ -299,6 +301,8 @@ module.exports = {
     "react/no-will-update-set-state": "warn",
     // Enforce ES5 or ES6 class for React Components
     "react/prefer-es6-class": "warn",
+    // Enforce that props are read-only
+    "react/prefer-read-only-props": "off",
     // Enforce stateless React Components to be written as a pure function
     "react/prefer-stateless-function": "warn",
     // Prevent missing props validation in a React component definition
@@ -326,6 +330,10 @@ module.exports = {
         sortShapeProp: true,
       },
     ],
+    // Enforce state initialization style
+    "react/state-in-constructor": ["warn", "never"],
+    // Enforces where React component static properties should be positioned.
+    "react/static-property-placement": "warn",
     // Enforce style prop value being an object
     "react/style-prop-object": "warn",
     // Prevent void DOM elements (e.g. <img />, <br />) from receiving children
