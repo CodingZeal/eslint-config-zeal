@@ -166,7 +166,7 @@ This plugin contains all of the rules available in:
 - [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y): 6.2.1
 - [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): 7.13.0
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks): 1.6.0
-- [eslint-plugin-react-native](https://github.com/intellicode/eslint-plugin-react-native): 3.6.0
+- [eslint-plugin-react-native](https://github.com/intellicode/eslint-plugin-react-native): 3.7.0
 
 ## License
 
