@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-unused-modules
 module.exports = {
   env: {
     browser: true,
@@ -172,6 +173,15 @@ module.exports = {
     "import/no-unassigned-import": "off",
     // Ensure imports point to a file/module that can be resolved
     "import/no-unresolved": ["error", { commonjs: true }],
+    // Report modules without exports, or exports without matching import in
+    // another module
+    "import/no-unused-modules": [
+      "warn",
+      {
+        missingExports: true,
+        unusedExports: true,
+      },
+    ],
     // Ensures that there are no useless path segments
     "import/no-useless-path-segments": "warn",
     // Forbid Webpack loader syntax in imports
@@ -581,6 +591,8 @@ module.exports = {
     "prefer-const": "warn",
     // require destructuring from arrays and/or objects
     "prefer-destructuring": "warn",
+    // Suggest using named capture group in regular expression
+    "prefer-named-capture-group": "off",
     // disallow parseInt() in favor of binary, octal, and hexadecimal literals
     "prefer-numeric-literals": "warn",
     // Prefer use of an object spread over Object.assign

@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-unused-modules
 module.exports = {
   env: {
     jest: true,
@@ -21,6 +22,8 @@ module.exports = {
     "jest/no-alias-methods": "off",
     // Disallow disabled tests
     "jest/no-disabled-tests": "warn",
+    // Disallow empty titles
+    "jest/no-empty-title": "warn",
     // Disallow focused tests
     "jest/no-focused-tests": "warn",
     // Disallow setup and teardown hooks
@@ -33,6 +36,8 @@ module.exports = {
     "jest/no-jest-import": "warn",
     // Disallow large snapshots
     "jest/no-large-snapshots": "warn",
+    // Disallow manually importing from __mocks__
+    "jest/no-mocks-import": "warn",
     // Avoid using a callback in asynchronous tests
     "jest/no-test-callback": "warn",
     // Disallow using f & x prefixes to define focused/skipped tests

@@ -158,15 +158,15 @@ That way, the `prettier` configurations will override any `zeal` configurations 
 
 This plugin contains all of the rules available in:
 
-- [ESLint](http://eslint.org/): 5.14.1
+- [ESLint](http://eslint.org/): 5.16.0
 - [eslint-plugin-ramda](https://github.com/ramda/eslint-plugin-ramda): 2.5.1
-- [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import): 2.14.0
-- [eslint-plugin-import-order-alphabetical](https://www.npmjs.com/package/eslint-plugin-import-order-alphabetical): 0.0.1
-- [eslint-plugin-jest](https://www.npmjs.com/package/eslint-plugin-jest): 22.3.0
+- [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import): 2.17.2
+- [eslint-plugin-import-order-alphabetical](https://www.npmjs.com/package/eslint-plugin-import-order-alphabetical): 0.0.2
+- [eslint-plugin-jest](https://www.npmjs.com/package/eslint-plugin-jest): 22.5.1
 - [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y): 6.2.1
-- [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): 7.12.4
-- [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks): 1.4.0
-- [eslint-plugin-react-native](https://github.com/intellicode/eslint-plugin-react-native): 3.6.0
+- [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): 7.13.0
+- [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks): 1.6.0
+- [eslint-plugin-react-native](https://github.com/intellicode/eslint-plugin-react-native): 3.7.0
 
 ## License
 
