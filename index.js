@@ -8,7 +8,7 @@ module.exports = {
   globals: {},
   parser: "babel-eslint",
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 2020,
     sourceType: "module",
   },
   plugins: ["import", "import-order-alphabetical"],
@@ -83,6 +83,8 @@ module.exports = {
     "func-names": "warn",
     // enforce use of function declarations or expressions
     "func-style": ["warn", "declaration", { allowArrowFunctions: true }],
+    // enforce line breaks between arguments of a function call
+    "function-call-argument-newline": ["warn", "consistent"],
     // enforce consistent line breaks inside function parentheses
     "function-paren-newline": ["warn", "consistent"],
     // enforce spacing around the * in generator functions
