@@ -10,36 +10,36 @@ All notable changes to this project will be documented in this file. This projec
 
 - Upgrade to eslint 5.16.0 ([#139](https://github.com/CodingZeal/eslint-config-zeal/pull/139))
 - Upgrade to eslint-config-prettier 6.1.0
-  ([#139](https://github.com/CodingZeal/eslint-config-zeal/pull/139), [#152](https://github.com/CodingZeal/eslint-config-zeal/pull/152))
+  ([#139](https://github.com/CodingZeal/eslint-config-zeal/pull/139), [#151](https://github.com/CodingZeal/eslint-config-zeal/pull/151))
 - Upgrade to eslint-plugin-import 2.18.2
-  ([#139](https://github.com/CodingZeal/eslint-config-zeal/pull/139), [#152](https://github.com/CodingZeal/eslint-config-zeal/pull/152))
+  ([#139](https://github.com/CodingZeal/eslint-config-zeal/pull/139), [#151](https://github.com/CodingZeal/eslint-config-zeal/pull/151))
 - Upgrade to eslint-plugin-import-order-alphabetical 0.0.2 ([#139](https://github.com/CodingZeal/eslint-config-zeal/pull/139))
 - Upgrade to eslint-plugin-jest 22.16.0
-  ([#139](https://github.com/CodingZeal/eslint-config-zeal/pull/139), [#152](https://github.com/CodingZeal/eslint-config-zeal/pull/152))
+  ([#139](https://github.com/CodingZeal/eslint-config-zeal/pull/139), [#151](https://github.com/CodingZeal/eslint-config-zeal/pull/151))
 - Upgrade to eslint-plugin-react 7.14.3
-  ([#139](https://github.com/CodingZeal/eslint-config-zeal/pull/139), [#152](https://github.com/CodingZeal/eslint-config-zeal/pull/152))
+  ([#139](https://github.com/CodingZeal/eslint-config-zeal/pull/139), [#151](https://github.com/CodingZeal/eslint-config-zeal/pull/151))
 - Upgrade to eslint-plugin-react-hooks 2.0.1
-  ([#139](https://github.com/CodingZeal/eslint-config-zeal/pull/139), [#152](https://github.com/CodingZeal/eslint-config-zeal/pull/152))
+  ([#139](https://github.com/CodingZeal/eslint-config-zeal/pull/139), [#151](https://github.com/CodingZeal/eslint-config-zeal/pull/151))
 - Upgrade to eslint-plugin-react-native 3.7.0 ([#139](https://github.com/CodingZeal/eslint-config-zeal/pull/139))
 - Ugrade transitive dependency eslint-utils to 1.4.2 to resolve a security issue
   ([#149](https://github.com/CodingZeal/eslint-config-zeal/pull/149)) -@dependabot/@hyosunko
-- Upgrade to babel-eslint 10.0.3 ([#152](https://github.com/CodingZeal/eslint-config-zeal/pull/152))
-- Upgrade to eslint-plugin-jsx-a11y 6.2.3 ([#152](https://github.com/CodingZeal/eslint-config-zeal/pull/152))
+- Upgrade to babel-eslint 10.0.3 ([#151](https://github.com/CodingZeal/eslint-config-zeal/pull/151))
+- Upgrade to eslint-plugin-jsx-a11y 6.2.3 ([#151](https://github.com/CodingZeal/eslint-config-zeal/pull/151))
 
 ## Added
 
 - New rule: `prefer-named-capture-group` defaults to `off` ([#139](https://github.com/CodingZeal/eslint-config-zeal/pull/139))
 - New rule: `import/no-unused-modules` defaults to `warn` with both `missingExports` and `unusedExports` options enabled. ([#139](https://github.com/CodingZeal/eslint-config-zeal/pull/139))
-- New rule: `jest/no-commented-out-tests` defaults to `warn` ([#152](https://github.com/CodingZeal/eslint-config-zeal/pull/152))
-- New rule: `jest/no-duplicate-hooks` defaults to `warn` ([#152](https://github.com/CodingZeal/eslint-config-zeal/pull/152))
+- New rule: `jest/no-commented-out-tests` defaults to `warn` ([#151](https://github.com/CodingZeal/eslint-config-zeal/pull/151))
+- New rule: `jest/no-duplicate-hooks` defaults to `warn` ([#151](https://github.com/CodingZeal/eslint-config-zeal/pull/151))
 - New rule: `jest/no-empty-title` defaults to `warn` ([#139](https://github.com/CodingZeal/eslint-config-zeal/pull/139))
-- New rule: `jest/no-expect-resolves` defaults to `warn` ([#152](https://github.com/CodingZeal/eslint-config-zeal/pull/152))
-- New rule: `jest/no-export` defaults to `warn` ([#152](https://github.com/CodingZeal/eslint-config-zeal/pull/152))
-- New rule: `jest/no-if` defaults to `warn` ([#152](https://github.com/CodingZeal/eslint-config-zeal/pull/152))
-- New rule: `jest/no-mocks-import` defaults to `warn` ([#152](https://github.com/CodingZeal/eslint-config-zeal/pull/152))
-- New rule: `jest/no-standalone-expect` defaults to `warn` ([#152](https://github.com/CodingZeal/eslint-config-zeal/pull/152))
-- New rule: `jest/no-try-expect` defaults to `warn` ([#152](https://github.com/CodingZeal/eslint-config-zeal/pull/152))
-- New rule: `jest/require-top-level-describe` defaults to `warn` ([#152](https://github.com/CodingZeal/eslint-config-zeal/pull/152))
+- New rule: `jest/no-expect-resolves` defaults to `warn` ([#151](https://github.com/CodingZeal/eslint-config-zeal/pull/151))
+- New rule: `jest/no-export` defaults to `warn` ([#151](https://github.com/CodingZeal/eslint-config-zeal/pull/151))
+- New rule: `jest/no-if` defaults to `warn` ([#151](https://github.com/CodingZeal/eslint-config-zeal/pull/151))
+- New rule: `jest/no-mocks-import` defaults to `warn` ([#151](https://github.com/CodingZeal/eslint-config-zeal/pull/151))
+- New rule: `jest/no-standalone-expect` defaults to `warn` ([#151](https://github.com/CodingZeal/eslint-config-zeal/pull/151))
+- New rule: `jest/no-try-expect` defaults to `warn` ([#151](https://github.com/CodingZeal/eslint-config-zeal/pull/151))
+- New rule: `jest/require-top-level-describe` defaults to `warn` ([#151](https://github.com/CodingZeal/eslint-config-zeal/pull/151))
 - New rule: `react/jsx-props-no-spreading` defaults to `off` ([#139](https://github.com/CodingZeal/eslint-config-zeal/pull/139))
 - New rule: `react/prefer-read-only-props` defaults to `off` ([#139](https://github.com/CodingZeal/eslint-config-zeal/pull/139))
 - New rule: `react/state-in-constructor` defaults to `warn` ([#139](https://github.com/CodingZeal/eslint-config-zeal/pull/139))
