@@ -20,16 +20,26 @@ module.exports = {
     "jest/lowercase-name": "warn",
     // Don't use alias methods
     "jest/no-alias-methods": "off",
+    // Disallow commented out tests
+    "jest/no-commented-out-tests": "warn",
     // Disallow disabled tests
     "jest/no-disabled-tests": "warn",
+    // Disallow duplicate setup and teardown hooks
+    "jest/no-duplicate-hooks": "warn",
     // Disallow empty titles
     "jest/no-empty-title": "warn",
+    // Avoid using expect().resolves
+    "jest/no-expect-resolves": "warn",
+    // no export from test file
+    "jest/no-export": "warn",
     // Disallow focused tests
     "jest/no-focused-tests": "warn",
     // Disallow setup and teardown hooks
     "jest/no-hooks": "off",
     // Disallow identical titles
     "jest/no-identical-title": "warn",
+    // Disallow conditional logic.
+    "jest/no-if": "warn",
     // Disallow Jasmine globals
     "jest/no-jasmine-globals": "warn",
     // Disallow importing jest
@@ -38,6 +48,8 @@ module.exports = {
     "jest/no-large-snapshots": "warn",
     // Disallow manually importing from __mocks__
     "jest/no-mocks-import": "warn",
+    // No standalone expect in a describe block
+    "jest/no-standalone-expect": "warn",
     // Avoid using a callback in asynchronous tests
     "jest/no-test-callback": "warn",
     // Disallow using f & x prefixes to define focused/skipped tests
@@ -46,6 +58,8 @@ module.exports = {
     "jest/no-test-return-statement": "warn",
     // Disallow using toBeTruthy() & toBeFalsy()
     "jest/no-truthy-falsy": "warn",
+    // Prevent catch assertions in tests
+    "jest/no-try-expect": "warn",
     // Suggest using toBeCalledWith OR toHaveBeenCalledWith
     "jest/prefer-called-with": "warn",
     // Suggest using expect.assertions() OR expect.hasAssertions()
@@ -66,6 +80,8 @@ module.exports = {
     "jest/prefer-to-have-length": "warn",
     // Suggest using test.todo
     "jest/prefer-todo": "warn",
+    // Require top-level describe block
+    "jest/require-top-level-describe": "warn",
     // Require a message for toThrow()
     "jest/require-tothrow-message": "warn",
     // Enforce valid describe() callback

@@ -188,6 +188,8 @@ module.exports = {
     // Enforce curly braces or disallow unnecessary curly braces in JSX props
     // and/or children.
     "react/jsx-curly-brace-presence": ["warn", "never"],
+    // Enforce linebreaks in curly braces in JSX attributes and expressions.
+    "react/jsx-curly-newline": "warn",
     // Enforce or disallow spaces inside of curly braces in JSX attributes
     "react/jsx-curly-spacing": "warn",
     // Enforce or disallow spaces around equal signs in JSX attributes
