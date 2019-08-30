@@ -2,7 +2,24 @@
 
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.10.0...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v2.0.0...HEAD)
+
+## [2.0.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.10.0...v2.0.0) - 2019-08-30
+
+**BREAKING**
+
+This version depends on eslint v6.2.2, which is a major version change from the
+previous release. If you still need to use eslint 5.x, stick with the v1.x series
+of this package.
+
+## Changed
+
+- Upgrade eslint to 6.2.2 ([#152](https://github.com/CodingZeal/eslint-config-zeal/pull/152))
+- Set `ecmaVersion` option to `2020` ([#152](https://github.com/CodingZeal/eslint-config-zeal/pull/152))
+
+## Added
+
+- New rule: `function-call-argument-newline` defaults to `warn` with `consistent` option ([#152](https://github.com/CodingZeal/eslint-config-zeal/pull/152))
 
 ## [1.10.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.9.0...v1.10.0) - 2019-08-30
 
