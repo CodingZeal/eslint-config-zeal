@@ -161,7 +161,7 @@ This plugin contains all of the rules available in:
 - [ESLint](http://eslint.org/): 6.2.2
 - [eslint-plugin-ramda](https://github.com/ramda/eslint-plugin-ramda): 2.5.1
 - [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import): 2.18.2
-- [eslint-plugin-import-order-alphabetical](https://www.npmjs.com/package/eslint-plugin-import-order-alphabetical): 0.0.2
+- [eslint-plugin-import-order-alphabetical](https://www.npmjs.com/package/eslint-plugin-import-order-alphabetical): 1.0.0
 - [eslint-plugin-jest](https://www.npmjs.com/package/eslint-plugin-jest): 22.16.0
 - [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y): 6.2.3
 - [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react): 7.14.3
