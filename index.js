@@ -177,13 +177,7 @@ module.exports = {
     "import/no-unresolved": ["error", { commonjs: true }],
     // Report modules without exports, or exports without matching import in
     // another module
-    "import/no-unused-modules": [
-      "warn",
-      {
-        missingExports: true,
-        unusedExports: true,
-      },
-    ],
+    "import/no-unused-modules": "off",
     // Ensures that there are no useless path segments
     "import/no-useless-path-segments": "warn",
     // Forbid Webpack loader syntax in imports
