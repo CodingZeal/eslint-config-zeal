@@ -224,6 +224,8 @@ module.exports = {
     "react/jsx-no-target-blank": "warn",
     // Disallow undeclared variables in JSX
     "react/jsx-no-undef": "warn",
+    // Disallow unnecessary fragments
+    "react/jsx-no-useless-fragment": "warn",
     // One JSX Element Per Line
     "react/jsx-one-expression-per-line": ["warn", { allow: "literal" }],
     // Enforce PascalCase for user-defined JSX components

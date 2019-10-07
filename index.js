@@ -12,6 +12,7 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["import", "import-order-alphabetical"],
+  reportUnusedDisableDirectives: true,
   rules: {
     // Enforces getter/setter pairs in objects
     "accessor-pairs": "warn",
@@ -63,6 +64,8 @@ module.exports = {
     curly: ["warn", "multi-line"],
     // require default case in switch statements
     "default-case": "warn",
+    // enforce default parameters to be last
+    "default-param-last": "warn",
     // enforces consistent newlines before or after dots
     "dot-location": ["warn", "property"],
     // encourages use of dot notation whenever possible
@@ -348,6 +351,8 @@ module.exports = {
     "no-implicit-globals": "warn",
     // disallow use of eval()-like methods
     "no-implied-eval": "warn",
+    // disallow assigning to imported bindings
+    "no-import-assign": "warn",
     // disallow comments inline after code
     "no-inline-comments": "off",
     // disallow function or variable declarations in nested blocks
@@ -595,6 +600,9 @@ module.exports = {
     "prefer-object-spread": "warn",
     // require using Error objects as Promise rejection reasons
     "prefer-promise-reject-errors": "off",
+    //  Disallow use of the RegExp constructor in favor of regular expression
+    //  literals
+    "prefer-regex-literals": "warn",
     // suggest using the rest parameters instead of arguments
     "prefer-rest-params": "warn",
     // suggest using the spread operator instead of .apply().
