@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-unused-modules
 module.exports = {
   parserOptions: {
     ecmaFeatures: {
