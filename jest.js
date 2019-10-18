@@ -63,6 +63,8 @@ module.exports = {
     "jest/prefer-called-with": "warn",
     // Suggest using expect.assertions() OR expect.hasAssertions()
     "jest/prefer-expect-assertions": "off",
+    // Suggest to have all hooks at top-level before tests
+    "jest/prefer-hooks-on-top": "warn",
     // Suggest using inline snapshots
     "jest/prefer-inline-snapshots": "off",
     // Suggest using jest.spyOn()
