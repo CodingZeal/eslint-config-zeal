@@ -2,7 +2,48 @@
 
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v2.0.0...HEAD)
+## [Unreleased](https://github.com/CodingZeal/eslint-config-zeal/compare/v2.1.0...HEAD)
+
+## [2.1.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v2.0.0...v2.1.0) - 2019-10-18
+
+## Changed
+
+- Changed rule: `import/no-unused-modules` now defaults to `off`.
+  ([#158](https://github.com/CodingZeal/eslint-config-zeal/pull/158))
+
+  After experimenting with import/no-unused-modules on a project, we found that it suffers from several issues:
+
+  - It is exceedingly slow. In our test project, linting time increased by 15-20x. There is an open issue about this. A mitigating PR has been merged, but not yet released.
+
+  - There are too many false positives. It reports every single Jest test file and doesn't recognize module.exports.
+
+  - It doesn't support using globs for ignoring files (see benmosher/eslint-plugin-import#1452 and benmosher/eslint-plugin-import#1326). If it did, we could more easily tell it to ignore our test files.
+
+  - Until these issues are resolved upstream, we're going to keep this rule
+    disabled by default.
+
+- Upgrade to eslint-plugin-import-order-alphabetical 1.0.0 ([#159](https://github.com/CodingZeal/eslint-config-zeal/pull/159))
+
+- Upgrade to eslint-plugin-jest 22.19.0
+  ([#159](https://github.com/CodingZeal/eslint-config-zeal/pull/159), [#161](https://github.com/CodingZeal/eslint-config-zeal/pull/161))
+
+- Upgrade to eslint-plugin-react-hooks 2.1.2 ([#159](https://github.com/CodingZeal/eslint-config-zeal/pull/159))
+
+- Upgrade to eslint-plugin-react 7.16.0 ([#159](https://github.com/CodingZeal/eslint-config-zeal/pull/159))
+
+- Upgrade to eslint 6.5.1
+  ([#159](https://github.com/CodingZeal/eslint-config-zeal/pull/159))
+
+## Added
+
+- New configuration setting: `reportUnusedDisableDirectives` set to `true`. We
+  generally use this in our projects via the command line. Now we can set it
+  here as a setting. ([#159](https://github.com/CodingZeal/eslint-config-zeal/pull/159))
+- New rule: `no-import-assign` defaults to `warn`. ([#159](https://github.com/CodingZeal/eslint-config-zeal/pull/159))
+- New rule: `prefer-regex-literals` defaults to `warn`. ([#159](https://github.com/CodingZeal/eslint-config-zeal/pull/159))
+- New rule: `default-param-last` defaults to `warn`. ([#159](https://github.com/CodingZeal/eslint-config-zeal/pull/159))
+- New rule: `react/jsx-no-useless-fragment` defaults to `warn`. ([#159](https://github.com/CodingZeal/eslint-config-zeal/pull/159))
+- New rule: `jest/prefer-hooks-on-top` defaults to `warn`. ([#161](https://github.com/CodingZeal/eslint-config-zeal/pull/161))
 
 ## [2.0.0](https://github.com/CodingZeal/eslint-config-zeal/compare/v1.10.0...v2.0.0) - 2019-08-30
 

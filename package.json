@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-zeal",
   "description": "ESLint sharable configuration matching Zeal's style guide",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "main": "index.js",
   "files": [
     "*.js",
