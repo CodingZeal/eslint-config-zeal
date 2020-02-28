@@ -45,7 +45,7 @@
     "style linter"
   ],
   "devDependencies": {
-    "babel-eslint": "^10.0.3",
+    "babel-eslint": "^10.1.0",
     "eslint": "6.5.1",
     "eslint-config-prettier": "^6.4.0",
     "eslint-find-rules": "^3.4.0",
