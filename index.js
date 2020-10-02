@@ -35,8 +35,6 @@ module.exports = {
     "block-spacing": "warn",
     // enforce one true brace style
     "brace-style": "warn",
-    // enforce return after a callback
-    "callback-return": "warn",
     // require camel case names
     camelcase: "warn",
     // enforce or disallow capitalization of the first letter of a comment,
@@ -93,14 +91,8 @@ module.exports = {
     "generator-star-spacing": ["warn", "after"],
     // enforce return statements in getters
     "getter-return": "warn",
-    // enforce require() on top-level module scope
-    "global-require": "warn",
     // make sure for-in loops have an if statement
     "guard-for-in": "warn",
-    // enforce error handling in callbacks
-    "handle-callback-err": "warn",
-    // blacklist certain identifiers to prevent them being used
-    "id-blacklist": "off",
     // this option enforces minimum and maximum identifier lengths (variable
     // names, property names etc.)
     "id-length": "off",
@@ -267,8 +259,6 @@ module.exports = {
     "no-await-in-loop": "warn",
     // disallow use of bitwise operators
     "no-bitwise": "warn",
-    // disallow use of the Buffer() constructor
-    "no-buffer-constructor": "warn",
     // disallow use of arguments.caller or arguments.callee
     "no-caller": "warn",
     // disallow lexical declarations in case clauses
@@ -391,8 +381,6 @@ module.exports = {
         ],
       },
     ],
-    // disallow mixing regular variable and require declarations
-    "no-mixed-requires": "warn",
     // disallow mixed spaces and tabs for indentation
     "no-mixed-spaces-and-tabs": "warn",
     // disallow use of chained assignment expressions
@@ -413,8 +401,6 @@ module.exports = {
     "no-new-func": "warn",
     // disallow the use of the Object constructor
     "no-new-object": "warn",
-    // disallow use of new operator with the require function
-    "no-new-require": "warn",
     // disallow use of the new operator with the Symbol object
     "no-new-symbol": "warn",
     // disallows creating new instances of String,Number, and Boolean
@@ -429,14 +415,8 @@ module.exports = {
     "no-octal-escape": "warn",
     // disallow reassignment of function parameters
     "no-param-reassign": "warn",
-    // disallow string concatenation with __dirname and __filename
-    "no-path-concat": "warn",
     // disallow use of unary operators, ++ and --
     "no-plusplus": "warn",
-    // disallow use of process.env
-    "no-process-env": "warn",
-    // disallow process.exit()
-    "no-process-exit": "warn",
     // disallow usage of __proto__ property
     "no-proto": "warn",
     // Disallow use of Object.prototypes builtins directly
@@ -449,8 +429,6 @@ module.exports = {
     "no-restricted-globals": "off",
     // restrict usage of specified node imports
     "no-restricted-imports": "off",
-    // restrict usage of specified node modules
-    "no-restricted-modules": "off",
     // disallow certain properties on certain objects
     "no-restricted-properties": "off",
     // disallow use of certain syntax in code
@@ -473,8 +451,6 @@ module.exports = {
     "no-shadow-restricted-names": "warn",
     // disallow sparse arrays
     "no-sparse-arrays": "warn",
-    // disallow use of synchronous methods
-    "no-sync": "warn",
     // Disallow tabs in file
     "no-tabs": "warn",
     // Disallow template literal placeholder syntax in regular strings
